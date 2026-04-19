@@ -1,9 +1,23 @@
 {
-  "name": "zhouyi-web",
+  "name": "zhouyi-react",
+  "private": true,
   "version": "1.0.0",
-  "description": "周易学习Web App - 64卦浏览/占卜/书库",
+  "type": "module",
   "scripts": {
-    "dev": "echo \"Open index.html in browser\"",
-    "vercel": "vercel"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.0"
   }
 }
