@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "hexagrams.json",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/hexagrams.json", "dest": "/hexagrams.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

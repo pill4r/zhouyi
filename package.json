@@ -1,0 +1,9 @@
+{
+  "name": "zhouyi-web",
+  "version": "1.0.0",
+  "description": "周易学习Web App - 64卦浏览/占卜/书库",
+  "scripts": {
+    "dev": "echo \"Open index.html in browser\"",
+    "vercel": "vercel"
+  }
+}
