@@ -74,9 +74,10 @@ export default function HomePage({ userData }) {
               <div
                 key={hex.id}
                 onClick={() => navigate(`/hexagrams/${hex.id}`)}
-                className="aspect-square bg-card rounded-lg flex items-center justify-center text-lg cursor-pointer hover:bg-gold/20 transition-colors"
+                className="aspect-square bg-card rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-gold/20 transition-colors"
               >
-                {hex.trigramAbove}{hex.trigramBelow}
+                <div className="text-base leading-tight">{hex.trigramAbove}{hex.trigramBelow}</div>
+                <div className="text-xs text-gold/80 leading-none mt-0.5">{hex.name}</div>
               </div>
             ))}
           </div>

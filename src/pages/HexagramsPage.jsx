@@ -65,10 +65,10 @@ export default function HexagramsPage({ userData, onUpdate }) {
                   isLearned ? 'ring-1 ring-gold/50' : ''
                 } ${isMemorized ? 'bg-gold/20' : ''}`}
               >
-                <div className="text-xl mb-0.5">
+                <div className="text-lg mb-0.5">
                   {hex.trigramAbove}{hex.trigramBelow}
                 </div>
-                <div className="text-xs text-gray">{hex.id}</div>
+                <div className="text-xs text-gold font-medium">{hex.name}</div>
                 {isFavorite && <span className="text-xs mt-0.5">★</span>}
               </div>
             )
