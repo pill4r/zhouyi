@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周易学习</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #0D0D0D;
+            --surface: #1A1A1A;
+            --card: #252525;
+            --gold: #D4AF37;
+            --gold-light: #F5D77A;
+            --text: #FAFAFA;
+            --gray: #9E9E9E;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--primary);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: var(--surface);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--gold);
+        }
+        
+        .header-btn {
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .nav {
+            background: var(--surface);
+            display: flex;
+            position: sticky;
+            bottom: 0;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .nav-item {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            color: var(--gray);
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        
+        .nav-item.active { color: var(--gold); }
+        .nav-item .icon { font-size: 22px; display: block; margin-bottom: 4px; }
+        
+        .page { display: none; padding: 16px; }
+        .page.active { display: block; }
+        
+        .today-card {
+            background: linear-gradient(135deg, var(--card), rgba(37, 37, 37, 0.8));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+        
+        .today-symbol { font-size: 60px; line-height: 1; }
+        .today-info h3 { color: var(--gray); font-size: 12px; font-weight: normal; }
+        .today-info .name { font-size: 32px; color: var(--gold); font-weight: bold; }
+        .today-info .nameCn { font-size: 16px; margin-bottom: 8px; }
+        .today-info .judgment { font-size: 14px; color: var(--gray); }
+        
+        .section-title { font-size: 16px; margin-bottom: 12px; color: var(--text); }
+        .bagua-scroll { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 24px; }
+        .bagua-item {
+            min-width: 70px;
+            background: var(--card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .bagua-item .symbol { font-size: 28px; }
+        .bagua-item .name { font-size: 14px; font-weight: bold; margin-top: 4px; }
+        .bagua-item .meaning { font-size: 10px; color: var(--gray); }
+        
+        .hexagram-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+        .hexagram-item {
+            background: var(--card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 12px 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .hexagram-item:active { transform: scale(0.95); }
+        .hexagram-item.learned { border-color: var(--gold); border-width: 2px; }
+        .hexagram-item .symbol { font-size: 24px; }
+        .hexagram-item .name { font-size: 14px; font-weight: bold; margin-top: 4px; }
+        .hexagram-item .id { font-size: 10px; color: var(--gray); }
+        
+        .detail-header {
+            background: var(--surface);
+            padding: 24px;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .detail-symbol { font-size: 60px; margin-bottom: 12px; }
+        .detail-name { font-size: 32px; color: var(--gold); font-weight: bold; }
+        .detail-nameCn { font-size: 16px; color: var(--gray); margin-bottom: 12px; }
+        .detail-tags { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+        .detail-tag {
+            background: var(--card);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .detail-meaning { margin-top: 16px; font-size: 14px; color: var(--gray); }
+        
+        .tabs { display: flex; background: var(--surface); border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+        .tab {
+            flex: 1;
+            padding: 14px;
+            text-align: center;
+            cursor: pointer;
+            color: var(--gray);
+            font-size: 14px;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+        .tab-content { display: none; padding: 16px; }
+        .tab-content.active { display: block; }
+        
+        .section-header { font-size: 14px; color: var(--gold); margin-bottom: 8px; margin-top: 16px; }
+        .section-header:first-child { margin-top: 0; }
+        .card { background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+        .card-title { font-size: 16px; margin-bottom: 12px; color: var(--text); }
+        .card-content { font-size: 14px; line-height: 1.8; color: var(--gray); }
+        
+        .line-item { background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+        .line-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .line-badge {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .line-badge.yang { background: var(--gold); color: var(--primary); }
+        .line-badge.yin { background: var(--card); color: var(--text); }
+        .line-name { font-size: 16px; }
+        .line-type { font-size: 12px; color: var(--gray); }
+        .line-judgment { font-size: 14px; margin-bottom: 8px; }
+        .line-image { font-size: 12px; color: var(--gray); }
+        
+        .divination-container { text-align: center; padding: 40px 20px; }
+        .divination-step { font-size: 20px; margin-bottom: 40px; }
+        .coins-display { display: flex; gap: 16px; justify-content: center; margin-bottom: 24px; }
+        .coin {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .coin.yang { background: var(--gold); color: var(--primary); }
+        .coin.yin { background: var(--card); color: var(--text); }
+        .coin.changing { background: var(--card); color: var(--gold); border-style: dashed; }
+        .divination-btn {
+            background: var(--gold);
+            color: var(--primary);
+            border: none;
+            padding: 16px 48px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 12px 0;
+        }
+        .divination-btn:active { transform: scale(0.95); }
+        .divination-hint { font-size: 12px; color: var(--gray); margin-top: 40px; }
+        .yao-record { margin: 20px 0; font-size: 14px; }
+        .yao-record span { display: inline-block; padding: 4px 12px; background: var(--card); border-radius: 12px; margin: 4px; }
+        
+        .progress-card { background: var(--card); border-radius: 16px; padding: 24px; margin-bottom: 16px; }
+        .progress-title { font-size: 16px; margin-bottom: 20px; }
+        .progress-rings { display: flex; gap: 24px; justify-content: center; }
+        .progress-ring { text-align: center; }
+        .progress-ring canvas { margin-bottom: 8px; }
+        .progress-ring .label { font-size: 14px; }
+        .progress-ring .value { font-size: 12px; color: var(--gray); }
+        
+        .quick-cards { display: flex; gap: 12px; margin-bottom: 16px; }
+        .quick-card {
+            flex: 1;
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .quick-card .icon { font-size: 28px; margin-bottom: 8px; }
+        .quick-card .label { font-size: 12px; }
+        .quick-card .value { font-size: 14px; color: var(--gold); font-weight: bold; }
+        
+        .suggestion-card { background: var(--card); border-radius: 12px; padding: 16px; }
+        .suggestion-header { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+        .suggestion-header .icon { font-size: 18px; }
+        .suggestion-header .title { font-size: 14px; }
+        
+        .search-input {
+            width: 100%;
+            background: var(--card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 14px 16px;
+            color: var(--text);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        .search-input::placeholder { color: var(--gray); }
+        .search-hints { margin-bottom: 24px; }
+        .search-hints-title { font-size: 14px; margin-bottom: 12px; }
+        .hint-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+        .hint-chip {
+            background: var(--card);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .search-result {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--card);
+            border-radius: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .search-result .symbol { font-size: 28px; }
+        .search-result .name { font-size: 16px; font-weight: bold; }
+        .search-result .judgment { font-size: 12px; color: var(--gray); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        
+        .back-btn { background: none; border: none; color: var(--text); font-size: 24px; cursor: pointer; padding: 8px; }
+        .empty-state { text-align: center; padding: 60px 20px; color: var(--gray); }
+        .empty-state .icon { font-size: 64px; margin-bottom: 16px; }
+        
+        .loading { text-align: center; padding: 40px; color: var(--gray); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>周易</h1>
+        <button class="header-btn" onclick="showSearch()">🔍</button>
+    </header>
+    
+    <main id="main-content">
+        <div id="page-home" class="page active">
+            <div class="today-card" onclick="showDetail(0)">
+                <div class="today-symbol" id="today-symbol">☰☰</div>
+                <div class="today-info">
+                    <h3>今日卦</h3>
+                    <div class="name" id="today-name">乾</div>
+                    <div class="nameCn" id="today-nameCn">乾为天</div>
+                    <div class="judgment" id="today-judgment">元亨利贞</div>
+                </div>
+            </div>
+            
+            <div class="section-title">八卦</div>
+            <div class="bagua-scroll" id="bagua-list"></div>
+            
+            <div class="section-title">六十四卦</div>
+            <div class="hexagram-grid" id="hexagram-grid"></div>
+        </div>
+        
+        <div id="page-detail" class="page">
+            <div class="detail-header">
+                <button class="back-btn" onclick="goBack()">←</button>
+                <div class="detail-symbol" id="detail-symbol">☰☰</div>
+                <div class="detail-name" id="detail-name">乾</div>
+                <div class="detail-nameCn" id="detail-nameCn">乾为天</div>
+                <div class="detail-tags" id="detail-tags"></div>
+                <div class="detail-meaning" id="detail-meaning"></div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab(this, 'tab-judgment')">卦辞</div>
+                <div class="tab" onclick="switchTab(this, 'tab-lines')">爻辞</div>
+                <div class="tab" onclick="switchTab(this, 'tab-detail')">详解</div>
+            </div>
+            
+            <div id="tab-judgment" class="tab-content active">
+                <div class="section-header">卦辞</div>
+                <div class="card"><div class="card-content" id="detail-judgment"></div></div>
+                <div class="section-header">大象传</div>
+                <div class="card"><div class="card-content" id="detail-daxiang"></div></div>
+            </div>
+            
+            <div id="tab-lines" class="tab-content">
+                <div id="detail-lines"></div>
+            </div>
+            
+            <div id="tab-detail" class="tab-content">
+                <div class="section-header">卦象结构</div>
+                <div class="card" id="detail-structure"></div>
+                <div class="section-header">五行生克</div>
+                <div class="card" id="detail-wuxing"></div>
+            </div>
+        </div>
+        
+        <div id="page-divination" class="page">
+            <div class="divination-container">
+                <div class="divination-step" id="divination-step">三枚铜钱占卜法</div>
+                <div class="coins-display" id="coins-display"></div>
+                <div class="yao-record" id="yao-record"></div>
+                <button class="divination-btn" id="divination-btn" onclick="throwCoins()">开始占卜</button>
+                <br>
+                <button class="header-btn" id="reset-btn" style="display:none" onclick="resetDivination()">重新开始</button>
+                <div id="divination-result" style="display:none"></div>
+                <div class="divination-hint">心中默念所问之事<br>连续投掷六次</div>
+            </div>
+        </div>
+        
+        <div id="page-library" class="page">
+            <div class="card" style="cursor:pointer" onclick="alert('功能开发中')">
+                <div class="card-title">周易·系辞</div>
+                <div class="card-content">孔子述易传之大成，共十二章</div>
+            </div>
+            <div class="card" style="cursor:pointer" onclick="alert('功能开发中')">
+                <div class="card-title">周易·说卦</div>
+                <div class="card-content">解说八卦象义，阐述八卦象法</div>
+            </div>
+            <div class="card" style="cursor:pointer" onclick="alert('功能开发中')">
+                <div class="card-title">周易·序卦</div>
+                <div class="card-content">六十四卦顺序义，含天地万物之理</div>
+            </div>
+            <div class="card" style="cursor:pointer" onclick="alert('功能开发中')">
+                <div class="card-title">周易·杂卦</div>
+                <div class="card-content">错综六十四卦，以相反相成为义</div>
+            </div>
+        </div>
+        
+        <div id="page-profile" class="page">
+            <div class="progress-card">
+                <div class="progress-title">学习进度</div>
+                <div class="progress-rings">
+                    <div class="progress-ring">
+                        <canvas id="progress-learned" width="80" height="80"></canvas>
+                        <div class="label">已学</div>
+                        <div class="value" id="progress-learned-text">0/64</div>
+                    </div>
+                    <div class="progress-ring">
+                        <canvas id="progress-memorized" width="80" height="80"></canvas>
+                        <div class="label">已背</div>
+                        <div class="value" id="progress-memorized-text">0/64</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-cards">
+                <div class="quick-card">
+                    <div class="icon">⭐</div>
+                    <div class="label">收藏</div>
+                    <div class="value" id="favorites-count">0</div>
+                </div>
+                <div class="quick-card">
+                    <div class="icon">📜</div>
+                    <div class="label">占卜历史</div>
+                    <div class="value" id="divination-count">0</div>
+                </div>
+            </div>
+            
+            <div class="suggestion-card">
+                <div class="suggestion-header">
+                    <span class="icon">💡</span>
+                    <span class="title">学习建议</span>
+                </div>
+                <div class="card-content">建议从「乾」「坤」「屯」「蒙」四卦开始，这是周易开篇，也是理解易经的基础。</div>
+            </div>
+        </div>
+        
+        <div id="page-search" class="page">
+            <input type="text" class="search-input" id="search-input" placeholder="搜索卦名、卦辞..." oninput="doSearch(this.value)">
+            <div class="search-hints" id="search-hints">
+                <div class="search-hints-title">搜索提示</div>
+                <div class="hint-chips">
+                    <span class="hint-chip" onclick="searchChip('乾')">乾</span>
+                    <span class="hint-chip" onclick="searchChip('坤')">坤</span>
+                    <span class="hint-chip" onclick="searchChip('元亨利贞')">卦辞</span>
+                    <span class="hint-chip" onclick="searchChip('自强不息')">自强不息</span>
+                </div>
+            </div>
+            <div id="search-results"></div>
+        </div>
+    </main>
+    
+    <nav class="nav">
+        <div class="nav-item active" onclick="showPage('home')">
+            <span class="icon">⬡</span>
+            卦象
+        </div>
+        <div class="nav-item" onclick="showPage('divination')">
+            <span class="icon">★</span>
+            占卜
+        </div>
+        <div class="nav-item" onclick="showPage('library')">
+            <span class="icon">📖</span>
+            书库
+        </div>
+        <div class="nav-item" onclick="showPage('profile')">
+            <span class="icon">👤</span>
+            我的
+        </div>
+    </nav>
+    
+    <!-- API Layer -->
+    <script src="apis.js"></script>
+    
+    <!-- Main App -->
+    <script>
+        // ============ 状态管理 ============
+        let hexagrams = [];
+        let learned = new Set();
+        let memorized = new Set();
+        let favorites = new Set();
+        
+        // BaGua data
+        const bagua = [
+            {name: '乾', symbol: '☰', meaning: '天'},
+            {name: '兑', symbol: '☱', meaning: '泽'},
+            {name: '离', symbol: '☲', meaning: '火'},
+            {name: '震', symbol: '☳', meaning: '雷'},
+            {name: '巽', symbol: '☴', meaning: '风'},
+            {name: '坎', symbol: '☵', meaning: '水'},
+            {name: '艮', symbol: '☶', meaning: '山'},
+            {name: '坤', symbol: '☷', meaning: '地'}
+        ];
+        
+        let coinThrows = [];
+        let divinationStep = 0;
+        let pageStack = ['home'];
+        
+        // ============ 初始化 ============
+        async function loadData() {
+            try {
+                const response = await fetch('hexagrams.json');
+                hexagrams = await response.json();
+                
+                // 从 API 加载用户数据
+                await loadUserData();
+                initApp();
+            } catch (e) {
+                console.error('Failed to load:', e);
+            }
+        }
+        
+        async function loadUserData() {
+            try {
+                const [progress, favs] = await Promise.all([
+                    API.Progress.get(),
+                    API.Favorites.get()
+                ]);
+                
+                if (progress.learned) learned = new Set(progress.learned);
+                if (progress.memorized) memorized = new Set(progress.memorized);
+                if (Array.isArray(favs)) favorites = new Set(favs);
+            } catch (e) {
+                console.log('Using local storage (API not available)');
+                // Fallback to localStorage
+                const local = localStorage.getItem('zhouyi_data');
+                if (local) {
+                    const data = JSON.parse(local);
+                    learned = new Set(data.learned || []);
+                    memorized = new Set(data.memorized || []);
+                    favorites = new Set(data.favorites || []);
+                }
+            }
+        }
+        
+        async function saveUserData() {
+            try {
+                await API.Progress.save({
+                    learned: [...learned],
+                    memorized: [...memorized]
+                });
+                localStorage.setItem('zhouyi_data', JSON.stringify({
+                    learned: [...learned],
+                    memorized: [...memorized],
+                    favorites: [...favorites]
+                }));
+            } catch (e) {
+                console.log('Save to localStorage only');
+                localStorage.setItem('zhouyi_data', JSON.stringify({
+                    learned: [...learned],
+                    memorized: [...memorized],
+                    favorites: [...favorites]
+                }));
+            }
+        }
+        
+        function initApp() {
+            renderBaGua();
+            renderHexagramGrid();
+            setTodayHexagram();
+            drawProgressRings();
+        }
+        
+        // ============ 渲染 ============
+        function renderBaGua() {
+            const container = document.getElementById('bagua-list');
+            container.innerHTML = bagua.map(b => \`
+                <div class="bagua-item">
+                    <div class="symbol">\${b.symbol}</div>
+                    <div class="name">\${b.name}</div>
+                    <div class="meaning">\${b.meaning}</div>
+                </div>
+            \`).join('');
+        }
+        
+        function renderHexagramGrid() {
+            const container = document.getElementById('hexagram-grid');
+            container.innerHTML = hexagrams.map((h, i) => \`
+                <div class="hexagram-item \${learned.has(h.id) ? 'learned' : ''}" onclick="showDetail(\${i})">
+                    <div class="symbol">\${h.trigramBelow}\${h.trigramAbove}</div>
+                    <div class="name">\${h.name}</div>
+                    <div class="id">\${h.id}</div>
+                </div>
+            \`).join('');
+        }
+        
+        function setTodayHexagram() {
+            const today = new Date();
+            const index = (today.getDate() + today.getMonth() * 31) % 64;
+            const h = hexagrams[index];
+            
+            document.getElementById('today-symbol').textContent = h.trigramBelow + h.trigramAbove;
+            document.getElementById('today-name').textContent = h.name;
+            document.getElementById('today-nameCn').textContent = h.nameCn;
+            document.getElementById('today-judgment').textContent = h.judgment;
+            document.querySelector('.today-card').onclick = () => showDetail(index);
+        }
+        
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page-' + pageId).classList.add('active');
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            if (pageId !== 'detail') pageStack = [pageId];
+            if (pageId === 'profile') {
+                drawProgressRings();
+                document.getElementById('favorites-count').textContent = favorites.size;
+            }
+        }
+        
+        function showDetail(index) {
+            const h = hexagrams[index];
+            document.getElementById('detail-symbol').textContent = h.trigramBelow + h.trigramAbove;
+            document.getElementById('detail-name').textContent = h.name;
+            document.getElementById('detail-nameCn').textContent = h.nameCn;
+            document.getElementById('detail-meaning').textContent = h.meaning;
+            
+            document.getElementById('detail-tags').innerHTML = \`
+                <span class="detail-tag">\${h.palace}</span>
+                <span class="detail-tag">\${h.fiveElements}</span>
+                \${learned.has(h.id) ? '<span class="detail-tag" style="border-color:var(--gold)">已学</span>' : ''}
+                \${memorized.has(h.id) ? '<span class="detail-tag" style="border-color:var(--gold-light)">已背</span>' : ''}
+            \`;
+            
+            document.getElementById('detail-judgment').textContent = h.judgment;
+            document.getElementById('detail-daxiang').textContent = h.daxiang || '无';
+            
+            const linesHtml = h.lines.slice().reverse().map(line => \`
+                <div class="line-item">
+                    <div class="line-header">
+                        <div class="line-badge \${line.isYang ? 'yang' : 'yin'}">\${line.isYang ? '—' : '--'}</div>
+                        <div>
+                            <div class="line-name">\${line.name}</div>
+                            <div class="line-type">\${line.isYang ? '阳爻' : '阴爻'}</div>
+                        </div>
+                    </div>
+                    <div class="line-judgment">爻辞：\${line.judgement}</div>
+                    <div class="line-image">小象：\${line.image || '无'}</div>
+                </div>
+            \`).join('');
+            document.getElementById('detail-lines').innerHTML = linesHtml;
+            
+            document.getElementById('detail-structure').innerHTML = \`
+                <div style="display:flex;justify-content:space-around">
+                    <div style="text-align:center"><div style="font-size:12px;color:var(--gray)">上卦</div><div style="font-size:24px;color:var(--gold)">\${h.trigramAbove}</div></div>
+                    <div style="text-align:center"><div style="font-size:12px;color:var(--gray)">下卦</div><div style="font-size:24px;color:var(--gold)">\${h.trigramBelow}</div></div>
+                    <div style="text-align:center"><div style="font-size:12px;color:var(--gray)">序号</div><div style="font-size:24px;color:var(--gold)">\${h.number}</div></div>
+                </div>
+            \`;
+            
+            document.getElementById('detail-wuxing').innerHTML = \`
+                <div style="margin-bottom:12px">五行：<span style="color:var(--gold)">\${h.fiveElements}</span></div>
+                <div style="font-size:12px;color:var(--gray);line-height:1.8">
+                    相生：金生水 → 水生木 → 木生火 → 火生土 → 土生金<br>
+                    相克：金克木 → 木克土 → 土克水 → 水克火 → 火克金
+                </div>
+            \`;
+            
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelector('.tab').classList.add('active');
+            document.getElementById('tab-judgment').classList.add('active');
+            
+            showPage('detail');
+            pageStack.push('detail');
+        }
+        
+        function switchTab(tab, tabId) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+        
+        function goBack() {
+            if (pageStack.length > 1) {
+                pageStack.pop();
+                const prevPage = pageStack[pageStack.length - 1];
+                if (prevPage === 'home') {
+                    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+                    document.querySelector('.nav-item').classList.add('active');
+                }
+                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                document.getElementById('page-' + prevPage).classList.add('active');
+            }
+        }
+        
+        function showSearch() {
+            showPage('search');
+            document.getElementById('search-input').focus();
+        }
+        
+        function searchChip(text) {
+            document.getElementById('search-input').value = text;
+            doSearch(text);
+        }
+        
+        function doSearch(query) {
+            const results = document.getElementById('search-results');
+            const hints = document.getElementById('search-hints');
+            if (query.length === 0) { hints.style.display = 'block'; results.innerHTML = ''; return; }
+            hints.style.display = 'none';
+            query = query.toLowerCase();
+            const matches = hexagrams.filter(h => h.name.includes(query) || h.nameCn.includes(query) || h.judgment.includes(query) || h.meaning.includes(query));
+            if (matches.length === 0) { results.innerHTML = '<div class="empty-state"><div class="icon">🔍</div>未找到相关卦象</div>'; return; }
+            results.innerHTML = matches.map(h => \`
+                <div class="search-result" onclick="showDetail(\${hexagrams.indexOf(h)})">
+                    <div class="symbol">\${h.trigramBelow}\${h.trigramAbove}</div>
+                    <div><div class="name">\${h.name}</div><div class="judgment">\${h.judgment}</div></div>
+                </div>
+            \`).join('');
+        }
+        
+        // ============ 占卜 ============
+        function throwCoins() {
+            if (divinationStep >= 6) return;
+            const coins = [Math.floor(Math.random() * 3), Math.floor(Math.random() * 3), Math.floor(Math.random() * 3)];
+            const sum = coins.reduce((a, b) => a + b, 0);
+            coinThrows.push({coins, sum});
+            divinationStep++;
+            renderDivination();
+            if (divinationStep === 6) setTimeout(showDivinationResult, 1000);
+        }
+        
+        function renderDivination() {
+            const stepEl = document.getElementById('divination-step');
+            const coinsEl = document.getElementById('coins-display');
+            const recordEl = document.getElementById('yao-record');
+            const btnEl = document.getElementById('divination-btn');
+            const resetEl = document.getElementById('reset-btn');
+            if (divinationStep < 6) {
+                stepEl.textContent = \`第 \${divinationStep + 1} 次投掷\`;
+                const lastThrow = coinThrows[coinThrows.length - 1];
+                coinsEl.innerHTML = lastThrow.coins.map(c => \`<div class="coin \${c >= 2 ? 'yang' : 'yin'}">\${c >= 2 ? '阳' : '阴'}</div>\`).join('');
+                const yaoNames = ['初爻', '二爻', '三爻', '四爻', '五爻', '上爻'];
+                recordEl.innerHTML = coinThrows.map((t, i) => \`<span style="\${(t.sum === 0 || t.sum === 3) ? 'color:var(--gold)' : ''}">\${yaoNames[i]}</span>\`).join('');
+                btnEl.textContent = '再次投掷';
+                resetEl.style.display = 'inline-block';
+            }
+        }
+        
+        async function showDivinationResult() {
+            let binary = 0;
+            let changingLines = [];
+            for (let i = 0; i < 6; i++) {
+                const t = coinThrows[i];
+                let isYang, isChanging = false;
+                if (t.sum === 3) { isYang = false; isChanging = true; }
+                else if (t.sum === 0) { isYang = true; isChanging = true; }
+                else if (t.sum === 2) { isYang = true; }
+                else { isYang = false; }
+                binary = (binary << 1) | (isYang ? 1 : 0);
+                if (isChanging) changingLines.push(i);
+            }
+            const hexagramId = binary + 1;
+            const h = hexagrams.find(x => x.id === hexagramId) || hexagrams[0];
+            
+            // 保存到历史
+            try {
+                await API.History.add(h.id, changingLines);
+            } catch (e) {}
+            
+            const coinsEl = document.getElementById('coins-display');
+            const stepEl = document.getElementById('divination-step');
+            const btnEl = document.getElementById('divination-btn');
+            stepEl.textContent = '得卦';
+            coinsEl.innerHTML = \`<div style="font-size:60px">\${h.trigramBelow}\${h.trigramAbove}</div>\`;
+            btnEl.textContent = '查看卦象详解';
+            btnEl.onclick = () => { showDetail(hexagrams.indexOf(h)); resetDivination(); };
+            if (changingLines.length > 0) {
+                const yaoNames = ['初九', '九二', '九三', '九四', '九五', '上九'];
+                document.getElementById('yao-record').innerHTML = \`<div style="color:var(--gold);margin-bottom:12px">动爻：\${changingLines.map(i => yaoNames[i]).join('、')}</div>\`;
+            }
+        }
+        
+        function resetDivination() {
+            coinThrows = [];
+            divinationStep = 0;
+            document.getElementById('divination-step').textContent = '三枚铜钱占卜法';
+            document.getElementById('coins-display').innerHTML = '';
+            document.getElementById('yao-record').innerHTML = '';
+            const btn = document.getElementById('divination-btn');
+            btn.textContent = '开始占卜';
+            btn.onclick = throwCoins;
+            document.getElementById('reset-btn').style.display = 'none';
+        }
+        
+        // ============ 进度环 ============
+        function drawProgressRings() {
+            const learnedPct = learned.size / 64;
+            const memorizedPct = memorized.size / 64;
+            drawRing('progress-learned', learnedPct);
+            drawRing('progress-memorized', memorizedPct);
+            document.getElementById('progress-learned-text').textContent = \`\${learned.size}/64\`;
+            document.getElementById('progress-memorized-text').textContent = \`\${memorized.size}/64\`;
+        }
+        
+        function drawRing(canvasId, percentage) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const centerX = 40, centerY = 40, radius = 32, lineWidth = 6;
+            ctx.clearRect(0, 0, 80, 80);
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            ctx.strokeStyle = '#252525';
+            ctx.lineWidth = lineWidth;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * percentage);
+            ctx.strokeStyle = '#D4AF37';
+            ctx.lineWidth = lineWidth;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+            ctx.fillStyle = '#D4AF37';
+            ctx.font = 'bold 14px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(Math.round(percentage * 100) + '%', centerX, centerY);
+        }
+        
+        // ============ 学习标记 ============
+        function markAsLearned(hexagramId) {
+            learned.add(hexagramId);
+            saveUserData();
+            renderHexagramGrid();
+        }
+        
+        function markAsMemorized(hexagramId) {
+            memorized.add(hexagramId);
+            saveUserData();
+            renderHexagramGrid();
+        }
+        
+        // Init
+        loadData();
+    </script>
+</body>
+</html>
