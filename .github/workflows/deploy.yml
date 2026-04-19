@@ -6,7 +6,7 @@ on:
     paths:
       - 'workers/src/**'
       - 'workers/wrangler.toml'
-      - 'workers/.github/**'
+      - 'workers/package.json'
 
 jobs:
   deploy:
@@ -25,5 +25,4 @@ jobs:
         run: |
           cd workers
           npm install
-          npx wrangler deploy --dry-run
           npx wrangler deploy
