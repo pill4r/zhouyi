@@ -1,7 +1,7 @@
 /**
- * 周易学习 App - Cloudflare Workers API
+ * 周易学习 App - Cloudflare Workers API + 静态文件托管
  * 支持：学习进度、收藏、占卜历史、笔记
- * 前端已部署在 Vercel: https://zhouyi-zeta.vercel.app
+ * 静态前端也托管在此 Worker 上
  */
 
 export default {
@@ -37,11 +37,48 @@ export default {
         });
       }
 
-      // 非 API 路径 → 告知前端地址
+      // 静态文件服务 (index.html, *.js, *.json, *.css, *.webp)
+      const staticExt = ['.html', '.js', '.json', '.css', '.webp', '.png', '.jpg'];
+      const isStatic = staticExt.some(ext => path.endsWith(ext)) || path === '/';
+      if (isStatic) {
+        let filePath = path;
+        if (path === '/') filePath = '/index.html';
+        
+        // 尝试从 KV 获取静态文件
+        const staticFile = await env.ZHOUYI_KV.get(`static${filePath}`, 'text');
+        if (staticFile) {
+          const contentType = getContentType(filePath);
+          return new Response(staticFile, {
+            headers: { 'Content-Type': contentType, ...corsHeaders },
+          });
+        }
+
+        // 尝试从 Worker bundle 内读取 (通过 glob import)
+        try {
+          const asset = staticAssets[`./public${filePath}`];
+          if (asset) {
+            const contentType = getContentType(filePath);
+            return new Response(asset, {
+              headers: { 'Content-Type': contentType, ...corsHeaders },
+            });
+          }
+        } catch (e) {}
+
+        // 返回 index.html (SPA fallback)
+        const indexHtml = await env.ZHOUYI_KV.get('static/index.html', 'text');
+        if (indexHtml) {
+          return new Response(indexHtml, {
+            headers: { 'Content-Type': 'text/html', ...corsHeaders },
+          });
+        }
+      }
+
+      // 未知路径
       return new Response(JSON.stringify({
-        error: 'API only',
-        message: 'This Worker only serves API endpoints. Frontend is at https://zhouyi-zeta.vercel.app',
-        endpoints: ['/api/progress', '/api/favorites', '/api/history', '/api/notes']
+        error: 'Not Found',
+        message: 'API endpoint or static file not found',
+        endpoints: ['/api/progress', '/api/favorites', '/api/history', '/api/notes'],
+        static: ['/', '/index.html', '/apis.js', '/hexagrams.json']
       }), {
         status: 404,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -55,7 +92,18 @@ export default {
   }
 };
 
-// 获取用户ID（简化版：使用固定ID或query param）
+function getContentType(path) {
+  if (path.endsWith('.html')) return 'text/html; charset=utf-8';
+  if (path.endsWith('.js')) return 'application/javascript; charset=utf-8';
+  if (path.endsWith('.json')) return 'application/json; charset=utf-8';
+  if (path.endsWith('.css')) return 'text/css; charset=utf-8';
+  if (path.endsWith('.webp')) return 'image/webp';
+  if (path.endsWith('.png')) return 'image/png';
+  if (path.endsWith('.jpg')) return 'image/jpeg';
+  return 'text/plain';
+}
+
+// ============ 学习进度 ============
 function getUserId(url) {
   return url.searchParams.get('user') || 'default_user';
 }
