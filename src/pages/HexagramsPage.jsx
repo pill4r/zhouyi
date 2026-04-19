@@ -51,7 +51,7 @@ export default function HexagramsPage({ userData, onUpdate }) {
 
       <main className="p-5 pb-8">
         {/* Hexagram Grid */}
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-8 gap-2">
           {filteredHexagrams.map((hex) => {
             const isLearned = learned.includes(hex.id)
             const isMemorized = memorized.includes(hex.id)
@@ -61,15 +61,13 @@ export default function HexagramsPage({ userData, onUpdate }) {
               <div
                 key={hex.id}
                 onClick={() => navigate(`/hexagrams/${hex.id}`)}
-                className={`aspect-square bg-card rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all active:scale-95 ${
+                className={`bg-card rounded-xl p-2 text-center cursor-pointer transition-all active:scale-95 ${
                   isLearned ? 'ring-1 ring-gold/50' : ''
                 } ${isMemorized ? 'bg-gold/20' : ''}`}
               >
-                <div className="text-lg mb-0.5">
-                  {hex.trigramAbove}{hex.trigramBelow}
-                </div>
+                <div className="text-xl mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
                 <div className="text-xs text-gold font-medium">{hex.name}</div>
-                {isFavorite && <span className="text-xs mt-0.5">★</span>}
+                {isFavorite && <span className="text-xs text-gold">★</span>}
               </div>
             )
           })}
