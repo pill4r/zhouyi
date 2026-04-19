@@ -1,13 +1,14 @@
 /**
  * 周易学习 App - Cloudflare Workers API
  * 支持：学习进度、收藏、占卜历史、笔记
+ * 前端已部署在 Vercel: https://zhouyi-zeta.vercel.app
  */
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
-    
+
     // CORS 头
     const corsHeaders = {
       'Access-Control-Allow-Origin': '*',
@@ -35,9 +36,16 @@ export default {
           headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         });
       }
-      
-      // 静态文件（前端）
-      return env.ASSETS.fetch(request);
+
+      // 非 API 路径 → 告知前端地址
+      return new Response(JSON.stringify({
+        error: 'API only',
+        message: 'This Worker only serves API endpoints. Frontend is at https://zhouyi-zeta.vercel.app',
+        endpoints: ['/api/progress', '/api/favorites', '/api/history', '/api/notes']
+      }), {
+        status: 404,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
     } catch (err) {
       return new Response(JSON.stringify({ error: err.message }), {
         status: 500,
@@ -88,9 +96,9 @@ async function handleFavorites(request, env, url) {
   if (request.method === 'POST') {
     const body = await request.json();
     const { action, hexagramId } = body;
-    
+
     let favorites = (await env.ZHOUYI_KV.get(key, 'json')) || [];
-    
+
     if (action === 'add') {
       if (!favorites.includes(hexagramId)) {
         favorites.push(hexagramId);
@@ -98,7 +106,7 @@ async function handleFavorites(request, env, url) {
     } else if (action === 'remove') {
       favorites = favorites.filter(id => id !== hexagramId);
     }
-    
+
     await env.ZHOUYI_KV.put(key, JSON.stringify(favorites));
     return new Response(JSON.stringify({ success: true, favorites }), { headers: corsHeaders });
   }
@@ -124,15 +132,15 @@ async function handleHistory(request, env, url) {
       timestamp: new Date().toISOString(),
       ...body,
     };
-    
+
     let history = (await env.ZHOUYI_KV.get(key, 'json')) || [];
-    history.unshift(record); // 最新在前
-    
+    history.unshift(record);
+
     // 只保留最近100条
     if (history.length > 100) {
       history = history.slice(0, 100);
     }
-    
+
     await env.ZHOUYI_KV.put(key, JSON.stringify(history));
     return new Response(JSON.stringify({ success: true, record }), { headers: corsHeaders });
   }
@@ -154,10 +162,10 @@ async function handleNotes(request, env, url) {
   if (request.method === 'POST') {
     const body = await request.json();
     const { hexagramId, content } = body;
-    
+
     let notes = (await env.ZHOUYI_KV.get(key, 'json')) || {};
     notes[hexagramId] = content;
-    
+
     await env.ZHOUYI_KV.put(key, JSON.stringify(notes));
     return new Response(JSON.stringify({ success: true }), { headers: corsHeaders });
   }
