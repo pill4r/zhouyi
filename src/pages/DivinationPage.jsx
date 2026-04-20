@@ -138,13 +138,45 @@ export default function DivinationPage({ userData, onUpdate }) {
     setThrowing(false)
   }
 
-  // 渲染爻线
-  function renderLine(yang, moving, large) {
-    const size = large ? 'text-3xl' : 'text-xl'
+  // 渲染爻线 — CSS 画线代替文字字符
+  function renderLine(yang, moving) {
+    const barColor = moving
+      ? 'bg-gold-light shadow-[0_0_6px_rgba(245,215,122,0.5)]'
+      : yang ? 'bg-gold' : 'bg-gray-500'
     return (
-      <span className={`${size} ${moving ? 'text-gold-light' : yang ? 'text-gold' : 'text-gray-400'}`}>
-        {yang ? '━━━' : '━ ━'}
-        {moving && <span className="text-xs ml-1 text-gold-light">○</span>}
+      <div className="relative flex items-center w-28 h-5">
+        {yang ? (
+          <div className={`w-full h-[5px] rounded-full ${barColor} ${moving ? 'animate-pulse' : ''}`} />
+        ) : (
+          <div className={`w-full flex justify-between ${moving ? 'animate-pulse' : ''}`}>
+            <div className={`w-[48%] h-[5px] rounded-full ${barColor}`} />
+            <div className={`w-[48%] h-[5px] rounded-full ${barColor}`} />
+          </div>
+        )}
+        {moving && (
+          <span className="absolute -right-5 top-1/2 -translate-y-1/2 text-[10px] text-gold-light leading-none">○</span>
+        )}
+      </div>
+    )
+  }
+
+  // 爻类型标签
+  function LineTypeBadge({ value }) {
+    const styles = {
+      9: 'bg-gold-light/15 text-gold-light border-gold-light/30',
+      8: 'bg-gray-800 text-gray-400 border-gray-700',
+      7: 'bg-gray-800 text-gray-400 border-gray-700',
+      6: 'bg-gold-light/15 text-gold-light border-gold-light/30',
+    }
+    const labels = {
+      9: '老阳 → 阴',
+      8: '少阴',
+      7: '少阳',
+      6: '老阴 → 阳',
+    }
+    return (
+      <span className={`text-[11px] px-2 py-0.5 rounded-full border ${styles[value]}`}>
+        {labels[value]}
       </span>
     )
   }
@@ -220,13 +252,14 @@ export default function DivinationPage({ userData, onUpdate }) {
             </div>
 
             {lastThrow && !throwing && (
-              <div className="text-center mb-6 text-sm">
-                <span className="text-gray">
-                  {lastThrow.sum === 9 && '老阳（三字）— 动爻'}
-                  {lastThrow.sum === 8 && '少阴（二字一背）'}
-                  {lastThrow.sum === 7 && '少阳（一字二背）'}
-                  {lastThrow.sum === 6 && '老阴（三背）— 动爻'}
-                </span>
+              <div className="text-center mb-6">
+                <LineTypeBadge value={lastThrow.sum} />
+                <div className="text-xs text-gray-500 mt-1">
+                  {lastThrow.sum === 9 && '三字'}
+                  {lastThrow.sum === 8 && '二字一背'}
+                  {lastThrow.sum === 7 && '一字二背'}
+                  {lastThrow.sum === 6 && '三背'}
+                </div>
               </div>
             )}
 
@@ -236,7 +269,7 @@ export default function DivinationPage({ userData, onUpdate }) {
                 {lines.map((l, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
-                    {renderLine(l.yang, l.moving, false)}
+                    {renderLine(l.yang, l.moving)}
                   </div>
                 ))}
               </div>
@@ -278,12 +311,9 @@ export default function DivinationPage({ userData, onUpdate }) {
                 {lines.map((l, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <span className="text-xs text-gray w-10">{getLineName(i, l.yang)}</span>
-                    {renderLine(l.yang, l.moving, false)}
-                    <span className="text-xs flex-1 text-right">
-                      {l.value === 9 && <span className="text-gold-light">老阳 → 阴</span>}
-                      {l.value === 8 && <span className="text-gray-500">少阴</span>}
-                      {l.value === 7 && <span className="text-gray-500">少阳</span>}
-                      {l.value === 6 && <span className="text-gold-light">老阴 → 阳</span>}
+                    {renderLine(l.yang, l.moving)}
+                    <span className="flex-1 text-right">
+                      <LineTypeBadge value={l.value} />
                     </span>
                   </div>
                 ))}
