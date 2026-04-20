@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
+import { Hexagon, Sparkles, BookOpen, User } from 'lucide-react'
 
 const tabs = [
-  { path: '/', icon: '⬡', label: '卦象' },
-  { path: '/divination', icon: '★', label: '占卜' },
-  { path: '/library', icon: '📖', label: '书库' },
-  { path: '/profile', icon: '👤', label: '我的' },
+  { path: '/', icon: Hexagon, label: '卦象' },
+  { path: '/divination', icon: Sparkles, label: '占卜' },
+  { path: '/library', icon: BookOpen, label: '书库' },
+  { path: '/profile', icon: User, label: '我的' },
 ]
 
 export default function Navigation() {
@@ -17,12 +18,16 @@ export default function Navigation() {
             to={tab.path}
             className={({ isActive }) =>
               `flex flex-col items-center justify-center w-full h-full transition-colors ${
-                isActive ? 'text-gold' : 'text-gray'
+                isActive ? 'text-gold' : 'text-gray-500'
               }`
             }
           >
-            <span className="text-2xl mb-1">{tab.icon}</span>
-            <span className="text-xs">{tab.label}</span>
+            {({ isActive }) => (
+              <>
+                <tab.icon className="w-6 h-6 mb-1" strokeWidth={isActive ? 2 : 1.5} />
+                <span className="text-xs">{tab.label}</span>
+              </>
+            )}
           </NavLink>
         ))}
       </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { API } from '../api/client'
+import { GraduationCap, Brain, Heart } from 'lucide-react'
 
 export default function ProfilePage({ userData, onUpdate }) {
   const [history, setHistory] = useState([])
@@ -36,14 +37,17 @@ export default function ProfilePage({ userData, onUpdate }) {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 mb-6">
           <div className="bg-card rounded-xl p-3 text-center">
+            <GraduationCap className="w-4 h-4 text-gold mx-auto mb-1" />
             <div className="text-xl font-semibold text-gold">{userData.learned?.length || 0}</div>
             <div className="text-xs text-gray">已学</div>
           </div>
           <div className="bg-card rounded-xl p-3 text-center">
+            <Brain className="w-4 h-4 text-gold mx-auto mb-1" />
             <div className="text-xl font-semibold text-gold">{userData.memorized?.length || 0}</div>
             <div className="text-xs text-gray">已背</div>
           </div>
           <div className="bg-card rounded-xl p-3 text-center">
+            <Heart className="w-4 h-4 text-gold mx-auto mb-1" />
             <div className="text-xl font-semibold text-gold">{userData.favorites?.length || 0}</div>
             <div className="text-xs text-gray">收藏</div>
           </div>

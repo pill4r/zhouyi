@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import hexagramsData from '../data/hexagrams.json'
 import { bagua } from '../data/bagua'
+import { GraduationCap, Brain, Heart } from 'lucide-react'
 
 export default function HomePage({ userData }) {
   const navigate = useNavigate()
@@ -47,9 +48,9 @@ export default function HomePage({ userData }) {
 
         {/* 学习进度 */}
         <div className="grid grid-cols-3 gap-3 mb-6">
-          <StatCard label="已学" value={learnedCount} total={64} />
-          <StatCard label="已背" value={memorizedCount} total={64} />
-          <StatCard label="收藏" value={favoritesCount} total={64} />
+          <StatCard icon={GraduationCap} label="已学" value={learnedCount} total={64} />
+          <StatCard icon={Brain} label="已背" value={memorizedCount} total={64} />
+          <StatCard icon={Heart} label="收藏" value={favoritesCount} total={64} />
         </div>
 
         {/* 八卦 */}
@@ -87,11 +88,12 @@ export default function HomePage({ userData }) {
   )
 }
 
-function StatCard({ label, value, total }) {
+function StatCard({ icon: Icon, label, value, total }) {
   const percentage = total > 0 ? (value / total) * 100 : 0
-  
+
   return (
     <div className="bg-card rounded-xl p-3 text-center">
+      <Icon className="w-4 h-4 text-gold mx-auto mb-1" />
       <div className="text-xl font-semibold text-gold">{value}</div>
       <div className="text-xs text-gray">{label}</div>
       <div className="w-full h-1 bg-surface rounded-full mt-2 overflow-hidden">

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import hexagramsData from '../data/hexagrams.json'
 import { bagua } from '../data/bagua'
+import { Star } from 'lucide-react'
 
 export default function HexagramsPage({ userData, onUpdate }) {
   const navigate = useNavigate()
@@ -67,7 +68,7 @@ export default function HexagramsPage({ userData, onUpdate }) {
               >
                 <div className="text-xl mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
                 <div className="text-xs text-gold font-medium">{hex.name}</div>
-                {isFavorite && <span className="text-xs text-gold">★</span>}
+                {isFavorite && <Star className="w-3 h-3 text-gold mx-auto" fill="currentColor" />}
               </div>
             )
           })}

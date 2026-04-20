@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import hexagramsData from '../data/hexagrams.json'
 import { bagua } from '../data/bagua'
 import { API } from '../api/client'
+import { ChevronLeft, Star, Check } from 'lucide-react'
 
 export default function HexagramDetailPage({ userData, onUpdate }) {
   const { id } = useParams()
@@ -90,10 +91,10 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
     <div className="min-h-screen bg-primary pb-8">
       {/* Header */}
       <header className="sticky top-0 z-40 bg-surface border-b border-gold/20 px-5 py-4 flex items-center gap-4">
-        <button onClick={() => navigate(-1)} className="text-2xl">←</button>
+        <button onClick={() => navigate(-1)} className="text-gold"><ChevronLeft className="w-6 h-6" /></button>
         <h1 className="text-xl font-semibold text-gold flex-1">{hex.nameCn}</h1>
-        <button onClick={toggleFavorite} className={`text-2xl ${isFavorite ? 'text-gold' : 'text-gray'}`}>
-          {isFavorite ? '★' : '☆'}
+        <button onClick={toggleFavorite} className={isFavorite ? 'text-gold' : 'text-gray-500'}>
+          <Star className="w-6 h-6" fill={isFavorite ? 'currentColor' : 'none'} />
         </button>
       </header>
 
@@ -138,7 +139,7 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
                 : 'bg-card text-gray'
             }`}
           >
-            {isLearned ? '✓ 已学' : '标记已学'}
+            {isLearned ? <><Check className="w-4 h-4 inline mr-1" />已学</> : '标记已学'}
           </button>
           <button
             onClick={toggleMemorized}
@@ -148,7 +149,7 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
                 : 'bg-card text-gray'
             }`}
           >
-            {isMemorized ? '✓ 已背' : '标记已背'}
+            {isMemorized ? <><Check className="w-4 h-4 inline mr-1" />已背</> : '标记已背'}
           </button>
         </div>
 

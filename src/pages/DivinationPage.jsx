@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import hexagramsData from '../data/hexagrams.json'
+import { RefreshCw } from 'lucide-react'
 
 export default function DivinationPage() {
   const [step, setStep] = useState(0) // 0: ready, 1: throwing, 2: result
@@ -125,7 +126,7 @@ export default function DivinationPage() {
               onClick={reset}
               className="text-gold border border-gold/50 px-6 py-2 rounded-full active:scale-95 transition-transform"
             >
-              重新占卜
+              <RefreshCw className="w-4 h-4 inline mr-1" />重新占卜
             </button>
           </div>
         )}
