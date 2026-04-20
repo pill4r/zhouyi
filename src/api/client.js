@@ -1,12 +1,8 @@
-/**
- * 周易学习 App - API 调用层
- * 对接 Cloudflare Workers KV 存储
- */
+import { getStoredAuth } from './auth'
 
 const API_BASE = 'https://zhouyi-api.pillarbialexi.workers.dev'
 
-// 生成用户ID
-function generateUserId() {
+function ensureAnonymousId() {
   let id = localStorage.getItem('zhouyi_user_id')
   if (!id) {
     id = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9)
@@ -15,18 +11,28 @@ function generateUserId() {
   return id
 }
 
-const USER = generateUserId()
+function getCurrentUserId() {
+  const { user } = getStoredAuth()
+  return user?.userId || ensureAnonymousId()
+}
 
-// 通用请求
+function getAuthToken() {
+  const { token } = getStoredAuth()
+  return token
+}
+
 async function apiRequest(endpoint, options = {}) {
-  const url = `${API_BASE}${endpoint}?user=${USER}`
-  const response = await fetch(url, {
-    ...options,
-    headers: {
-      'Content-Type': 'application/json',
-      ...options.headers,
-    },
-  })
+  const userId = getCurrentUserId()
+  const token = getAuthToken()
+  const url = `${API_BASE}${endpoint}?user=${userId}`
+  const headers = {
+    'Content-Type': 'application/json',
+    ...options.headers,
+  }
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`
+  }
+  const response = await fetch(url, { ...options, headers })
   if (!response.ok) throw new Error('API request failed')
   return response.json()
 }

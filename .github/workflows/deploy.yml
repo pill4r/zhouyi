@@ -26,3 +26,10 @@ jobs:
           cd workers
           npm install
           npx wrangler deploy
+
+      - name: Set JWT Secret
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          cd workers
+          echo "${{ secrets.JWT_SECRET }}" | npx wrangler secret put JWT_SECRET

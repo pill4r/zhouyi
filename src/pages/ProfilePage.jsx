@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { API } from '../api/client'
-import { GraduationCap, Brain, Heart } from 'lucide-react'
+import { useAuth } from '../components/AuthProvider'
+import { GraduationCap, Brain, Heart, LogIn, LogOut } from 'lucide-react'
 
 export default function ProfilePage({ userData, onUpdate }) {
+  const navigate = useNavigate()
+  const { isLoggedIn, user, onLogout } = useAuth()
   const [history, setHistory] = useState([])
   const [notes, setNotes] = useState({})
   const [loading, setLoading] = useState(true)
@@ -34,6 +38,35 @@ export default function ProfilePage({ userData, onUpdate }) {
       </header>
 
       <main className="p-5 pb-8">
+        {/* 认证状态 */}
+        {isLoggedIn ? (
+          <div className="bg-card rounded-xl p-4 mb-6 flex items-center justify-between">
+            <div>
+              <div className="text-xs text-gray mb-0.5">当前用户</div>
+              <div className="text-gold font-medium">{user?.username}</div>
+            </div>
+            <button
+              onClick={() => { onLogout(); navigate('/') }}
+              className="text-gray-400 active:text-gray-200 transition-colors inline-flex items-center gap-1 text-sm"
+            >
+              <LogOut className="w-4 h-4" />退出
+            </button>
+          </div>
+        ) : (
+          <div className="bg-card rounded-xl p-4 mb-6 flex items-center justify-between">
+            <div>
+              <div className="text-sm text-gray">未登录</div>
+              <div className="text-xs text-gray-500">登录后可在多设备同步数据</div>
+            </div>
+            <button
+              onClick={() => navigate('/login')}
+              className="bg-gold text-primary font-medium px-4 py-2 rounded-full active:scale-95 transition-transform inline-flex items-center gap-1 text-sm"
+            >
+              <LogIn className="w-4 h-4" />登录
+            </button>
+          </div>
+        )}
+
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 mb-6">
           <div className="bg-card rounded-xl p-3 text-center">
