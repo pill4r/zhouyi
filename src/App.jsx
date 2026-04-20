@@ -43,7 +43,7 @@ export default function App() {
           <Route path="/" element={<HomePage userData={userData} />} />
           <Route path="/hexagrams" element={<HexagramsPage userData={userData} onUpdate={loadUserData} />} />
           <Route path="/hexagrams/:id" element={<HexagramDetailPage userData={userData} onUpdate={loadUserData} />} />
-          <Route path="/divination" element={<DivinationPage />} />
+          <Route path="/divination" element={<DivinationPage userData={userData} onUpdate={loadUserData} />} />
           <Route path="/library" element={<LibraryPage />} />
           <Route path="/profile" element={<ProfilePage userData={userData} onUpdate={loadUserData} />} />
         </Routes>
