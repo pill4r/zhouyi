@@ -7,3131 +7,3143 @@
     "trigramBelow": "☰",
     "palace": "乾宫",
     "fiveElements": "金",
-    "judgment": "卦辞：乾卦，亨。",
+    "judgment": "乾：元亨，利貞。",
     "meaning": "象征天，极为刚健。代表创造、领导、进取。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：潛龍，勿用。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：見龍在田，利見大人。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：君子終日乾乾，夕惕若，厲，无咎。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：或躍在淵，无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：飛龍在天，利見大人。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：亢龍有悔。"
+      },
+      {
+        "position": 7,
+        "name": "用九",
+        "isYang": true,
+        "judgement": "用九：見群龍无首，吉。"
       }
     ]
   },
   {
     "id": 2,
     "name": "坤",
-    "nameCn": "☰☱坤",
-    "trigramAbove": "☱",
-    "trigramBelow": "☰",
+    "nameCn": "☷☷坤",
+    "trigramAbove": "☷",
+    "trigramBelow": "☷",
     "palace": "坤宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：坤卦，亨。",
+    "fiveElements": "土",
+    "judgment": "坤：元亨，利牝馬之貞。君子有攸往，先迷後得主，利西南得朋，東北喪朋。安貞，吉。",
     "meaning": "象征地，极为柔顺。代表承载、顺从、包容。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：履霜，堅冰至。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：直，方，大，不習无不利。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：含章可貞。或從王事，无成有終。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：括囊；无咎，无譽。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：黃裳，元吉。"
       },
       {
         "position": 6,
-        "name": "上九",
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：龍戰于野，其血玄黃。"
+      },
+      {
+        "position": 7,
+        "name": "用六",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "用六：利永貞。"
       }
     ]
   },
   {
     "id": 3,
     "name": "屯",
-    "nameCn": "☰☲屯",
-    "trigramAbove": "☲",
-    "trigramBelow": "☰",
+    "nameCn": "☵☳屯",
+    "trigramAbove": "☵",
+    "trigramBelow": "☳",
     "palace": "坎宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：屯卦，亨。",
-    "meaning": "象征初生、困难、萌芽。万事开头难。",
+    "fiveElements": "水",
+    "judgment": "屯：元亨，利貞，勿用有攸往，利建侯。",
+    "meaning": "象征初生，艰难困顿而生机萌发。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：磐桓；利居貞，利建侯。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：屯如邅如，乘馬班如。匪寇婚媾，女子貞不字，十年乃字。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：即鹿无虞，惟入于林中，君子幾不如舍，往吝。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：乘馬班如，求婚媾，往吉，无不利。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：屯其膏，小貞吉，大貞凶。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：乘馬班如，泣血漣如。"
       }
     ]
   },
   {
     "id": 4,
     "name": "蒙",
-    "nameCn": "☰☳蒙",
-    "trigramAbove": "☳",
-    "trigramBelow": "☰",
+    "nameCn": "☶☵蒙",
+    "trigramAbove": "☶",
+    "trigramBelow": "☵",
     "palace": "离宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：蒙卦，亨。",
-    "meaning": "象征蒙昧、幼稚、教育。需要启发教育。",
+    "fiveElements": "火",
+    "judgment": "蒙：亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。",
+    "meaning": "象征蒙昧，幼稚无知。代表启蒙、教育。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：發蒙，利用刑人，用說桎梏，以往吝。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：包蒙吉；納婦吉；子克家。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：勿用取女；見金夫，不有躬，无攸利。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：困蒙，吝。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：童蒙，吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：擊蒙；不利為寇，利禦寇。"
       }
     ]
   },
   {
     "id": 5,
     "name": "需",
-    "nameCn": "☰☴需",
-    "trigramAbove": "☴",
+    "nameCn": "☵☰需",
+    "trigramAbove": "☵",
     "trigramBelow": "☰",
     "palace": "坤宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：需卦，亨。",
-    "meaning": "象征等待、需求。云在天上，需待时。",
+    "fiveElements": "土",
+    "judgment": "需：有孚，光亨，貞吉。利涉大川。",
+    "meaning": "象征等待，需要耐心守候。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "讼",
-    "nameCn": "☰☵讼",
-    "trigramAbove": "☵",
-    "trigramBelow": "☰",
-    "palace": "离宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：讼卦，亨。",
-    "meaning": "象征争讼、争议。争讼终凶，宜和解。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：需于郊。利用恆，无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "师",
-    "nameCn": "☰☶师",
-    "trigramAbove": "☶",
-    "trigramBelow": "☰",
-    "palace": "坎宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：师卦，亨。",
-    "meaning": "象征军队、战争。贞正兵师，丈人则吉。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：需于沙。小有言，終吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：需于泥，致寇至。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：需于血，出自穴。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：需于酒食，貞吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：入于穴，有不速之客三人來，敬之終吉。"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "訟",
+    "nameCn": "☰☵訟",
+    "trigramAbove": "☰",
+    "trigramBelow": "☵",
+    "palace": "离宫",
+    "fiveElements": "火",
+    "judgment": "訟：有孚，窒。惕中吉。終凶。利見大人，不利涉大川。",
+    "meaning": "象征争讼，争论是非。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：不永所事，小有言，終吉。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：不克訟，歸而逋，其邑人三百戶，无眚。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：食舊德，貞厲，終吉，或從王事，无成。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：不克訟，復即命渝，安貞吉。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：訟元吉。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：或錫之鞶帶，終朝三褫之。"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "師",
+    "nameCn": "☷☵師",
+    "trigramAbove": "☷",
+    "trigramBelow": "☵",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "師：貞，丈人，吉无咎。",
+    "meaning": "象征军队，统帅众人。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：師出以律，否臧凶。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：在師中吉，无咎，王三錫命。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：師或輿尸，凶。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：師左次，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：大君有命，開國承家，小人勿用。"
       }
     ]
   },
   {
     "id": 8,
     "name": "比",
-    "nameCn": "☰☷比",
-    "trigramAbove": "☷",
-    "trigramBelow": "☰",
+    "nameCn": "☵☷比",
+    "trigramAbove": "☵",
+    "trigramBelow": "☷",
     "palace": "坤宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：比卦，亨。",
-    "meaning": "象征亲比、团结、辅佐。",
+    "fiveElements": "土",
+    "judgment": "比：吉。原筮元永貞，无咎。不寧方來，後夫凶。",
+    "meaning": "象征亲近、比较、辅助。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：有孚，比之，无咎。有孚盈缶，終來有它吉。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：比之自內，貞吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：比之匪人。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：外比之，貞吉。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：顯比，王用三驅，失前禽。邑人不誡，吉。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：比之无首，凶。"
       }
     ]
   },
   {
     "id": 9,
     "name": "小畜",
-    "nameCn": "☱☰小畜",
-    "trigramAbove": "☰",
-    "trigramBelow": "☱",
+    "nameCn": "☴☰小畜",
+    "trigramAbove": "☴",
+    "trigramBelow": "☰",
     "palace": "巽宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：小畜卦，亨。",
-    "meaning": "象征小的积畜、等待。",
+    "fiveElements": "木",
+    "judgment": "小畜：亨。密雲不雨，自我西郊。",
+    "meaning": "象征小的蓄积，力量微薄。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：復自道，何其咎，吉。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：牽復，吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：輿說輻，夫妻反目。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：有孚，血去惕出，无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：有孚攣如，富以其鄰。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：既雨既處，尚德載，婦貞厲。月幾望，君子征凶。"
       }
     ]
   },
   {
     "id": 10,
     "name": "履",
-    "nameCn": "☱☱履",
-    "trigramAbove": "☱",
+    "nameCn": "☰☱履",
+    "trigramAbove": "☰",
     "trigramBelow": "☱",
     "palace": "艮宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：履卦，亨。",
-    "meaning": "象征实践、履行。",
+    "fiveElements": "土",
+    "judgment": "履虎尾，不咥人，亨。",
+    "meaning": "象征实践、履行，谨慎行事。",
     "lines": [
       {
         "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：素履，往无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：履道坦坦，幽人貞吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：履虎尾，愬愬，終吉。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：夬履，貞厲。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：視履考祥，其旋元吉。"
       }
     ]
   },
   {
     "id": 11,
     "name": "泰",
-    "nameCn": "☱☲泰",
-    "trigramAbove": "☲",
-    "trigramBelow": "☱",
+    "nameCn": "☷☰泰",
+    "trigramAbove": "☷",
+    "trigramBelow": "☰",
     "palace": "坤宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：泰卦，亨。",
-    "meaning": "象征通泰、平安。天地交泰。",
+    "fiveElements": "土",
+    "judgment": "泰：小往大來，吉亨。",
+    "meaning": "象征通泰，天地交合，万物通达。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：拔茅茹，以其彙，征吉。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：包荒，用馮河，不遐遺，朋亡，得尚于中行。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：无平不陂，无往不復，艱貞无咎。勿恤其孚，于食有福。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：翩翩，不富，以其鄰，不戒以孚。"
       },
       {
         "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：帝乙歸妹，以祉元吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：城復于隍，勿用師。自邑告命，貞吝。"
       }
     ]
   },
   {
     "id": 12,
     "name": "否",
-    "nameCn": "☱☳否",
-    "trigramAbove": "☳",
-    "trigramBelow": "☱",
+    "nameCn": "☰☷否",
+    "trigramAbove": "☰",
+    "trigramBelow": "☷",
     "palace": "乾宫",
     "fiveElements": "金",
-    "judgment": "卦辞：否卦，亨。",
-    "meaning": "象征闭塞、不通。天地不交。",
+    "judgment": "否之匪人，不利君子貞，大往小來。",
+    "meaning": "象征闭塞，天地不交，万物不通。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：拔茅茹，以其彙，貞吉亨。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：包承。小人吉，大人否，亨。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：包羞。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：有命，无咎，疇離祉。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：休否，大人吉。其亡其亡，繫于苞桑。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：傾否，先否後喜。"
       }
     ]
   },
   {
     "id": 13,
     "name": "同人",
-    "nameCn": "☱☴同人",
-    "trigramAbove": "☴",
-    "trigramBelow": "☱",
+    "nameCn": "☰☲同人",
+    "trigramAbove": "☰",
+    "trigramBelow": "☲",
     "palace": "离宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：同人卦，亨。",
-    "meaning": "象征同人、合作。和同于人。",
+    "fiveElements": "火",
+    "judgment": "同人于野，亨。利涉大川，利君子貞。",
+    "meaning": "象征志同道合，与人同心。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：同人于門，无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：同人于宗，吝。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：伏戎于莽，升其高陵，三歲不興。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：乘其墉，弗克攻，吉。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：同人，先號咷而後笑。大師克相遇。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：同人于郊，无悔。"
       }
     ]
   },
   {
     "id": 14,
     "name": "大有",
-    "nameCn": "☱☵大有",
-    "trigramAbove": "☵",
-    "trigramBelow": "☱",
+    "nameCn": "☲☰大有",
+    "trigramAbove": "☲",
+    "trigramBelow": "☰",
     "palace": "乾宫",
     "fiveElements": "金",
-    "judgment": "卦辞：大有卦，亨。",
-    "meaning": "象征大获所有、丰收。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "name": "谦",
-    "nameCn": "☱☶谦",
-    "trigramAbove": "☶",
-    "trigramBelow": "☱",
-    "palace": "艮宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：谦卦，亨。",
-    "meaning": "象征谦虚、谦让。地山谦。",
+    "judgment": "大有：元亨。",
+    "meaning": "象征大丰收，富有天下。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：无交害，匪咎，艱則无咎。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：大車以載，有攸往，无咎。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：公用亨于天子，小人弗克。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：匪其彭，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：厥孚交如，威如；吉。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：自天祐之，吉无不利。"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "謙",
+    "nameCn": "☷☶謙",
+    "trigramAbove": "☷",
+    "trigramBelow": "☶",
+    "palace": "坤宫",
+    "fiveElements": "土",
+    "judgment": "謙：亨，君子有終。",
+    "meaning": "象征谦虚，功高不自居。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：謙謙君子，用涉大川，吉。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：鳴謙，貞吉。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：勞謙，君子有終，吉。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：无不利，撝謙。"
       },
       {
         "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：不富，以其鄰，利用侵伐，无不利。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：鳴謙，利用行師，征邑國。"
       }
     ]
   },
   {
     "id": 16,
     "name": "豫",
-    "nameCn": "☱☷豫",
-    "trigramAbove": "☷",
-    "trigramBelow": "☱",
+    "nameCn": "☳☷豫",
+    "trigramAbove": "☳",
+    "trigramBelow": "☷",
     "palace": "震宫",
-    "fiveElements": "金",
-    "judgment": "卦辞：豫卦，亨。",
-    "meaning": "象征喜悦、安乐。雷地豫。",
+    "fiveElements": "木",
+    "judgment": "豫：利建侯，行師。",
+    "meaning": "象征愉悦、安乐。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：鳴豫，凶。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：介于石，不終日，貞吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：盱豫，悔。遲有悔。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：由豫，大有得。勿疑。朋盍簪。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：貞疾，恆不死。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：冥豫，成有渝，无咎。"
       }
     ]
   },
   {
     "id": 17,
-    "name": "随",
-    "nameCn": "☲☰随",
-    "trigramAbove": "☰",
-    "trigramBelow": "☲",
+    "name": "隨",
+    "nameCn": "☱☳隨",
+    "trigramAbove": "☱",
+    "trigramBelow": "☳",
     "palace": "震宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：随卦，亨。",
-    "meaning": "象征随从、跟随。泽雷随。",
+    "fiveElements": "木",
+    "judgment": "隨：元亨利貞，无咎。",
+    "meaning": "象征随从，随时变通。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：官有渝，貞吉。出門交有功。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：系小子，失丈夫。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：系丈夫，失小子。隨有求得，利居貞。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：隨有獲，貞凶。有孚在道，以明，何咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：孚于嘉，吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：拘系之，乃從維之。王用亨于西山。"
       }
     ]
   },
   {
     "id": 18,
-    "name": "蛊",
-    "nameCn": "☲☱蛊",
-    "trigramAbove": "☱",
-    "trigramBelow": "☲",
-    "palace": "艮宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：蛊卦，亨。",
-    "meaning": "象征腐败、革新。山风蛊。",
+    "name": "蠱",
+    "nameCn": "☶☴蠱",
+    "trigramAbove": "☶",
+    "trigramBelow": "☴",
+    "palace": "巽宫",
+    "fiveElements": "木",
+    "judgment": "蠱：元亨，利涉大川。先甲三日，後甲三日。",
+    "meaning": "象征败坏、腐败，需要革新。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：幹父之蠱，有子，考无咎，厲終吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "name": "临",
-    "nameCn": "☲☲临",
-    "trigramAbove": "☲",
-    "trigramBelow": "☲",
-    "palace": "坤宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：临卦，亨。",
-    "meaning": "象征降临、监理。地泽临。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：幹母之蠱，不可貞。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：幹父之蠱，小有悔，无大咎。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "name": "观",
-    "nameCn": "☲☳观",
-    "trigramAbove": "☳",
-    "trigramBelow": "☲",
-    "palace": "乾宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：观卦，亨。",
-    "meaning": "象征观察、展示。风地观。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：裕父之蠱，往見吝。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：幹父之蠱，用譽。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：不事王侯，高尚其事。"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "臨",
+    "nameCn": "☷☱臨",
+    "trigramAbove": "☷",
+    "trigramBelow": "☱",
+    "palace": "坤宫",
+    "fiveElements": "土",
+    "judgment": "臨：元，亨，利，貞。至于八月有凶。",
+    "meaning": "象征面临、莅临，居高临下。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：咸臨，貞吉。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：咸臨，吉无不利。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：甘臨，无攸利。既憂之，无咎。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：至臨，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：知臨，大君之宜，吉。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：敦臨，吉无咎。"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "觀",
+    "nameCn": "☴☷觀",
+    "trigramAbove": "☴",
+    "trigramBelow": "☷",
+    "palace": "乾宫",
+    "fiveElements": "金",
+    "judgment": "觀：盥而不薦，有孚顒若。",
+    "meaning": "象征观察、审视。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：童觀，小人无咎，君子吝。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：闚觀，利女貞。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：觀我生，進退。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：觀國之光，利用賓于王。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：觀我生，君子无咎。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：觀其生，君子无咎。"
       }
     ]
   },
   {
     "id": 21,
     "name": "噬嗑",
-    "nameCn": "☲☴噬嗑",
-    "trigramAbove": "☴",
-    "trigramBelow": "☲",
+    "nameCn": "☲☳噬嗑",
+    "trigramAbove": "☲",
+    "trigramBelow": "☳",
     "palace": "离宫",
     "fiveElements": "火",
-    "judgment": "卦辞：噬嗑卦，亨。",
-    "meaning": "象征刑罚、断决。火雷噬嗑。",
+    "judgment": "噬嗑：亨。利用獄。",
+    "meaning": "象征咬合，刑罚断狱。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：屨校滅趾，无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：噬膚滅鼻，无咎。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：噬臘肉，遇毒；小吝，无咎。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：噬乾胏，得金矢，利艱貞，吉。"
       },
       {
         "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：噬乾肉，得黃金，貞厲，无咎。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：何校滅耳，凶。"
       }
     ]
   },
   {
     "id": 22,
-    "name": "贲",
-    "nameCn": "☲☵贲",
-    "trigramAbove": "☵",
+    "name": "賁",
+    "nameCn": "☶☲賁",
+    "trigramAbove": "☶",
     "trigramBelow": "☲",
     "palace": "艮宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：贲卦，亨。",
-    "meaning": "象征文饰、美丽。山火贲。",
+    "fiveElements": "土",
+    "judgment": "賁：亨。小利有攸往。",
+    "meaning": "象征文饰，修饰美化。",
     "lines": [
       {
         "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：賁其趾，舍車而徒。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：賁其須。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：賁如濡如，永貞吉。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：賁如皤如，白馬翰如，匪寇婚媾。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：賁于丘園，束帛戔戔，吝，終吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：白賁，无咎。"
       }
     ]
   },
   {
     "id": 23,
-    "name": "剥",
-    "nameCn": "☲☶剥",
+    "name": "剝",
+    "nameCn": "☶☷剝",
     "trigramAbove": "☶",
-    "trigramBelow": "☲",
+    "trigramBelow": "☷",
     "palace": "乾宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：剥卦，亨。",
-    "meaning": "象征剥落、侵蚀。山地剥。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "name": "复",
-    "nameCn": "☲☷复",
-    "trigramAbove": "☷",
-    "trigramBelow": "☲",
-    "palace": "坤宫",
-    "fiveElements": "火",
-    "judgment": "卦辞：复卦，亨。",
-    "meaning": "象征复归、回复。地雷复。",
+    "fiveElements": "金",
+    "judgment": "剝：不利有攸往。",
+    "meaning": "象征剥落、侵蚀。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "name": "无妄",
-    "nameCn": "☳☰无妄",
-    "trigramAbove": "☰",
-    "trigramBelow": "☳",
-    "palace": "巽宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：无妄卦，亨。",
-    "meaning": "象征无妄、不虚伪。天雷无妄。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：剝床以足，蔑貞凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：剝床以辨，蔑貞凶。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：剝之，无咎。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：剝床以膚，凶。"
       },
       {
         "position": 5,
-        "name": "九五",
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：貫魚，以宮人寵，无不利。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "上九：碩果不食，君子得輿，小人剝廬。"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "復",
+    "nameCn": "☷☳復",
+    "trigramAbove": "☷",
+    "trigramBelow": "☳",
+    "palace": "坤宫",
+    "fiveElements": "土",
+    "judgment": "復：亨。出入无疾，朋來无咎。反復其道，七日來復，利有攸往。",
+    "meaning": "象征复归、回归。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：不遠復，无祗悔，元吉。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：休復，吉。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：頻復，厲无咎。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：中行獨復。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：敦復，无悔。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：迷復，凶，有災眚。用行師，終有大敗，以其國君，凶；至于十年，不克征。"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "無妄",
+    "nameCn": "☰☳無妄",
+    "trigramAbove": "☰",
+    "trigramBelow": "☳",
+    "palace": "巽宫",
+    "fiveElements": "木",
+    "judgment": "无妄：元亨，利貞。其匪正有眚，不利有攸往。",
+    "meaning": "象征不妄为，无虚妄。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：无妄，往吉。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：不耕獲，不菑畬，則利有攸往。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：无妄之災，或繫之牛，行人之得，邑人之災。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：可貞，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：无妄之疾，勿藥有喜。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：无妄，行有眚，无攸利。"
       }
     ]
   },
   {
     "id": 26,
     "name": "大畜",
-    "nameCn": "☳☱大畜",
-    "trigramAbove": "☱",
-    "trigramBelow": "☳",
+    "nameCn": "☶☰大畜",
+    "trigramAbove": "☶",
+    "trigramBelow": "☰",
     "palace": "艮宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：大畜卦，亨。",
-    "meaning": "象征大的积畜。山天大畜。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 27,
-    "name": "颐",
-    "nameCn": "☳☲颐",
-    "trigramAbove": "☲",
-    "trigramBelow": "☳",
-    "palace": "巽宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：颐卦，亨。",
-    "meaning": "象征颐养、养育。山雷颐。",
+    "fiveElements": "土",
+    "judgment": "大畜：利貞，不家食吉，利涉大川。",
+    "meaning": "象征大的蓄积，积蓄力量。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 28,
-    "name": "大过",
-    "nameCn": "☳☳大过",
-    "trigramAbove": "☳",
-    "trigramBelow": "☳",
-    "palace": "兑宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：大过卦，亨。",
-    "meaning": "象征大的过度。泽风大过。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：有厲利已。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：輿說輹。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：良馬逐，利艱貞。曰閑輿衛，利有攸往。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：童牛之牿，元吉。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：豶豕之牙，吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：何天之衢，亨。"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "頤",
+    "nameCn": "☶☳頤",
+    "trigramAbove": "☶",
+    "trigramBelow": "☳",
+    "palace": "巽宫",
+    "fiveElements": "木",
+    "judgment": "頤：貞吉。觀頤，自求口實。",
+    "meaning": "象征颐养，修养身心。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：舍爾靈龜，觀我朵頤，凶。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：顛頤，拂經，于丘頤，征凶。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：拂頤，貞凶，十年勿用，无攸利。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：顛頤，吉，虎視眈眈，其欲逐逐，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：拂經，居貞吉，不可涉大川。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：由頤，厲吉，利涉大川。"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "大過",
+    "nameCn": "☱☴大過",
+    "trigramAbove": "☱",
+    "trigramBelow": "☴",
+    "palace": "震宫",
+    "fiveElements": "木",
+    "judgment": "大過：棟橈，利有攸往，亨。",
+    "meaning": "象征大的过失，压力过大。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：藉用白茅，无咎。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：枯楊生稊，老夫得其女妻，无不利。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：棟橈，凶。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：棟隆，吉；有它吝。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：枯楊生華，老婦得士夫，无咎无譽。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：過涉滅頂，凶，无咎。"
       }
     ]
   },
   {
     "id": 29,
     "name": "坎",
-    "nameCn": "☳☴坎",
-    "trigramAbove": "☴",
-    "trigramBelow": "☳",
-    "palace": "坎宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：坎卦，亨。",
-    "meaning": "象征险陷、水。坎为水。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "name": "离",
-    "nameCn": "☳☵离",
+    "nameCn": "☵☵坎",
     "trigramAbove": "☵",
-    "trigramBelow": "☳",
-    "palace": "离宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：离卦，亨。",
-    "meaning": "象征光明、美丽。离为火。",
+    "trigramBelow": "☵",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "坎：習坎，有孚，維心亨，行有尚。",
+    "meaning": "象征重重险难，水深危险。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：習坎，入于坎窞，凶。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：坎有險，求小得。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：來之坎坎，險且枕，入于坎窞，勿用。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：樽酒簋貳，用缶，納約自牖，終无咎。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：坎不盈，祗既平，无咎。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：係用徽纆，寘于叢棘，三歲不得，凶。"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "離",
+    "nameCn": "☲☲離",
+    "trigramAbove": "☲",
+    "trigramBelow": "☲",
+    "palace": "离宫",
+    "fiveElements": "火",
+    "judgment": "離：利貞，亨。畜牝牛，吉。",
+    "meaning": "象征光明，附丽于正道。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：履錯然，敬之无咎。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：黃離，元吉。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：日昃之離，不鼓缶而歌，則大耋之嗟，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：突如其來如，焚如，死如，棄如。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：出涕沱若，戚嗟若，吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：王用出征，有嘉折首，獲匪其醜，无咎。"
       }
     ]
   },
   {
     "id": 31,
     "name": "咸",
-    "nameCn": "☳☶咸",
-    "trigramAbove": "☶",
-    "trigramBelow": "☳",
+    "nameCn": "☱☶咸",
+    "trigramAbove": "☱",
+    "trigramBelow": "☶",
     "palace": "兑宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：咸卦，亨。",
-    "meaning": "象征感应、婚姻。泽山咸。",
+    "fiveElements": "金",
+    "judgment": "咸，亨，利貞，取女吉。",
+    "meaning": "象征感应，相互吸引。",
     "lines": [
       {
         "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "",
+        "isYang": false,
+        "judgement": "初六，咸其拇。"
       },
       {
         "position": 2,
-        "name": "六二",
+        "name": "",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二，咸其腓，凶，居吉。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "",
+        "isYang": false,
+        "judgement": "九三，咸其股，執其隨，往吝。"
       },
       {
         "position": 4,
-        "name": "六四",
+        "name": "",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四，貞吉，悔亡，憧憧往來，朋從爾思。"
       },
       {
         "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "",
+        "isYang": false,
+        "judgement": "九五，咸其脢，无悔。"
       },
       {
         "position": 6,
-        "name": "上六",
+        "name": "",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六，咸其輔頰舌。"
       }
     ]
   },
   {
     "id": 32,
-    "name": "恒",
-    "nameCn": "☳☷恒",
-    "trigramAbove": "☷",
-    "trigramBelow": "☳",
+    "name": "恆",
+    "nameCn": "☳☴恆",
+    "trigramAbove": "☳",
+    "trigramBelow": "☴",
     "palace": "震宫",
     "fiveElements": "木",
-    "judgment": "卦辞：恒卦，亨。",
-    "meaning": "象征恒久、固定。雷风恒。",
+    "judgment": "恆：亨，无咎，利貞，利有攸往。",
+    "meaning": "象征恒久，持久不变。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：浚恆，貞凶，无攸利。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：悔亡。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：不恆其德，或承之羞，貞吝。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：田无禽。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：恆其德，貞，婦人吉，夫子凶。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：振恆，凶。"
       }
     ]
   },
   {
     "id": 33,
-    "name": "遁",
-    "nameCn": "☴☰遁",
+    "name": "遯",
+    "nameCn": "☰☶遯",
     "trigramAbove": "☰",
-    "trigramBelow": "☴",
+    "trigramBelow": "☶",
     "palace": "乾宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：遁卦，亨。",
-    "meaning": "象征退隐、逃避。天山遁。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 34,
-    "name": "大壮",
-    "nameCn": "☴☱大壮",
-    "trigramAbove": "☱",
-    "trigramBelow": "☴",
-    "palace": "乾宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：大壮卦，亨。",
-    "meaning": "象征壮大、强盛。雷天大壮。",
+    "fiveElements": "金",
+    "judgment": "遯：亨，小利貞。",
+    "meaning": "象征退避，适时隐退。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 35,
-    "name": "晋",
-    "nameCn": "☴☲晋",
-    "trigramAbove": "☲",
-    "trigramBelow": "☴",
-    "palace": "乾宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：晋卦，亨。",
-    "meaning": "象征前进、晋升。火地晋。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：遯尾，厲，勿用有攸往。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：執之用黃牛之革，莫之勝說。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：係遯，有疾厲，畜臣妾吉。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：好遯，君子吉，小人否。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：嘉遯，貞吉。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：肥遯，无不利。"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "大壯",
+    "nameCn": "☳☰大壯",
+    "trigramAbove": "☳",
+    "trigramBelow": "☰",
+    "palace": "坤宫",
+    "fiveElements": "土",
+    "judgment": "大壯：利貞。",
+    "meaning": "象征壮盛，力量充沛。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：壯于趾，征凶，有孚。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：貞吉。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：貞吉悔亡，藩決不羸，壯于大輿之輹。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：喪羊于易，无悔。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：羝羊觸藩，不能退，不能遂，无攸利，艱則吉。"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "晉",
+    "nameCn": "☲☷晉",
+    "trigramAbove": "☲",
+    "trigramBelow": "☷",
+    "palace": "乾宫",
+    "fiveElements": "金",
+    "judgment": "晉：康侯用錫馬蕃庶，晝日三接。",
+    "meaning": "象征进取、晋升。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：晉如，摧如，貞吉。罔孚，裕无咎。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：晉如，愁如，貞吉。受茲介福，于其王母。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：眾允，悔亡。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：晉如碩鼠，貞厲。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：悔亡，失得勿恤，往吉，无不利。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：晉其角，維用伐邑，厲吉无咎，貞吝。"
       }
     ]
   },
   {
     "id": 36,
     "name": "明夷",
-    "nameCn": "☴☳明夷",
-    "trigramAbove": "☳",
-    "trigramBelow": "☴",
-    "palace": "坤宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：明夷卦，亨。",
-    "meaning": "象征光明受伤、地伤害。",
+    "nameCn": "☷☲明夷",
+    "trigramAbove": "☷",
+    "trigramBelow": "☲",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "明夷：利艱貞。",
+    "meaning": "象征光明受伤，韬光养晦。",
     "lines": [
       {
         "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：明夷于飛，垂其翼。君子于行，三日不食，有攸往，主人有言。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：明夷，夷于左股，用拯馬壯，吉。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：明夷于南狩，得其大首，不可疾貞。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：入于左腹，獲明夷之心，出于門庭。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：箕子之明夷，利貞。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：不明晦，初登于天，後入于地。"
       }
     ]
   },
   {
     "id": 37,
     "name": "家人",
-    "nameCn": "☴☴家人",
+    "nameCn": "☴☲家人",
     "trigramAbove": "☴",
-    "trigramBelow": "☴",
+    "trigramBelow": "☲",
     "palace": "巽宫",
     "fiveElements": "木",
-    "judgment": "卦辞：家人卦，亨。",
-    "meaning": "象征家人、家庭。风火家人。",
+    "judgment": "家人：利女貞。",
+    "meaning": "象征家人，治理家庭。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：閑有家，悔亡。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：无攸遂，在中饋，貞吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：家人嗃嗃，悔厲吉；婦子嘻嘻，終吝。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：富家，大吉。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：王假有家，勿恤，往吉。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：有孚威如，終吉。"
       }
     ]
   },
   {
     "id": 38,
     "name": "睽",
-    "nameCn": "☴☵睽",
-    "trigramAbove": "☵",
-    "trigramBelow": "☴",
-    "palace": "兑宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：睽卦，亨。",
-    "meaning": "象征乖睽、矛盾。火泽睽。",
+    "nameCn": "☲☱睽",
+    "trigramAbove": "☲",
+    "trigramBelow": "☱",
+    "palace": "艮宫",
+    "fiveElements": "土",
+    "judgment": "睽：小事吉。",
+    "meaning": "象征乖离、背离。",
     "lines": [
       {
         "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：悔亡，喪馬勿逐，自復；見惡人无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：遇主于巷，无咎。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：見輿曳，其牛掣，其人天且劓，无初有終。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：睽孤，遇元夫，交孚，厲无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：悔亡，厥宗噬膚，往何咎。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：睽孤，見豕負塗，載鬼一車，先張之弧，後說之弧，匪寇婚媾，往遇雨則吉。"
       }
     ]
   },
   {
     "id": 39,
     "name": "蹇",
-    "nameCn": "☴☶蹇",
-    "trigramAbove": "☶",
-    "trigramBelow": "☴",
-    "palace": "艮宫",
-    "fiveElements": "木",
-    "judgment": "卦辞：蹇卦，亨。",
-    "meaning": "象征艰难、困苦。水山蹇。",
+    "nameCn": "☵☶蹇",
+    "trigramAbove": "☵",
+    "trigramBelow": "☶",
+    "palace": "兑宫",
+    "fiveElements": "金",
+    "judgment": "蹇：利西南，不利東北；利見大人，貞吉。",
+    "meaning": "象征困难、跛足难行。",
     "lines": [
       {
         "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：往蹇，來譽。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：王臣蹇蹇，匪躬之故。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：往蹇來反。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：往蹇來連。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：大蹇朋來。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：往蹇來碩，吉；利見大人。"
       }
     ]
   },
   {
     "id": 40,
     "name": "解",
-    "nameCn": "☴☷解",
-    "trigramAbove": "☷",
-    "trigramBelow": "☴",
+    "nameCn": "☳☵解",
+    "trigramAbove": "☳",
+    "trigramBelow": "☵",
     "palace": "震宫",
     "fiveElements": "木",
-    "judgment": "卦辞：解卦，亨。",
-    "meaning": "象征解除、缓解。雷水解。",
+    "judgment": "解：利西南，无所往，其來復吉。有攸往，夙吉。",
+    "meaning": "象征解除困难，化解危机。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：田獲三狐，得黃矢，貞吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：負且乘，致寇至，貞吝。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：解而拇，朋至斯孚。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 41,
-    "name": "损",
-    "nameCn": "☵☰损",
-    "trigramAbove": "☰",
-    "trigramBelow": "☵",
-    "palace": "艮宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：损卦，亨。",
-    "meaning": "象征减损、损失。山泽损。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：君子維有解，吉；有孚于小人。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：公用射隼于高墉之上，獲之，无不利。"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "損",
+    "nameCn": "☶☱損",
+    "trigramAbove": "☶",
+    "trigramBelow": "☱",
+    "palace": "艮宫",
+    "fiveElements": "土",
+    "judgment": "損：有孚，元吉，无咎，可貞，利有攸往。曷之用，二簋可用享。",
+    "meaning": "象征减损，舍己为人。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：巳事遄往，无咎，酌損之。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：利貞，征凶，弗損，益之。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：三人行，則損一人；一人行，則得其友。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：損其疾，使遄有喜，无咎。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：或益之，十朋之龜弗克違，元吉。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：弗損益之，无咎，貞吉，有攸往，得臣无家。"
       }
     ]
   },
   {
     "id": 42,
     "name": "益",
-    "nameCn": "☵☱益",
-    "trigramAbove": "☱",
-    "trigramBelow": "☵",
+    "nameCn": "☴☳益",
+    "trigramAbove": "☴",
+    "trigramBelow": "☳",
     "palace": "巽宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：益卦，亨。",
-    "meaning": "象征增益、利益。风雷益。",
+    "fiveElements": "木",
+    "judgment": "益：利有攸往，利涉大川。",
+    "meaning": "象征增益，兴利除弊。",
     "lines": [
       {
         "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：利用為大作，元吉，无咎。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：益之用凶事，无咎。有孚中行，告公用圭。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：中行，告公從。利用為依遷國。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：有孚惠心，勿問元吉。有孚惠我德。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：莫益之，或擊之，立心勿恆，凶。"
       }
     ]
   },
   {
     "id": 43,
     "name": "夬",
-    "nameCn": "☵☲夬",
-    "trigramAbove": "☲",
-    "trigramBelow": "☵",
+    "nameCn": "☱☰夬",
+    "trigramAbove": "☱",
+    "trigramBelow": "☰",
     "palace": "坤宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：夬卦，亨。",
-    "meaning": "象征决断、决定。泽天夬。",
+    "fiveElements": "土",
+    "judgment": "夬：揚于王庭，孚號，有厲，告自邑，不利即戎，利有攸往。",
+    "meaning": "象征决断，果敢除弊。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：壯于前趾，往不勝為咎。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：惕號，莫夜有戎，勿恤。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：壯于頄，有凶。君子夬夬，獨行，遇雨，若濡，有慍，无咎。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：臀无膚，其行次且。牽羊悔亡，聞言不信。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：莧陸夬夬，中行无咎。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：无號，終有凶。"
       }
     ]
   },
   {
     "id": 44,
     "name": "姤",
-    "nameCn": "☵☳姤",
-    "trigramAbove": "☳",
-    "trigramBelow": "☵",
+    "nameCn": "☰☴姤",
+    "trigramAbove": "☰",
+    "trigramBelow": "☴",
     "palace": "乾宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：姤卦，亨。",
-    "meaning": "象征相遇、邂逅。天风姤。",
+    "fiveElements": "金",
+    "judgment": "姤：女壯，勿用取女。",
+    "meaning": "象征相遇，不期而遇。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：繫于金柅，貞吉，有攸往，見凶，羸豕孚蹢躅。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：包有魚，无咎，不利賓。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：臀无膚，其行次且，厲，无大咎。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：包无魚，起凶。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：以杞包瓜，含章，有隕自天。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：姤其角，吝，无咎。"
       }
     ]
   },
   {
     "id": 45,
     "name": "萃",
-    "nameCn": "☵☴萃",
-    "trigramAbove": "☴",
-    "trigramBelow": "☵",
-    "palace": "坤宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：萃卦，亨。",
-    "meaning": "象征聚集、汇萃。泽地萃。",
+    "nameCn": "☱☷萃",
+    "trigramAbove": "☱",
+    "trigramBelow": "☷",
+    "palace": "兑宫",
+    "fiveElements": "金",
+    "judgment": "萃：亨。王假有廟，利見大人，亨，利貞。用大牲吉，利有攸往。",
+    "meaning": "象征聚集、汇合。",
     "lines": [
       {
         "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：有孚不終，乃亂乃萃，若號一握為笑，勿恤，往无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：引吉，无咎，孚乃利用禴。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：萃如，嗟如，无攸利，往无咎，小吝。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：大吉，无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：萃有位，无咎。匪孚，元永貞，悔亡。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：齎咨涕洟，无咎。"
       }
     ]
   },
   {
     "id": 46,
     "name": "升",
-    "nameCn": "☵☵升",
-    "trigramAbove": "☵",
-    "trigramBelow": "☵",
+    "nameCn": "☷☴升",
+    "trigramAbove": "☷",
+    "trigramBelow": "☴",
     "palace": "震宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：升卦，亨。",
-    "meaning": "象征上升、提升。地风升。",
+    "fiveElements": "木",
+    "judgment": "升：元亨，用見大人，勿恤，南征吉。",
+    "meaning": "象征上升、登进。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：允升，大吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：孚乃利用禴，无咎。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：升虛邑。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：王用亨于岐山，吉无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：貞吉，升階。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：冥升，利于不息之貞。"
       }
     ]
   },
   {
     "id": 47,
     "name": "困",
-    "nameCn": "☵☶困",
-    "trigramAbove": "☶",
+    "nameCn": "☱☵困",
+    "trigramAbove": "☱",
     "trigramBelow": "☵",
     "palace": "兑宫",
-    "fiveElements": "水",
-    "judgment": "卦辞：困卦，亨。",
-    "meaning": "象征困穷、困境。泽水困。",
+    "fiveElements": "金",
+    "judgment": "困：亨，貞，大人吉，无咎，有言不信。",
+    "meaning": "象征困顿、困境。",
     "lines": [
       {
         "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：臀困于株木，入于幽谷，三歲不覿。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：困于酒食，朱紱方來，利用享祀，征凶，无咎。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：困于石，據于蒺蔾，入于其宮，不見其妻，凶。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：來徐徐，困于金車，吝，有終。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：劓刖，困于赤紱，乃徐有說，利用祭祀。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：困于葛藟，于臲卼，曰動悔。有悔，征吉。"
       }
     ]
   },
   {
     "id": 48,
     "name": "井",
-    "nameCn": "☵☷井",
-    "trigramAbove": "☷",
-    "trigramBelow": "☵",
+    "nameCn": "☵☴井",
+    "trigramAbove": "☵",
+    "trigramBelow": "☴",
     "palace": "坎宫",
     "fiveElements": "水",
-    "judgment": "卦辞：井卦，亨。",
-    "meaning": "象征水井、用途。风水井。",
+    "judgment": "井：改邑不改井，无喪无得，往來井井。汔至，亦未繘井，羸其瓶，凶。",
+    "meaning": "象征水井，养民不穷。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：井泥不食，舊井无禽。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：井谷射鮒，瓮敝漏。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：井渫不食，為我心惻，可用汲，王明，並受其福。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：井甃，无咎。"
       },
       {
         "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：井冽，寒泉食。"
       },
       {
         "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：井收勿幕，有孚元吉。"
       }
     ]
   },
   {
     "id": 49,
     "name": "革",
-    "nameCn": "☶☰革",
-    "trigramAbove": "☰",
-    "trigramBelow": "☶",
+    "nameCn": "☱☲革",
+    "trigramAbove": "☱",
+    "trigramBelow": "☲",
     "palace": "离宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：革卦，亨。",
-    "meaning": "象征变革、革命。泽火革。",
+    "fiveElements": "火",
+    "judgment": "革：巳日乃孚，元亨利貞，悔亡。",
+    "meaning": "象征变革、除旧布新。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：鞏用黃牛之革。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：巳日乃革之，征吉，无咎。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：征凶，貞厲，革言三就，有孚。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：悔亡，有孚改命，吉。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：大人虎變，未占有孚。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：君子豹變，小人革面，征凶，居貞吉。"
       }
     ]
   },
   {
     "id": 50,
     "name": "鼎",
-    "nameCn": "☶☱鼎",
-    "trigramAbove": "☱",
-    "trigramBelow": "☶",
+    "nameCn": "☲☴鼎",
+    "trigramAbove": "☲",
+    "trigramBelow": "☴",
     "palace": "离宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：鼎卦，亨。",
-    "meaning": "象征鼎立、稳固。火风鼎。",
+    "fiveElements": "火",
+    "judgment": "鼎：元吉，亨。",
+    "meaning": "象征鼎器，烹饪养贤。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：鼎顛趾，利出否，得妾以其子，无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：鼎有實，我仇有疾，不我能即，吉。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：鼎折足，覆公餗，其形渥，凶。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：鼎黃耳，金鉉，利貞。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：鼎玉鉉，大吉，无不利。"
       }
     ]
   },
   {
     "id": 51,
     "name": "震",
-    "nameCn": "☶☲震",
-    "trigramAbove": "☲",
-    "trigramBelow": "☶",
+    "nameCn": "☳☳震",
+    "trigramAbove": "☳",
+    "trigramBelow": "☳",
     "palace": "震宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：震卦，亨。",
-    "meaning": "象征震动、震惊。震为雷。",
+    "fiveElements": "木",
+    "judgment": "震：亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。",
+    "meaning": "象征震动，雷声惊醒。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：震來虩虩，後笑言啞啞，吉。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：震蘇蘇，震行无眚。"
       },
       {
         "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：震遂泥。"
       },
       {
         "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：震往來厲，億无喪，有事。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎。婚媾有言。"
       }
     ]
   },
   {
     "id": 52,
     "name": "艮",
-    "nameCn": "☶☳艮",
-    "trigramAbove": "☳",
+    "nameCn": "☶☶艮",
+    "trigramAbove": "☶",
     "trigramBelow": "☶",
     "palace": "艮宫",
     "fiveElements": "土",
-    "judgment": "卦辞：艮卦，亨。",
-    "meaning": "象征停止、阻碍。艮为山。",
+    "judgment": "艮：艮其背，不獲其身，行其庭，不見其人，无咎。",
+    "meaning": "象征静止，止而不动。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：艮其趾，无咎，利永貞。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：艮其腓，不拯其隨，其心不快。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：艮其限，列其夤，厲薰心。"
       },
       {
         "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：艮其身，无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：艮其輔，言有序，悔亡。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：敦艮，吉。"
       }
     ]
   },
   {
     "id": 53,
-    "name": "渐",
-    "nameCn": "☶☴渐",
+    "name": "漸",
+    "nameCn": "☴☶漸",
     "trigramAbove": "☴",
     "trigramBelow": "☶",
     "palace": "艮宫",
     "fiveElements": "土",
-    "judgment": "卦辞：渐卦，亨。",
-    "meaning": "象征渐进、缓慢。风山渐。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 54,
-    "name": "归妹",
-    "nameCn": "☶☵归妹",
-    "trigramAbove": "☵",
-    "trigramBelow": "☶",
-    "palace": "震宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：归妹卦，亨。",
-    "meaning": "象征少女出嫁、归宿。雷泽归妹。",
+    "judgment": "漸：女歸吉，利貞。",
+    "meaning": "象征渐进，循序渐进。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 55,
-    "name": "丰",
-    "nameCn": "☶☶丰",
-    "trigramAbove": "☶",
-    "trigramBelow": "☶",
-    "palace": "震宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：丰卦，亨。",
-    "meaning": "象征丰盛、丰满。雷火丰。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：鴻漸于干，小子厲，有言，无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：鴻漸于磐，飲食衎衎，吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：鴻漸于陸，夫征不復，婦孕不育，凶；利禦寇。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：鴻漸于木，或得其桷，无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：鴻漸于陸，其羽可用為儀，吉。"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "歸妹",
+    "nameCn": "☳☱歸妹",
+    "trigramAbove": "☳",
+    "trigramBelow": "☱",
+    "palace": "兑宫",
+    "fiveElements": "金",
+    "judgment": "歸妹：征凶，无攸利。",
+    "meaning": "象征少女出嫁，归之终也。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：歸妹以娣，跛能履，征吉。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：眇能視，利幽人之貞。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：歸妹以須，反歸以娣。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：歸妹愆期，遲歸有時。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：帝乙歸妹，其君之袂，不如其娣之袂良，月幾望，吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上六：女承筐无實，士刲羊无血，无攸利。"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "豐",
+    "nameCn": "☳☲豐",
+    "trigramAbove": "☳",
+    "trigramBelow": "☲",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "豐：亨，王假之，勿憂，宜日中。",
+    "meaning": "象征丰收、盛大光明。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：遇其配主，雖旬无咎，往有尚。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：豐其沛，日中見沬，折其右肱，无咎。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：豐其蔀，日中見斗，遇其夷主，吉。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：來章，有慶譽，吉。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：豐其屋，蔀其家，闚其戶，闃其无人，三歲不覿，凶。"
       }
     ]
   },
   {
     "id": 56,
     "name": "旅",
-    "nameCn": "☶☷旅",
-    "trigramAbove": "☷",
+    "nameCn": "☲☶旅",
+    "trigramAbove": "☲",
     "trigramBelow": "☶",
     "palace": "离宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：旅卦，亨。",
-    "meaning": "象征旅行、客居。火山旅。",
+    "fiveElements": "火",
+    "judgment": "旅：小亨，旅貞吉。",
+    "meaning": "象征旅行、客居他乡。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：旅瑣瑣，斯其所取災。"
       },
       {
         "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：旅即次，懷其資，得童僕貞。"
       },
       {
         "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：旅焚其次，喪其童僕，貞厲。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：旅于處，得其資斧，我心不快。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：射雉一矢亡，終以譽命。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。"
       }
     ]
   },
   {
     "id": 57,
     "name": "巽",
-    "nameCn": "☷☰巽",
-    "trigramAbove": "☰",
-    "trigramBelow": "☷",
+    "nameCn": "☴☴巽",
+    "trigramAbove": "☴",
+    "trigramBelow": "☴",
     "palace": "巽宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：巽卦，亨。",
-    "meaning": "象征进入、谦顺。巽为风。",
+    "fiveElements": "木",
+    "judgment": "巽：小亨，利攸往，利見大人。",
+    "meaning": "象征进入、顺从，如风之入。",
     "lines": [
       {
         "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：進退，利武人之貞。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：巽在床下，用史巫紛若，吉，无咎。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：頻巽，吝。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：悔亡，田獲三品。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：貞吉悔亡，无不利。无初有終，先庚三日，後庚三日，吉。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：巽在床下，喪其資斧，貞凶。"
       }
     ]
   },
   {
     "id": 58,
-    "name": "兑",
-    "nameCn": "☷☱兑",
+    "name": "兌",
+    "nameCn": "☱☱兌",
     "trigramAbove": "☱",
-    "trigramBelow": "☷",
+    "trigramBelow": "☱",
     "palace": "兑宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：兑卦，亨。",
-    "meaning": "象征喜悦、取悦。兑为泽。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 59,
-    "name": "涣",
-    "nameCn": "☷☲涣",
-    "trigramAbove": "☲",
-    "trigramBelow": "☷",
-    "palace": "离宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：涣卦，亨。",
-    "meaning": "象征涣散、离散。风水涣。",
+    "fiveElements": "金",
+    "judgment": "兌：亨，利貞。",
+    "meaning": "象征喜悦、欢欣。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 60,
-    "name": "节",
-    "nameCn": "☷☳节",
-    "trigramAbove": "☳",
-    "trigramBelow": "☷",
-    "palace": "坎宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：节卦，亨。",
-    "meaning": "象征节制、节约。水泽节。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：和兌，吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "九二：孚兌，吉，悔亡。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "六三：來兌，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：商兌，未寧，介疾有喜。"
       },
       {
         "position": 5,
-        "name": "六五",
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：孚于剝，有厲。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "上六：引兌。"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "渙",
+    "nameCn": "☴☵渙",
+    "trigramAbove": "☴",
+    "trigramBelow": "☵",
+    "palace": "离宫",
+    "fiveElements": "火",
+    "judgment": "渙：亨。王假有廟，利涉大川，利貞。",
+    "meaning": "象征涣散，离散而去。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：用拯馬壯，吉。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：渙奔其机，悔亡。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：渙其躬，无悔。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：渙其群，元吉。渙有丘，匪夷所思。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：渙汗其大號，渙王居，无咎。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：渙其血，去逖出，无咎。"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "節",
+    "nameCn": "☵☱節",
+    "trigramAbove": "☵",
+    "trigramBelow": "☱",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "節：亨。苦節，不可貞。",
+    "meaning": "象征节制、限度。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：不出戶庭，无咎。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：不出門庭，凶。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：不節若，則嗟若，无咎。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：安節，亨。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：甘節，吉；往有尚。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：苦節，貞凶，悔亡。"
       }
     ]
   },
   {
     "id": 61,
     "name": "中孚",
-    "nameCn": "☷☴中孚",
+    "nameCn": "☴☱中孚",
     "trigramAbove": "☴",
-    "trigramBelow": "☷",
-    "palace": "兑宫",
+    "trigramBelow": "☱",
+    "palace": "艮宫",
     "fiveElements": "土",
-    "judgment": "卦辞：中孚卦，亨。",
-    "meaning": "象征诚信、心中诚信。风泽中孚。",
+    "judgment": "中孚：豚魚吉，利涉大川，利貞。",
+    "meaning": "象征诚信，中正之信。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初九：虞吉，有它不燕。"
       },
       {
         "position": 2,
-        "name": "六二",
-        "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。"
       },
       {
         "position": 3,
-        "name": "九三",
-        "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：得敵，或鼓或罷，或泣或歌。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "六四：月幾望，馬匹亡，无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "九五：有孚攣如，无咎。"
       },
       {
         "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "name": "上九",
+        "isYang": true,
+        "judgement": "上九：翰音登于天，貞凶。"
       }
     ]
   },
   {
     "id": 62,
-    "name": "小过",
-    "nameCn": "☷☵小过",
-    "trigramAbove": "☵",
-    "trigramBelow": "☷",
-    "palace": "震宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：小过卦，亨。",
-    "meaning": "象征小的过度。雷山小过。",
+    "name": "小過",
+    "nameCn": "☳☶小過",
+    "trigramAbove": "☳",
+    "trigramBelow": "☶",
+    "palace": "兑宫",
+    "fiveElements": "金",
+    "judgment": "小過：亨，利貞，可小事，不可大事。飛鳥遺之音，不宜上，宜下，大吉。",
+    "meaning": "象征小的过失，行事宜谦。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "九四",
-        "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "六五",
-        "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上九",
-        "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 63,
-    "name": "既济",
-    "nameCn": "☷☶既济",
-    "trigramAbove": "☶",
-    "trigramBelow": "☷",
-    "palace": "坎宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：既济卦，亨。",
-    "meaning": "象征成功、完成。水火既济。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初九",
-        "isYang": true,
-        "judgement": "爻辞1：此处需要详细爻辞。"
+        "judgement": "初六：飛鳥以凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "爻辞2：此处需要详细爻辞。"
+        "judgement": "六二：過其祖，遇其妣；不及其君，遇其臣；无咎。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "爻辞3：此处需要详细爻辞。"
-      },
-      {
-        "position": 4,
-        "name": "六四",
-        "isYang": false,
-        "judgement": "爻辞4：此处需要详细爻辞。"
-      },
-      {
-        "position": 5,
-        "name": "九五",
-        "isYang": true,
-        "judgement": "爻辞5：此处需要详细爻辞。"
-      },
-      {
-        "position": 6,
-        "name": "上六",
-        "isYang": false,
-        "judgement": "爻辞6：此处需要详细爻辞。"
-      }
-    ]
-  },
-  {
-    "id": 64,
-    "name": "未济",
-    "nameCn": "☷☷未济",
-    "trigramAbove": "☷",
-    "trigramBelow": "☷",
-    "palace": "离宫",
-    "fiveElements": "土",
-    "judgment": "卦辞：未济卦，亨。",
-    "meaning": "象征未成、失败。火水未济。",
-    "lines": [
-      {
-        "position": 1,
-        "name": "初六",
-        "isYang": false,
-        "judgement": "爻辞1：此处需要详细爻辞。"
-      },
-      {
-        "position": 2,
-        "name": "九二",
-        "isYang": true,
-        "judgement": "爻辞2：此处需要详细爻辞。"
-      },
-      {
-        "position": 3,
-        "name": "六三",
-        "isYang": false,
-        "judgement": "爻辞3：此处需要详细爻辞。"
+        "judgement": "九三：弗過防之，從或戕之，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "爻辞4：此处需要详细爻辞。"
+        "judgement": "九四：无咎，弗過遇之。往厲必戒，勿用永貞。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "爻辞5：此处需要详细爻辞。"
+        "judgement": "六五：密雲不雨，自我西郊，公弋取彼在穴。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：弗遇過之，飛鳥離之，凶，是謂災眚。"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "既濟",
+    "nameCn": "☵☲既濟",
+    "trigramAbove": "☵",
+    "trigramBelow": "☲",
+    "palace": "坎宫",
+    "fiveElements": "水",
+    "judgment": "既濟：亨，小利貞，初吉終亂。",
+    "meaning": "象征已经完成，万事已成。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初九",
+        "isYang": true,
+        "judgement": "初九：曳其輪，濡其尾，无咎。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "isYang": false,
+        "judgement": "六二：婦喪其茀，勿逐，七日得。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "isYang": true,
+        "judgement": "九三：高宗伐鬼方，三年克之，小人勿用。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "isYang": false,
+        "judgement": "六四：繻有衣袽，終日戒。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "isYang": true,
+        "judgement": "九五：東鄰殺牛，不如西鄰之禴祭，實受其福。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "isYang": false,
+        "judgement": "上六：濡其首，厲。"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "未濟",
+    "nameCn": "☲☵未濟",
+    "trigramAbove": "☲",
+    "trigramBelow": "☵",
+    "palace": "离宫",
+    "fiveElements": "火",
+    "judgment": "未濟：亨，小狐汔濟，濡其尾，无攸利。",
+    "meaning": "象征尚未完成，事未终结。",
+    "lines": [
+      {
+        "position": 1,
+        "name": "初六",
+        "isYang": false,
+        "judgement": "初六：濡其尾，吝。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "isYang": true,
+        "judgement": "九二：曳其輪，貞吉。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "isYang": false,
+        "judgement": "六三：未濟，征凶，利涉大川。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "isYang": true,
+        "judgement": "九四：貞吉，悔亡，震用伐鬼方，三年有賞于大國。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "isYang": false,
+        "judgement": "六五：貞吉，无悔，君子之光，有孚，吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "爻辞6：此处需要详细爻辞。"
+        "judgement": "上九：有孚于飲酒，无咎，濡其首，有孚失是。"
       }
     ]
   }
