@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bronze" cx="38%" cy="36%" r="55%">
+      <stop offset="0%" stop-color="#fce588"/>
+      <stop offset="25%" stop-color="#d4af37"/>
+      <stop offset="55%" stop-color="#b8941e"/>
+      <stop offset="80%" stop-color="#8a6d14"/>
+      <stop offset="100%" stop-color="#6a5010"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.3)"/>
+      <stop offset="35%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="65%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.2)"/>
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="50%" stop-color="#8a6d14"/>
+      <stop offset="100%" stop-color="#6a5010"/>
+    </linearGradient>
+    <filter id="coinShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="patina">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="textured"/>
+      <feComposite in="textured" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Coin body -->
+  <g filter="url(#coinShadow)">
+    <!-- Outer rim -->
+    <circle cx="100" cy="100" r="96" fill="url(#rimGrad)" stroke="#5a4210" stroke-width="1"/>
+    <circle cx="100" cy="100" r="93" fill="url(#bronze)" stroke="#a68520" stroke-width="0.5"/>
+
+    <!-- Sheen overlay -->
+    <circle cx="100" cy="100" r="93" fill="url(#sheen)"/>
+
+    <!-- Patina texture -->
+    <circle cx="100" cy="100" r="91" fill="none" filter="url(#patina)" opacity="0.15"/>
+
+    <!-- Inner decorative rim -->
+    <circle cx="100" cy="100" r="82" fill="none" stroke="#c9a84c" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#a68520" stroke-width="0.4" opacity="0.4"/>
+
+    <!-- Field texture (subtle concentric rings like real cast coins) -->
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#b8941e" stroke-width="0.3" opacity="0.15"/>
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#b8941e" stroke-width="0.3" opacity="0.1"/>
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#b8941e" stroke-width="0.3" opacity="0.08"/>
+
+    <!-- Square hole -->
+    <rect x="88" y="88" width="24" height="24" rx="1" fill="#0d0d0d" stroke="#a68520" stroke-width="0.8"/>
+    <rect x="89.5" y="89.5" width="21" height="21" rx="0.5" fill="#111" stroke="#6a5010" stroke-width="0.4"/>
+    <!-- Hole inner shadow -->
+    <rect x="90" y="90" width="20" height="20" rx="0.5" fill="none" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
+
+    <!-- Characters: 開元通寶 (top-bottom-right-left) -->
+    <g fill="#f5d77a" font-family="KaiTi, STKaiti, serif" font-size="22" font-weight="bold" text-anchor="middle">
+      <!-- 開 (top) -->
+      <text x="100" y="62">
+        <tspan fill="#fce588" opacity="0.15" dx="0.5" dy="0.5">開</tspan>
+        <tspan fill="#f5d77a">開</tspan>
+      </text>
+      <!-- 元 (bottom) -->
+      <text x="100" y="152">
+        <tspan fill="#fce588" opacity="0.15" dx="0.5" dy="0.5">元</tspan>
+        <tspan fill="#f5d77a">元</tspan>
+      </text>
+      <!-- 通 (right) -->
+      <text x="156" y="107">
+        <tspan fill="#fce588" opacity="0.15" dx="0.5" dy="0.5">通</tspan>
+        <tspan fill="#f5d77a">通</tspan>
+      </text>
+      <!-- 寶 (left) -->
+      <text x="44" y="107">
+        <tspan fill="#fce588" opacity="0.15" dx="0.5" dy="0.5">寶</tspan>
+        <tspan fill="#f5d77a">寶</tspan>
+      </text>
+    </g>
+
+    <!-- Rim highlight (top edge catch light) -->
+    <path d="M 30 60 A 80 80 0 0 1 170 60" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -53,6 +53,46 @@ function throwThreeCoins() {
   return { coins, sum, yang, moving, value: sum }
 }
 
+// 单枚铜钱组件 — 传统方孔钱 SVG
+function Coin({ coin, index, throwing, lastThrow, revealed }) {
+  const isZi = coin === 3
+  const hasResult = lastThrow && !throwing && revealed
+  const active = hasResult && isZi
+
+  let animClass = 'coin-idle'
+  if (throwing) animClass = `coin-flip-${index}`
+  else if (hasResult) animClass = 'coin-reveal'
+
+  const coinSrc = hasResult
+    ? (isZi ? '/coins/coin-zi.png' : '/coins/coin-bei.png')
+    : throwing
+      ? '/coins/coin-zi.png'
+      : '/coins/coin-bei.png'
+
+  const opacity = throwing ? 0.6 : hasResult ? 1 : 0.5
+
+  return (
+    <div className="flex flex-col items-center gap-1.5" style={{ perspective: '500px' }}>
+      <div className={`relative w-[70px] h-[70px] ${animClass} ${active ? 'coin-glow' : ''}`}>
+        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/30 via-gold/15 to-gold/5 border-2 border-gold/50" />
+        <img
+          src={coinSrc}
+          alt={hasResult ? (isZi ? '字' : '背') : '铜钱'}
+          className="relative w-full h-full rounded-full"
+          style={{ opacity, filter: throwing ? 'blur(1px)' : 'none' }}
+          draggable={false}
+        />
+      </div>
+
+      {hasResult && (
+        <span className={`text-[10px] font-medium ${active ? 'text-gold' : 'text-gray-500'}`}>
+          {isZi ? '字 (3)' : '背 (2)'}
+        </span>
+      )}
+    </div>
+  )
+}
+
 // 动爻标记：老阳 ○，老阴 ×
 function getMarker(value) {
   if (value === 9) return '○'
@@ -85,6 +125,7 @@ export default function DivinationPage({ userData, onUpdate }) {
   const [throwing, setThrowing] = useState(false)
   const [lastThrow, setLastThrow] = useState(null)
   const [saving, setSaving] = useState(false)
+  const [revealed, setRevealed] = useState(false)
 
   const movingCount = useMemo(() => lines.filter(l => l.moving).length, [lines])
 
@@ -129,17 +170,23 @@ export default function DivinationPage({ userData, onUpdate }) {
   async function throwOnce() {
     setThrowing(true)
     setLastThrow(null)
-
-    await new Promise(r => setTimeout(r, 400))
+    setRevealed(false)
 
     const result = throwThreeCoins()
     setLastThrow(result)
 
-    await new Promise(r => setTimeout(r, 300))
+    // Wait for flip animation to finish (~800ms for the longest coin)
+    await new Promise(r => setTimeout(r, 850))
+
+    setThrowing(false)
+    // Staggered reveal
+    await new Promise(r => setTimeout(r, 150))
+    setRevealed(true)
+
+    await new Promise(r => setTimeout(r, 400))
 
     const newLines = [...lines, { ...result, position: currentLine }]
     setLines(newLines)
-    setThrowing(false)
 
     if (currentLine < 5) {
       setCurrentLine(currentLine + 1)
@@ -159,6 +206,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     setLines([])
     setLastThrow(null)
     setThrowing(false)
+    setRevealed(false)
   }
 
   // 渲染单条爻线
@@ -261,27 +309,21 @@ export default function DivinationPage({ userData, onUpdate }) {
             </div>
 
             {/* 当前三枚铜钱 */}
-            <div className="flex justify-center gap-6 mb-8">
+            <div className="flex justify-center gap-5 mb-6">
               {(lastThrow ? lastThrow.coins : [0, 0, 0]).map((coin, i) => (
-                <div
+                <Coin
                   key={i}
-                  className={`w-16 h-16 rounded-full border-2 flex items-center justify-center text-2xl transition-all duration-300 ${
-                    throwing
-                      ? 'border-gold/30 animate-bounce'
-                      : lastThrow
-                        ? coin === 3
-                          ? 'border-gold bg-gold/10 text-gold'
-                          : 'border-gray-600 bg-card text-gray-400'
-                        : 'border-gold/20 bg-card text-gray-600'
-                  }`}
-                >
-                  {lastThrow && !throwing ? (coin === 3 ? '字' : '背') : '…'}
-                </div>
+                  index={i}
+                  coin={coin}
+                  throwing={throwing}
+                  lastThrow={lastThrow}
+                  revealed={revealed}
+                />
               ))}
             </div>
 
-            {lastThrow && !throwing && (
-              <div className="text-center mb-6">
+            {revealed && lastThrow && (
+              <div className="text-center mb-6 animate-[fadeIn_0.3s_ease-out]">
                 <LineTypeBadge value={lastThrow.sum} />
                 <div className="text-xs text-gray-500 mt-1">
                   {lastThrow.sum === 9 && '三字'}

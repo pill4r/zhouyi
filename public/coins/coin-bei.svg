@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="darkBronze" cx="38%" cy="36%" r="55%">
+      <stop offset="0%" stop-color="#8a8a7a"/>
+      <stop offset="25%" stop-color="#5a5a4a"/>
+      <stop offset="55%" stop-color="#444438"/>
+      <stop offset="80%" stop-color="#333328"/>
+      <stop offset="100%" stop-color="#252520"/>
+    </radialGradient>
+    <linearGradient id="sheen2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="35%" stop-color="rgba(255,255,255,0.03)"/>
+      <stop offset="65%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.15)"/>
+    </linearGradient>
+    <linearGradient id="rimGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#777768"/>
+      <stop offset="50%" stop-color="#4a4a3e"/>
+      <stop offset="100%" stop-color="#3a3a30"/>
+    </linearGradient>
+    <filter id="coinShadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="patina2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="textured"/>
+      <feComposite in="textured" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- Coin body -->
+  <g filter="url(#coinShadow2)">
+    <!-- Outer rim -->
+    <circle cx="100" cy="100" r="96" fill="url(#rimGrad2)" stroke="#3a3a30" stroke-width="1"/>
+    <circle cx="100" cy="100" r="93" fill="url(#darkBronze)" stroke="#5a5a4a" stroke-width="0.5"/>
+
+    <!-- Sheen overlay -->
+    <circle cx="100" cy="100" r="93" fill="url(#sheen2)"/>
+
+    <!-- Patina texture -->
+    <circle cx="100" cy="100" r="91" fill="none" filter="url(#patina2)" opacity="0.12"/>
+
+    <!-- Inner decorative rim -->
+    <circle cx="100" cy="100" r="82" fill="none" stroke="#6a6a5a" stroke-width="1.2" opacity="0.35"/>
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#555548" stroke-width="0.4" opacity="0.3"/>
+
+    <!-- Field texture -->
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#5a5a4a" stroke-width="0.3" opacity="0.1"/>
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#5a5a4a" stroke-width="0.3" opacity="0.08"/>
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#5a5a4a" stroke-width="0.3" opacity="0.06"/>
+
+    <!-- Square hole -->
+    <rect x="88" y="88" width="24" height="24" rx="1" fill="#0d0d0d" stroke="#5a5a4a" stroke-width="0.8"/>
+    <rect x="89.5" y="89.5" width="21" height="21" rx="0.5" fill="#111" stroke="#3a3a30" stroke-width="0.4"/>
+    <rect x="90" y="90" width="20" height="20" rx="0.5" fill="none" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
+
+    <!-- Crescent moon mark (common on reverse of ancient coins) -->
+    <path d="M 100 55 A 12 12 0 0 1 100 79 A 9 9 0 0 0 100 55" fill="none" stroke="#6a6a5a" stroke-width="1.2" opacity="0.4"/>
+
+    <!-- Subtle dot marks -->
+    <circle cx="65" cy="100" r="2" fill="none" stroke="#6a6a5a" stroke-width="0.8" opacity="0.25"/>
+    <circle cx="135" cy="100" r="2" fill="none" stroke="#6a6a5a" stroke-width="0.8" opacity="0.25"/>
+
+    <!-- Rim highlight -->
+    <path d="M 30 60 A 80 80 0 0 1 170 60" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
