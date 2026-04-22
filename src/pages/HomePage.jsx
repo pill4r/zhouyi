@@ -25,7 +25,7 @@ export default function HomePage({ userData }) {
         <h1 className="text-xl font-semibold text-gold">周易</h1>
       </header>
 
-      <main className="p-5 pb-8">
+      <main className="p-5 pb-24">
         {/* 今日卦 */}
         {todayHexagram && (
           <div
@@ -70,15 +70,15 @@ export default function HomePage({ userData }) {
         {/* 六十四卦预览 */}
         <section>
           <h2 className="text-sm font-medium text-gray mb-3">六十四卦</h2>
-          <div className="grid grid-cols-8 gap-2">
+          <div className="grid grid-cols-4 gap-3 md:grid-cols-8 md:gap-2">
             {hexagramsData.slice(0, 64).map((hex) => (
               <div
                 key={hex.id}
                 onClick={() => navigate(`/hexagrams/${hex.id}`)}
-                className="bg-card rounded-xl p-2 text-center cursor-pointer hover:bg-gold/20 transition-colors active:scale-95"
+                className="bg-card rounded-xl p-3 md:p-2 text-center cursor-pointer hover:bg-gold/20 transition-colors active:scale-95"
               >
-                <div className="text-xl mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
-                <div className="text-xs text-gold font-medium">{hex.name}</div>
+                <div className="text-2xl md:text-xl mb-1 md:mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
+                <div className="text-sm md:text-xs text-gold font-medium">{hex.name}</div>
               </div>
             ))}
           </div>

@@ -50,25 +50,25 @@ export default function HexagramsPage({ userData, onUpdate }) {
         </div>
       </header>
 
-      <main className="p-5 pb-8">
+      <main className="p-5 pb-24">
         {/* Hexagram Grid */}
-        <div className="grid grid-cols-8 gap-2">
+        <div className="grid grid-cols-4 gap-3 md:grid-cols-8 md:gap-2">
           {filteredHexagrams.map((hex) => {
             const isLearned = learned.includes(hex.id)
             const isMemorized = memorized.includes(hex.id)
             const isFavorite = favorites.includes(hex.id)
-            
+
             return (
               <div
                 key={hex.id}
                 onClick={() => navigate(`/hexagrams/${hex.id}`)}
-                className={`bg-card rounded-xl p-2 text-center cursor-pointer transition-all active:scale-95 ${
+                className={`bg-card rounded-xl p-3 md:p-2 text-center cursor-pointer transition-all active:scale-95 ${
                   isLearned ? 'ring-1 ring-gold/50' : ''
                 } ${isMemorized ? 'bg-gold/20' : ''}`}
               >
-                <div className="text-xl mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
-                <div className="text-xs text-gold font-medium">{hex.name}</div>
-                {isFavorite && <Star className="w-3 h-3 text-gold mx-auto" fill="currentColor" />}
+                <div className="text-2xl md:text-xl mb-1 md:mb-0.5">{hex.trigramAbove}{hex.trigramBelow}</div>
+                <div className="text-sm md:text-xs text-gold font-medium">{hex.name}</div>
+                {isFavorite && <Star className="w-3 h-3 text-gold mx-auto mt-1" fill="currentColor" />}
               </div>
             )
           })}
