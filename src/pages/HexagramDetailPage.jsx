@@ -172,7 +172,7 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
           <div className="space-y-2">
             {hex.lines?.map((line) => (
               <div key={line.position} className="bg-card rounded-xl p-3 flex items-center gap-3">
-                <div className={`text-2xl ${line.isYang ? 'text-gold' : 'text-gray'}`}>
+                <div className={`text-2xl ${line.isYang ? 'text-gold' : 'text-muted'}`}>
                   {line.isYang ? '——' : '— —'}
                 </div>
                 <div>

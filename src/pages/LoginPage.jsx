@@ -52,7 +52,7 @@ export default function LoginPage() {
           <button
             onClick={() => { setMode('login'); setError('') }}
             className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors ${
-              mode === 'login' ? 'bg-gold text-primary' : 'text-gray'
+              mode === 'login' ? 'bg-gold text-primary' : 'text-muted'
             }`}
           >
             登录
@@ -60,7 +60,7 @@ export default function LoginPage() {
           <button
             onClick={() => { setMode('register'); setError('') }}
             className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors ${
-              mode === 'register' ? 'bg-gold text-primary' : 'text-gray'
+              mode === 'register' ? 'bg-gold text-primary' : 'text-muted'
             }`}
           >
             注册

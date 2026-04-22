@@ -166,7 +166,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     const marker = value ? getMarker(value) : ''
     const barColor = moving
       ? 'bg-gold-light shadow-[0_0_8px_rgba(245,215,122,0.5)]'
-      : yang ? 'bg-gold' : 'bg-gray-400'
+      : yang ? 'bg-gold' : 'bg-muted'
     return (
       <div className="relative flex items-center w-28 h-6">
         {yang ? (
@@ -192,7 +192,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       <div className="flex flex-col items-center gap-2">
         {[...linesData].reverse().map((l, ri) => {
           const yang = l.yang
-          const barColor = yang ? 'bg-gold' : 'bg-gray-400'
+          const barColor = yang ? 'bg-gold' : 'bg-muted'
           return (
             <div key={ri} className="flex items-center w-24 h-5">
               {yang ? (
@@ -332,7 +332,7 @@ export default function DivinationPage({ userData, onUpdate }) {
                       const marker = getMarker(l.value)
                       const barColor = l.moving
                         ? 'bg-gold-light shadow-[0_0_8px_rgba(245,215,122,0.5)]'
-                        : l.yang ? 'bg-gold' : 'bg-gray-400'
+                        : l.yang ? 'bg-gold' : 'bg-muted'
                       return (
                         <div key={i} className="relative flex items-center w-20 h-5">
                           {l.yang ? (

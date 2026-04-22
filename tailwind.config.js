@@ -13,7 +13,7 @@ export default {
         gold: '#D4AF37',
         'gold-light': '#F5D77A',
         text: '#FAFAFA',
-        gray: '#9E9E9E',
+        muted: '#9E9E9E',
       },
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
