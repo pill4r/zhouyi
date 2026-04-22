@@ -2,7 +2,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import hexagramsData from '../data/hexagrams.json'
 import { API } from '../api/client'
-import { RefreshCw, ChevronRight, Sparkles } from 'lucide-react'
+import { RefreshCw, ChevronRight, Sparkles, ArrowRight } from 'lucide-react'
 
 // 三硬币法：字=3 背=2，三币之和
 // 6 = 老阴(动) 7 = 少阳 8 = 少阴 9 = 老阳(动)
@@ -51,6 +51,30 @@ function throwThreeCoins() {
   else if (sum === 7) { yang = true; moving = false }  // 少阳
   else { yang = false; moving = true }                 // 老阴 → 动 (sum === 6)
   return { coins, sum, yang, moving, value: sum }
+}
+
+// 动爻标记：老阳 ○，老阴 ×
+function getMarker(value) {
+  if (value === 9) return '○'
+  if (value === 6) return '×'
+  return ''
+}
+
+// 爻类型标签
+function LineTypeBadge({ value }) {
+  const config = {
+    9: { label: '老阳', sub: '变阴', cls: 'bg-amber-500/20 text-amber-300 border-amber-500/30' },
+    7: { label: '少阳', sub: '', cls: 'bg-sky-500/15 text-sky-300 border-sky-500/25' },
+    8: { label: '少阴', sub: '', cls: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/25' },
+    6: { label: '老阴', sub: '变阳', cls: 'bg-amber-500/20 text-amber-300 border-amber-500/30' },
+  }
+  const c = config[value]
+  return (
+    <span className={`inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-full border ${c.cls}`}>
+      <span className="font-medium">{c.label}</span>
+      {c.sub && <span className="text-[10px] opacity-70">→ {c.sub}</span>}
+    </span>
+  )
 }
 
 export default function DivinationPage({ userData, onUpdate }) {
@@ -120,7 +144,6 @@ export default function DivinationPage({ userData, onUpdate }) {
     if (currentLine < 5) {
       setCurrentLine(currentLine + 1)
     } else {
-      // 第六爻完成，计算结果
       const orig = findHexagram(newLines)
       const changed = movingCount > 0 || newLines.some(l => l.moving)
         ? findHexagram(getChangedLines(newLines))
@@ -138,46 +161,52 @@ export default function DivinationPage({ userData, onUpdate }) {
     setThrowing(false)
   }
 
-  // 渲染爻线 — CSS 画线代替文字字符
-  function renderLine(yang, moving) {
+  // 渲染单条爻线
+  function renderLine(yang, moving, value) {
+    const marker = value ? getMarker(value) : ''
     const barColor = moving
-      ? 'bg-gold-light shadow-[0_0_6px_rgba(245,215,122,0.5)]'
-      : yang ? 'bg-gold' : 'bg-gray-500'
+      ? 'bg-gold-light shadow-[0_0_8px_rgba(245,215,122,0.5)]'
+      : yang ? 'bg-gold' : 'bg-gray-400'
     return (
-      <div className="relative flex items-center w-28 h-5">
+      <div className="relative flex items-center w-28 h-6">
         {yang ? (
           <div className={`w-full h-[5px] rounded-full ${barColor} ${moving ? 'animate-pulse' : ''}`} />
         ) : (
           <div className={`w-full flex justify-between ${moving ? 'animate-pulse' : ''}`}>
-            <div className={`w-[48%] h-[5px] rounded-full ${barColor}`} />
-            <div className={`w-[48%] h-[5px] rounded-full ${barColor}`} />
+            <div className={`w-[45%] h-[5px] rounded-full ${barColor}`} />
+            <div className={`w-[45%] h-[5px] rounded-full ${barColor}`} />
           </div>
         )}
-        {moving && (
-          <span className="absolute -right-5 top-1/2 -translate-y-1/2 text-[10px] text-gold-light leading-none">○</span>
+        {marker && (
+          <span className="absolute -right-5 top-1/2 -translate-y-1/2 text-xs text-gold-light font-bold leading-none">
+            {marker}
+          </span>
         )}
       </div>
     )
   }
 
-  // 爻类型标签
-  function LineTypeBadge({ value }) {
-    const styles = {
-      9: 'bg-gold-light/15 text-gold-light border-gold-light/30',
-      8: 'bg-gray-800 text-gray-400 border-gray-700',
-      7: 'bg-gray-800 text-gray-400 border-gray-700',
-      6: 'bg-gold-light/15 text-gold-light border-gold-light/30',
-    }
-    const labels = {
-      9: '老阳 → 阴',
-      8: '少阴',
-      7: '少阳',
-      6: '老阴 → 阳',
-    }
+  // 渲染完整卦象图（无标记版）
+  function renderHexagramDiagram(linesData) {
     return (
-      <span className={`text-[11px] px-2 py-0.5 rounded-full border ${styles[value]}`}>
-        {labels[value]}
-      </span>
+      <div className="flex flex-col items-center gap-2">
+        {[...linesData].reverse().map((l, ri) => {
+          const yang = l.yang
+          const barColor = yang ? 'bg-gold' : 'bg-gray-400'
+          return (
+            <div key={ri} className="flex items-center w-24 h-5">
+              {yang ? (
+                <div className={`w-full h-[5px] rounded-full ${barColor}`} />
+              ) : (
+                <div className="w-full flex justify-between">
+                  <div className={`w-[44%] h-[5px] rounded-full ${barColor}`} />
+                  <div className={`w-[44%] h-[5px] rounded-full ${barColor}`} />
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
     )
   }
 
@@ -269,7 +298,7 @@ export default function DivinationPage({ userData, onUpdate }) {
                 {lines.map((l, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
-                    {renderLine(l.yang, l.moving)}
+                    {renderLine(l.yang, l.moving, l.value)}
                   </div>
                 ))}
               </div>
@@ -288,30 +317,84 @@ export default function DivinationPage({ userData, onUpdate }) {
         {/* 结果阶段 */}
         {step === 2 && originalHex && (
           <div className="w-full max-w-sm mt-4">
-            {/* 本卦 */}
+
+            {/* 卦象对比图：本卦 → 变卦 */}
             <div className="bg-card rounded-2xl p-5 mb-4">
-              <div className="text-xs text-gray mb-2">本卦</div>
-              <div
-                className="flex items-center gap-4 cursor-pointer active:scale-98 transition-transform"
-                onClick={() => navigate(`/hexagrams/${originalHex.id}`)}
-              >
-                <div className="text-5xl">{originalHex.trigramAbove}{originalHex.trigramBelow}</div>
-                <div className="flex-1">
-                  <div className="text-xl font-medium text-gold">{originalHex.name}</div>
-                  <div className="text-xs text-gray mt-1 line-clamp-2">{originalHex.judgment}</div>
+              <div className="flex items-start justify-between">
+                {/* 本卦 */}
+                <div
+                  className="flex-1 flex flex-col items-center cursor-pointer active:scale-98 transition-transform"
+                  onClick={() => navigate(`/hexagrams/${originalHex.id}`)}
+                >
+                  <div className="text-xs text-gray mb-3">本卦</div>
+                  <div className="flex flex-col-reverse items-center gap-1.5 mb-3">
+                    {lines.map((l, i) => {
+                      const marker = getMarker(l.value)
+                      const barColor = l.moving
+                        ? 'bg-gold-light shadow-[0_0_8px_rgba(245,215,122,0.5)]'
+                        : l.yang ? 'bg-gold' : 'bg-gray-400'
+                      return (
+                        <div key={i} className="relative flex items-center w-20 h-5">
+                          {l.yang ? (
+                            <div className={`w-full h-[4px] rounded-full ${barColor} ${l.moving ? 'animate-pulse' : ''}`} />
+                          ) : (
+                            <div className={`w-full flex justify-between ${l.moving ? 'animate-pulse' : ''}`}>
+                              <div className={`w-[44%] h-[4px] rounded-full ${barColor}`} />
+                              <div className={`w-[44%] h-[4px] rounded-full ${barColor}`} />
+                            </div>
+                          )}
+                          {marker && (
+                            <span className="absolute -right-4 top-1/2 -translate-y-1/2 text-[10px] text-gold-light font-bold leading-none">
+                              {marker}
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <div className="text-2xl mb-0.5">{originalHex.trigramAbove}{originalHex.trigramBelow}</div>
+                  <div className="text-lg font-medium text-gold">{originalHex.name}</div>
+                  <div className="text-[10px] text-gray-500 mt-1 line-clamp-1 px-2">{originalHex.judgment}</div>
                 </div>
-                <ChevronRight className="w-4 h-4 text-gray-500" />
+
+                {/* 箭头 */}
+                {changedHex && (
+                  <div className="flex items-center self-center px-1 pt-6">
+                    <ArrowRight className="w-5 h-5 text-gold/40" />
+                  </div>
+                )}
+
+                {/* 变卦 */}
+                {changedHex && changedLines && (
+                  <div
+                    className="flex-1 flex flex-col items-center cursor-pointer active:scale-98 transition-transform"
+                    onClick={() => navigate(`/hexagrams/${changedHex.id}`)}
+                  >
+                    <div className="text-xs text-gray mb-3">变卦</div>
+                    {renderHexagramDiagram(changedLines)}
+                    <div className="text-2xl mb-0.5 mt-3">{changedHex.trigramAbove}{changedHex.trigramBelow}</div>
+                    <div className="text-lg font-medium text-gold">{changedHex.name}</div>
+                    <div className="text-[10px] text-gray-500 mt-1 line-clamp-1 px-2">{changedHex.judgment}</div>
+                  </div>
+                )}
               </div>
+
+              {/* 无动爻提示 */}
+              {!lines.some(l => l.moving) && (
+                <div className="text-center text-sm text-gray mt-4 pt-3 border-t border-gold/10">
+                  六爻皆静，以本卦卦辞断之。
+                </div>
+              )}
             </div>
 
-            {/* 六爻 */}
+            {/* 六爻详情 */}
             <div className="bg-card rounded-2xl p-4 mb-4">
               <div className="text-xs text-gray mb-3">六爻（从下至上）</div>
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {lines.map((l, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <span className="text-xs text-gray w-10">{getLineName(i, l.yang)}</span>
-                    {renderLine(l.yang, l.moving)}
+                  <div key={i} className="flex items-center gap-2">
+                    <span className="text-xs text-gray w-8 flex-shrink-0">{getLineName(i, l.yang)}</span>
+                    {renderLine(l.yang, l.moving, l.value)}
                     <span className="flex-1 text-right">
                       <LineTypeBadge value={l.value} />
                     </span>
@@ -338,31 +421,6 @@ export default function DivinationPage({ userData, onUpdate }) {
                     ) : null
                   )}
                 </div>
-              </div>
-            )}
-
-            {/* 变卦 */}
-            {changedHex && (
-              <div className="bg-card rounded-2xl p-5 mb-4">
-                <div className="text-xs text-gray mb-2">变卦</div>
-                <div
-                  className="flex items-center gap-4 cursor-pointer active:scale-98 transition-transform"
-                  onClick={() => navigate(`/hexagrams/${changedHex.id}`)}
-                >
-                  <div className="text-5xl">{changedHex.trigramAbove}{changedHex.trigramBelow}</div>
-                  <div className="flex-1">
-                    <div className="text-xl font-medium text-gold">{changedHex.name}</div>
-                    <div className="text-xs text-gray mt-1 line-clamp-2">{changedHex.judgment}</div>
-                  </div>
-                  <ChevronRight className="w-4 h-4 text-gray-500" />
-                </div>
-              </div>
-            )}
-
-            {/* 无动爻提示 */}
-            {!lines.some(l => l.moving) && (
-              <div className="bg-card rounded-2xl p-4 mb-4 text-center">
-                <div className="text-sm text-gray">六爻皆静，以本卦卦辞断之。</div>
               </div>
             )}
 
