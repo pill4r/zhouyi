@@ -252,32 +252,31 @@ export default function DivinationPage({ userData, onUpdate }) {
     )
   }
 
-  // 解卦步骤组件
+  // 解卦维度组件
   function DivinationGuide({ lines, originalHex, changedHex }) {
     const movingCount = lines.filter(l => l.moving).length
     const staticIndices = lines.map((l, i) => !l.moving ? i : -1).filter(i => i !== -1)
 
-    let stepTitle = ''
-    let stepDesc = ''
-    let referenceName = ''
-    let referenceText = ''
-    let trendText = ''
+    // --- 现状：本卦解读 ---
+    const presentTitle = `${originalHex.name} · ${originalHex.trigramAbove}${originalHex.trigramBelow}`
+    const presentText = originalHex.judgment
+    const presentMeaning = originalHex.meaning
+
+    // --- 契机：动爻解读（朱熹法则） ---
+    let opportunityTitle = ''
+    let opportunityText = ''
+    let opportunityRule = ''
 
     if (movingCount === 0) {
-      stepTitle = '六爻皆静'
-      stepDesc = '六个爻都没有动，代表事情相对稳定，以本卦卦辞断之。'
-      referenceName = `${originalHex.name} · 卦辞`
-      referenceText = originalHex.judgment
-      trendText = '当前状态稳定，暂无明显变化趋势。'
+      opportunityTitle = '六爻皆静'
+      opportunityText = originalHex.judgment
+      opportunityRule = '无动爻，事情相对稳定，以本卦卦辞为判。'
     } else if (movingCount === 1) {
       const idx = lines.findIndex(l => l.moving)
-      stepTitle = '一爻动'
-      stepDesc = `只有一个爻动（${originalHex.lines[idx]?.name}），以本卦此爻爻辞断之。这是最简单、最明确的占法。`
-      referenceName = `${originalHex.name} · ${originalHex.lines[idx]?.name}`
-      referenceText = originalHex.lines[idx]?.judgement
-      trendText = changedHex
-        ? `动则生变，趋势指向「${changedHex.name}」。`
-        : ''
+      const line = originalHex.lines[idx]
+      opportunityTitle = `${line?.name} · 动`
+      opportunityText = line?.judgement
+      opportunityRule = `一爻动，取${line?.name}爻辞断之。此为变化的突破口。`
     } else if (movingCount === 2) {
       const movingIndices = lines.map((l, i) => l.moving ? i : -1).filter(i => i !== -1)
       const l1 = lines[movingIndices[0]]
@@ -285,121 +284,125 @@ export default function DivinationPage({ userData, onUpdate }) {
       let targetIdx
       if (l1.yang !== l2.yang) {
         targetIdx = l1.yang ? movingIndices[1] : movingIndices[0]
-        const targetLine = originalHex.lines[targetIdx]
-        stepTitle = '两爻动（一阴一阳）'
-        stepDesc = `两个爻动，一阴一阳，取阴爻（${targetLine?.name}）爻辞断之。`
-        referenceName = `${originalHex.name} · ${targetLine?.name}`
+        opportunityRule = `两爻动，一阴一阳，取阴爻爻辞。`
       } else {
         targetIdx = Math.max(...movingIndices)
-        const targetLine = originalHex.lines[targetIdx]
-        stepTitle = `两爻动（同为${l1.yang ? '阳' : '阴'}）`
-        stepDesc = `两个爻动，同为${l1.yang ? '阳' : '阴'}，取上爻（${targetLine?.name}）爻辞断之。`
-        referenceName = `${originalHex.name} · ${targetLine?.name}`
+        opportunityRule = `两爻动，同为${l1.yang ? '阳' : '阴'}，取上爻爻辞。`
       }
-      referenceText = originalHex.lines[targetIdx]?.judgement
-      trendText = changedHex
-        ? `两爻皆变，趋势指向「${changedHex.name}」。`
-        : ''
+      const line = originalHex.lines[targetIdx]
+      opportunityTitle = `${line?.name} · 动`
+      opportunityText = line?.judgement
     } else if (movingCount === 3) {
-      stepTitle = '三爻动'
-      stepDesc = '三个爻动，变化复杂，以本卦卦辞为主，变卦为辅参看。'
-      referenceName = `${originalHex.name} · 卦辞`
-      referenceText = originalHex.judgment
-      trendText = changedHex
-        ? `三爻皆变，趋势指向「${changedHex.name}」，可参看变卦卦辞。`
-        : ''
+      opportunityTitle = `${originalHex.name} · 三爻动`
+      opportunityText = originalHex.judgment
+      opportunityRule = '三爻动，变化复杂，以本卦卦辞为主，变卦为辅。'
     } else if (movingCount === 4) {
       const targetIdx = staticIndices.length > 0 ? Math.min(...staticIndices) : 0
-      const targetLine = changedHex?.lines[targetIdx]
-      stepTitle = '四爻动'
-      stepDesc = `四个爻动，以变卦静爻辞断之，取下爻（${targetLine?.name}）。`
-      referenceName = `${changedHex?.name} · ${targetLine?.name}`
-      referenceText = changedHex?.lines[targetIdx]?.judgement
-      trendText = `大势已变，以变卦「${changedHex?.name}」为主。`
+      const line = changedHex?.lines[targetIdx]
+      opportunityTitle = `${line?.name} · 静`
+      opportunityText = line?.judgement
+      opportunityRule = `四爻动，以变卦静爻辞断之，取下爻。`
     } else if (movingCount === 5) {
       const targetIdx = staticIndices[0] || 0
-      const targetLine = changedHex?.lines[targetIdx]
-      stepTitle = '五爻动'
-      stepDesc = `五个爻动，以变卦唯一静爻辞断之（${targetLine?.name}）。`
-      referenceName = `${changedHex?.name} · ${targetLine?.name}`
-      referenceText = changedHex?.lines[targetIdx]?.judgement
-      trendText = `大势已变，以变卦「${changedHex?.name}」为主。`
+      const line = changedHex?.lines[targetIdx]
+      opportunityTitle = `${line?.name} · 静`
+      opportunityText = line?.judgement
+      opportunityRule = `五爻动，以变卦唯一静爻辞断之。`
     } else {
       if (originalHex.id === 1) {
-        stepTitle = '六爻皆动（乾卦）'
-        stepDesc = '乾卦六爻皆动，以"用九"断之。群龙无首，大吉。'
-        referenceName = '乾 · 用九'
-        referenceText = '用九：見群龍无首，吉。'
+        opportunityTitle = '用九 · 六爻皆动'
+        opportunityText = '用九：見群龍无首，吉。'
+        opportunityRule = '乾卦六爻皆动，以"用九"断之。'
       } else if (originalHex.id === 2) {
-        stepTitle = '六爻皆动（坤卦）'
-        stepDesc = '坤卦六爻皆动，以"用六"断之。永远守正则有利。'
-        referenceName = '坤 · 用六'
-        referenceText = '用六：利永貞。'
+        opportunityTitle = '用六 · 六爻皆动'
+        opportunityText = '用六：利永貞。'
+        opportunityRule = '坤卦六爻皆动，以"用六"断之。'
       } else {
-        stepTitle = '六爻皆动'
-        stepDesc = '六爻皆动，物极必反，以变卦卦辞断之。'
-        referenceName = `${changedHex?.name} · 卦辞`
-        referenceText = changedHex?.judgment
+        opportunityTitle = `${changedHex?.name} · 六爻皆动`
+        opportunityText = changedHex?.judgment
+        opportunityRule = '六爻皆动，物极必反，以变卦卦辞断之。'
       }
-      trendText = `彻底转变，以变卦「${changedHex?.name}」为主。`
+    }
+
+    // --- 预测：变卦解读 ---
+    let futureTitle = ''
+    let futureText = ''
+    let futureRule = ''
+
+    if (changedHex) {
+      futureTitle = `${changedHex.name} · ${changedHex.trigramAbove}${changedHex.trigramBelow}`
+      futureText = changedHex.judgment
+      futureRule = `动爻皆变，事情趋势指向「${changedHex.name}」。变卦代表未来的发展方向。`
+    } else {
+      futureTitle = `${originalHex.name} · 无变`
+      futureText = '六爻皆静，事情按现有轨迹发展。'
+      futureRule = '无动爻，无变化，事态稳定。'
     }
 
     return (
-      <div className="bg-card rounded-2xl p-5 mb-4">
-        <div className="flex items-center gap-2 mb-4">
-          <BookOpen className="w-4 h-4 text-gold" />
-          <div className="text-sm font-medium text-gold">解卦步骤</div>
-        </div>
-
-        {/* 步骤1：本卦 */}
-        <div className="flex gap-3 mb-4">
-          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gold/20 text-gold text-xs flex items-center justify-center font-medium">1</div>
-          <div>
-            <div className="text-sm text-text font-medium mb-0.5">确定本卦</div>
-            <div className="text-xs text-gray">六爻成卦，本卦为「{originalHex.name}」。{originalHex.judgment}</div>
-          </div>
-        </div>
-
-        {/* 步骤2：动爻分析 */}
-        <div className="flex gap-3 mb-4">
-          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gold/20 text-gold text-xs flex items-center justify-center font-medium">2</div>
-          <div className="flex-1">
-            <div className="text-sm text-text font-medium mb-0.5">分析动爻 · {stepTitle}</div>
-            <div className="text-xs text-gray">{stepDesc}</div>
-            {movingCount > 0 && (
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {lines.map((l, i) => l.moving ? (
-                  <span key={i} className="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/20">
-                    {originalHex.lines[i]?.name} {l.value === 9 ? '○' : '×'}
-                  </span>
-                ) : null)}
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* 步骤3：断卦参考 */}
-        <div className="flex gap-3 mb-4">
-          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gold/20 text-gold text-xs flex items-center justify-center font-medium">3</div>
-          <div className="flex-1">
-            <div className="text-sm text-text font-medium mb-1">断卦参考</div>
-            <div className="bg-surface rounded-lg p-3 border border-gold/10">
-              <div className="text-xs text-gold mb-1">{referenceName}</div>
-              <div className="text-sm text-text/90 leading-relaxed">{referenceText}</div>
+      <div className="space-y-4 mb-4">
+        {/* 现状：本卦 */}
+        <div className="bg-card rounded-2xl p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-8 h-8 rounded-full bg-sky-500/20 flex items-center justify-center">
+              <span className="text-sky-300 text-xs font-bold">现</span>
             </div>
-          </div>
-        </div>
-
-        {/* 步骤4：变卦趋势 */}
-        {changedHex && (
-          <div className="flex gap-3">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gold/20 text-gold text-xs flex items-center justify-center font-medium">4</div>
             <div>
-              <div className="text-sm text-text font-medium mb-0.5">变卦趋势</div>
-              <div className="text-xs text-gray">{trendText}</div>
+              <div className="text-sm font-medium text-text">现状</div>
+              <div className="text-[10px] text-gray">事情目前的状态</div>
             </div>
           </div>
-        )}
+          <div className="bg-surface rounded-lg p-3 border border-gold/10 mb-2">
+            <div className="text-xs text-gold mb-1">{presentTitle}</div>
+            <div className="text-sm text-text/90 leading-relaxed">{presentText}</div>
+          </div>
+          <div className="text-xs text-gray">{presentMeaning}</div>
+        </div>
+
+        {/* 契机：动爻 */}
+        <div className="bg-card rounded-2xl p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+              <span className="text-amber-300 text-xs font-bold">机</span>
+            </div>
+            <div>
+              <div className="text-sm font-medium text-text">契机</div>
+              <div className="text-[10px] text-gray">变化的触发点与行动指引</div>
+            </div>
+          </div>
+          <div className="bg-surface rounded-lg p-3 border border-amber-500/20 mb-2">
+            <div className="text-xs text-amber-300 mb-1">{opportunityTitle}</div>
+            <div className="text-sm text-text/90 leading-relaxed">{opportunityText}</div>
+          </div>
+          <div className="text-xs text-gray">{opportunityRule}</div>
+          {movingCount > 0 && (
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {lines.map((l, i) => l.moving ? (
+                <span key={i} className="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/20">
+                  {originalHex.lines[i]?.name} {l.value === 9 ? '○' : '×'}
+                </span>
+              ) : null)}
+            </div>
+          )}
+        </div>
+
+        {/* 预测：变卦 */}
+        <div className="bg-card rounded-2xl p-5">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">
+              <span className="text-emerald-300 text-xs font-bold">未</span>
+            </div>
+            <div>
+              <div className="text-sm font-medium text-text">预测</div>
+              <div className="text-[10px] text-gray">事情的发展趋势</div>
+            </div>
+          </div>
+          <div className="bg-surface rounded-lg p-3 border border-emerald-500/20 mb-2">
+            <div className="text-xs text-emerald-300 mb-1">{futureTitle}</div>
+            <div className="text-sm text-text/90 leading-relaxed">{futureText}</div>
+          </div>
+          <div className="text-xs text-gray">{futureRule}</div>
+        </div>
       </div>
     )
   }
