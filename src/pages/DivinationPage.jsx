@@ -54,6 +54,8 @@ function throwThreeCoins() {
 }
 
 // 单枚铜钱组件 — 传统方孔钱 SVG
+import AncientCoin from '../components/AncientCoin'
+
 function Coin({ coin, index, throwing, lastThrow, revealed }) {
   const isZi = coin === 3
   const hasResult = lastThrow && !throwing && revealed
@@ -63,26 +65,18 @@ function Coin({ coin, index, throwing, lastThrow, revealed }) {
   if (throwing) animClass = `coin-flip-${index}`
   else if (hasResult) animClass = 'coin-reveal'
 
-  const coinSrc = hasResult
-    ? (isZi ? '/coins/coin-zi.png' : '/coins/coin-bei.png')
-    : throwing
-      ? '/coins/coin-zi.png'
-      : '/coins/coin-bei.png'
-
-  const opacity = throwing ? 0.6 : hasResult ? 1 : 0.5
+  let face = 'unknown'
+  if (hasResult || throwing) {
+    face = isZi ? 'word' : 'back'
+  }
 
   return (
     <div className="flex flex-col items-center gap-1.5" style={{ perspective: '500px' }}>
-      <div className={`relative w-[70px] h-[70px] ${animClass} ${active ? 'coin-glow' : ''}`}>
-        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/30 via-gold/15 to-gold/5 border-2 border-gold/50" />
-        <img
-          src={coinSrc}
-          alt={hasResult ? (isZi ? '字' : '背') : '铜钱'}
-          className="relative w-full h-full rounded-full"
-          style={{ opacity, filter: throwing ? 'blur(1px)' : 'none' }}
-          draggable={false}
-        />
-      </div>
+      <AncientCoin
+        face={face}
+        animClass={animClass}
+        active={active}
+      />
 
       {hasResult && (
         <span className={`text-[10px] font-medium ${active ? 'text-gold' : 'text-gray-500'}`}>
