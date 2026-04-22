@@ -266,6 +266,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     let opportunityTitle = ''
     let opportunityText = ''
     let opportunityRule = ''
+    let opportunityLineName = ''
 
     if (movingCount === 0) {
       opportunityTitle = '六爻皆静'
@@ -277,6 +278,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityTitle = `${line?.name} · 动`
       opportunityText = line?.judgement
       opportunityRule = `一爻动，取${line?.name}爻辞断之。此为变化的突破口。`
+      opportunityLineName = line?.name
     } else if (movingCount === 2) {
       const movingIndices = lines.map((l, i) => l.moving ? i : -1).filter(i => i !== -1)
       const l1 = lines[movingIndices[0]]
@@ -292,6 +294,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       const line = originalHex.lines[targetIdx]
       opportunityTitle = `${line?.name} · 动`
       opportunityText = line?.judgement
+      opportunityLineName = line?.name
     } else if (movingCount === 3) {
       opportunityTitle = `${originalHex.name} · 三爻动`
       opportunityText = originalHex.judgment
@@ -302,12 +305,14 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityTitle = `${line?.name} · 静`
       opportunityText = line?.judgement
       opportunityRule = `四爻动，以变卦静爻辞断之，取下爻。`
+      opportunityLineName = line?.name
     } else if (movingCount === 5) {
       const targetIdx = staticIndices[0] || 0
       const line = changedHex?.lines[targetIdx]
       opportunityTitle = `${line?.name} · 静`
       opportunityText = line?.judgement
       opportunityRule = `五爻动，以变卦唯一静爻辞断之。`
+      opportunityLineName = line?.name
     } else {
       if (originalHex.id === 1) {
         opportunityTitle = '用九 · 六爻皆动'
@@ -323,6 +328,37 @@ export default function DivinationPage({ userData, onUpdate }) {
         opportunityRule = '六爻皆动，物极必反，以变卦卦辞断之。'
       }
     }
+
+    // 根据爻名解析出位置和阴阳，生成通用爻位含义
+    function getLinePositionMeaning(lineName) {
+      if (!lineName) return ''
+      const pos = lineName.slice(0, 1) // 初、二、三、四、五、上
+      const isYang = lineName.includes('九')
+
+      const meanings = {
+        '初': isYang
+          ? '初九：事情刚刚开始，潜力待发，宜守不宜攻，需耐心等待时机。'
+          : '初六：事情初具雏形，根基未稳，宜静观其变，切勿轻举妄动。',
+        '二': isYang
+          ? '九二：才华初显，小有成就，得中正之位，可寻求贵人提携。'
+          : '六二：柔顺得中，守正持中，顺遂平稳，以柔克刚为上。',
+        '三': isYang
+          ? '九三：事情到了关键转折，刚强过盛，居下卦之极，需谨防过劳。'
+          : '六三：处境艰险，柔弱失正，居下卦之极，行事宜小心谨慎。',
+        '四': isYang
+          ? '九四：刚强近君，上下两难，需审时度势，进退均需谨慎。'
+          : '六四：柔顺得正，近君之位，谨慎行事可保平安。',
+        '五': isYang
+          ? '九五：刚强中正，至尊之位（君位），大吉大利，事业登峰造极。'
+          : '六五：柔弱居尊，以柔克刚，可成大事，但需依赖贤能。',
+        '上': isYang
+          ? '上九：刚强至极，盛极而衰，需知进退，免于走向穷途。'
+          : '上六：柔弱至极，穷途末路，当知收敛，以免过独子空。',
+      }
+      return meanings[pos] || ''
+    }
+
+    const opportunityMeaning = getLinePositionMeaning(opportunityLineName)
 
     // --- 预测：变卦解读 ---
     let futureTitle = ''
@@ -372,7 +408,12 @@ export default function DivinationPage({ userData, onUpdate }) {
           </div>
           <div className="bg-surface rounded-lg p-3 border border-amber-500/20 mb-2">
             <div className="text-xs text-amber-300 mb-1">{opportunityTitle}</div>
-            <div className="text-sm text-text/90 leading-relaxed">{opportunityText}</div>
+            <div className="text-sm text-text/90 leading-relaxed mb-2">{opportunityText}</div>
+            {opportunityMeaning && (
+              <div className="text-xs text-text/60 leading-relaxed border-t border-amber-500/10 pt-2">
+                {opportunityMeaning}
+              </div>
+            )}
           </div>
           <div className="text-xs text-gray">{opportunityRule}</div>
           {movingCount > 0 && (
@@ -399,7 +440,12 @@ export default function DivinationPage({ userData, onUpdate }) {
           </div>
           <div className="bg-surface rounded-lg p-3 border border-emerald-500/20 mb-2">
             <div className="text-xs text-emerald-300 mb-1">{futureTitle}</div>
-            <div className="text-sm text-text/90 leading-relaxed">{futureText}</div>
+            <div className="text-sm text-text/90 leading-relaxed mb-2">{futureText}</div>
+            {changedHex?.meaning && (
+              <div className="text-xs text-text/60 leading-relaxed border-t border-emerald-500/10 pt-2">
+                {changedHex.meaning}
+              </div>
+            )}
           </div>
           <div className="text-xs text-gray">{futureRule}</div>
         </div>
