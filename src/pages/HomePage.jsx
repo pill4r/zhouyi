@@ -58,7 +58,11 @@ export default function HomePage({ userData }) {
           <h2 className="text-sm font-medium text-gray mb-3">八卦</h2>
           <div className="flex gap-3 overflow-x-auto pb-3 -mx-5 px-5">
             {bagua.map((bag) => (
-              <div key={bag.id} className="flex-shrink-0 bg-card rounded-xl p-3 text-center min-w-[70px]">
+              <div
+                key={bag.id}
+                onClick={() => navigate(`/library?section=bagua-detail&bagua=${bag.id}`)}
+                className="flex-shrink-0 bg-card rounded-xl p-3 text-center min-w-[70px] cursor-pointer hover:bg-gold/20 active:scale-95 transition-transform"
+              >
                 <div className="text-2xl mb-1">{bag.symbol}</div>
                 <div className="text-sm font-medium">{bag.name}</div>
                 <div className="text-xs text-gray">{bag.meaning}</div>

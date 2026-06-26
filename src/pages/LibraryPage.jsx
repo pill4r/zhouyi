@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { bagua } from '../data/bagua'
 import { librarySections } from '../data/libraryArticles'
 import { ChevronDown, ChevronRight, MapPin, Calendar, User as UserIcon, Heart, Palette } from 'lucide-react'
@@ -6,9 +7,15 @@ import { ChevronDown, ChevronRight, MapPin, Calendar, User as UserIcon, Heart, P
 const positionNames = ['一', '二', '三', '四', '五', '六', '七', '八']
 
 export default function LibraryPage() {
-  const [activeSection, setActiveSection] = useState('basics')
+  const [searchParams] = useSearchParams()
+  const initialSection = searchParams.get('section') || 'basics'
+  const initialBagua = searchParams.get('bagua')
+
+  const [activeSection, setActiveSection] = useState(initialSection)
   const [expandedArticle, setExpandedArticle] = useState(null)
-  const [expandedBagua, setExpandedBagua] = useState(null)
+  const [expandedBagua, setExpandedBagua] = useState(
+    initialBagua ? Number(initialBagua) : null
+  )
 
   const toggleArticle = (id) => {
     setExpandedArticle(expandedArticle === id ? null : id)

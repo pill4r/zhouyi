@@ -267,6 +267,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     let opportunityText = ''
     let opportunityRule = ''
     let opportunityLineName = ''
+    let opportunityLinePlain = ''
 
     if (movingCount === 0) {
       opportunityTitle = '六爻皆静'
@@ -279,6 +280,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityText = line?.judgement
       opportunityRule = `一爻动，取${line?.name}爻辞断之。此为变化的突破口。`
       opportunityLineName = line?.name
+      opportunityLinePlain = line?.judgementPlain || ''
     } else if (movingCount === 2) {
       const movingIndices = lines.map((l, i) => l.moving ? i : -1).filter(i => i !== -1)
       const l1 = lines[movingIndices[0]]
@@ -295,6 +297,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityTitle = `${line?.name} · 动`
       opportunityText = line?.judgement
       opportunityLineName = line?.name
+      opportunityLinePlain = line?.judgementPlain || ''
     } else if (movingCount === 3) {
       opportunityTitle = `${originalHex.name} · 三爻动`
       opportunityText = originalHex.judgment
@@ -306,6 +309,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityText = line?.judgement
       opportunityRule = `四爻动，以变卦静爻辞断之，取下爻。`
       opportunityLineName = line?.name
+      opportunityLinePlain = line?.judgementPlain || ''
     } else if (movingCount === 5) {
       const targetIdx = staticIndices[0] || 0
       const line = changedHex?.lines[targetIdx]
@@ -313,6 +317,7 @@ export default function DivinationPage({ userData, onUpdate }) {
       opportunityText = line?.judgement
       opportunityRule = `五爻动，以变卦唯一静爻辞断之。`
       opportunityLineName = line?.name
+      opportunityLinePlain = line?.judgementPlain || ''
     } else {
       if (originalHex.id === 1) {
         opportunityTitle = '用九 · 六爻皆动'
@@ -409,6 +414,11 @@ export default function DivinationPage({ userData, onUpdate }) {
           <div className="bg-surface rounded-lg p-3 border border-amber-500/20 mb-2">
             <div className="text-xs text-amber-300 mb-1">{opportunityTitle}</div>
             <div className="text-sm text-text/90 leading-relaxed mb-2">{opportunityText}</div>
+            {opportunityLinePlain && (
+              <div className="text-xs text-amber-200/70 leading-relaxed border-t border-amber-500/10 pt-2 mb-2">
+                <span className="text-amber-400/80 mr-1">白话：</span>{opportunityLinePlain}
+              </div>
+            )}
             {opportunityMeaning && (
               <div className="text-xs text-text/60 leading-relaxed border-t border-amber-500/10 pt-2">
                 {opportunityMeaning}
@@ -657,6 +667,11 @@ export default function DivinationPage({ userData, onUpdate }) {
                         <div className="text-sm text-text/80">
                           {originalHex.lines[i]?.judgement}
                         </div>
+                        {originalHex.lines[i]?.judgementPlain && (
+                          <div className="text-xs text-text/55 leading-relaxed mt-1.5 pt-1.5 border-t border-gold/10">
+                            {originalHex.lines[i].judgementPlain}
+                          </div>
+                        )}
                       </div>
                     ) : null
                   )}
