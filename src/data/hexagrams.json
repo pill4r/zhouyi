@@ -8,49 +8,56 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "乾：元亨，利貞。",
-    "meaning": "象征天，极为刚健。代表创造、领导、进取。",
+    "meaning": "乾为天，六爻皆阳，象征刚健中正、自强不息。代表创造、领导与进取，占得此卦多主大通顺，宜积极奋发；然阳刚过盛易折，当戒骄戒躁、知进知退。元亨利贞四德俱全，为诸卦之首。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：潛龍，勿用。"
+        "judgement": "初九：潛龍，勿用。",
+        "judgementPlain": "龙潜伏于水中，时机未到，不可轻举妄动。当韬光养晦、积蓄实力。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：見龍在田，利見大人。"
+        "judgement": "九二：見龍在田，利見大人。",
+        "judgementPlain": "龙出现在田野，德行初显，利于拜见德高望重之人以获提携。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：君子終日乾乾，夕惕若，厲，无咎。"
+        "judgement": "九三：君子終日乾乾，夕惕若，厲，无咎。",
+        "judgementPlain": "君子整日勤勉不息，夜晚亦警惕戒惧，虽处险境终无灾祸。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：或躍在淵，无咎。"
+        "judgement": "九四：或躍在淵，无咎。",
+        "judgementPlain": "或腾跃或退守深渊，进退审时度势，灵活应对则无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：飛龍在天，利見大人。"
+        "judgement": "九五：飛龍在天，利見大人。",
+        "judgementPlain": "龙飞腾于天，正值鼎盛，利于拜见大人成就大业。九五至尊，大吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：亢龍有悔。"
+        "judgement": "上九：亢龍有悔。",
+        "judgementPlain": "龙飞至极点，盛极而衰，必有悔吝。知进而不知退者必致困窘。"
       },
       {
         "position": 7,
         "name": "用九",
         "isYang": true,
-        "judgement": "用九：見群龍无首，吉。"
+        "judgement": "用九：見群龍无首，吉。",
+        "judgementPlain": "群龙并起而不自居首位，谦和处众，无为首之争则吉。乾卦六爻全变之道。"
       }
     ]
   },
@@ -63,49 +70,56 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "坤：元亨，利牝馬之貞。君子有攸往，先迷後得主，利西南得朋，東北喪朋。安貞，吉。",
-    "meaning": "象征地，极为柔顺。代表承载、顺从、包容。",
+    "meaning": "坤为地，六爻皆阴，象征柔顺厚德、承载万物。代表包容、顺从与辅助，占得此卦宜柔顺守正、以静制动，如牝马般顺从正道则吉。当循理而行，不可争先，厚德方能载物。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：履霜，堅冰至。"
+        "judgement": "初六：履霜，堅冰至。",
+        "judgementPlain": "脚下踩到霜，便知坚冰将至。见微知著，防微杜渐，阴气始生将渐盛。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：直，方，大，不習无不利。"
+        "judgement": "六二：直，方，大，不習无不利。",
+        "judgementPlain": "正直、方正、宏大，自然之道不习而通，无所往而不利。坤德之正。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：含章可貞。或從王事，无成有終。"
+        "judgement": "六三：含章可貞。或從王事，无成有終。",
+        "judgementPlain": "蕴含华美才德而不外露，守正不渝。辅佐君王之功不自居，终有善果。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：括囊；无咎，无譽。"
+        "judgement": "六四：括囊；无咎，无譽。",
+        "judgementPlain": "扎紧口袋，收敛谨守，不求有功但求无过，故无咎亦无誉。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：黃裳，元吉。"
+        "judgement": "六五：黃裳，元吉。",
+        "judgementPlain": "身着黄色下裳，文德中正而显于外，大吉。柔顺居尊之象。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：龍戰于野，其血玄黃。"
+        "judgement": "上六：龍戰于野，其血玄黃。",
+        "judgementPlain": "龙在原野争战，流出青黄之血。阴气极盛而与阳相抗，凶险之兆。"
       },
       {
         "position": 7,
         "name": "用六",
         "isYang": true,
-        "judgement": "用六：利永貞。"
+        "judgement": "用六：利永貞。",
+        "judgementPlain": "利于永远坚守正道。坤卦六爻全变之道，以柔顺守正为吉。"
       }
     ]
   },
@@ -118,43 +132,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "屯：元亨，利貞，勿用有攸往，利建侯。",
-    "meaning": "象征初生，艰难困顿而生机萌发。",
+    "meaning": "屯为云雷屯聚，象征事物初生、艰难动荡而生机萌发。占得此卦主起步维艰、阻力重重，然蕴含巨大潜能。宜守正立志、广求辅助（利建侯），切忌冒进，待时而动方有转机。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：磐桓；利居貞，利建侯。"
+        "judgement": "初九：磐桓；利居貞，利建侯。",
+        "judgementPlain": "徘徊不前，利于安居守正，广建辅助之人。初创之时宜稳根基。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：屯如邅如，乘馬班如。匪寇婚媾，女子貞不字，十年乃字。"
+        "judgement": "六二：屯如邅如，乘馬班如。匪寇婚媾，女子貞不字，十年乃字。",
+        "judgementPlain": "艰难盘桓，乘马徘徊。非为劫掠而是求婚，女子守贞暂不嫁，十年后方可成。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：即鹿无虞，惟入于林中，君子幾不如舍，往吝。"
+        "judgement": "六三：即鹿无虞，惟入于林中，君子幾不如舍，往吝。",
+        "judgementPlain": "逐鹿而无向导，徒入林中，君子见机不如舍弃，强往必有遗憾。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：乘馬班如，求婚媾，往吉，无不利。"
+        "judgement": "六四：乘馬班如，求婚媾，往吉，无不利。",
+        "judgementPlain": "乘马徘徊前往求亲，往则吉，无所不利。主动寻求辅助则成。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：屯其膏，小貞吉，大貞凶。"
+        "judgement": "九五：屯其膏，小貞吉，大貞凶。",
+        "judgementPlain": "屯积膏泽，小处守正则吉，大事则凶。施惠宜小不宜大。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：乘馬班如，泣血漣如。"
+        "judgement": "上六：乘馬班如，泣血漣如。",
+        "judgementPlain": "乘马徘徊，痛哭流血流泪。屯难至极、穷途末路之象，悲伤至极。"
       }
     ]
   },
@@ -167,43 +187,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "蒙：亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。",
-    "meaning": "象征蒙昧，幼稚无知。代表启蒙、教育。",
+    "meaning": "蒙为山下出泉，象征蒙昧幼稚、待启蒙育。占得此卦主见识未开、判断不明，宜虚心求教、接受引导。教育之道贵在诚敬专一，忌反复冒渎；启蒙者当循循善诱，受教者当心存谦诚。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：發蒙，利用刑人，用說桎梏，以往吝。"
+        "judgement": "初六：發蒙，利用刑人，用說桎梏，以往吝。",
+        "judgementPlain": "启发蒙昧，宜用规范约束人，解除其桎梏；若急于前往则生遗憾。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：包蒙吉；納婦吉；子克家。"
+        "judgement": "九二：包蒙吉；納婦吉；子克家。",
+        "judgementPlain": "包容蒙昧者则吉，纳娶贤妇则吉，子弟能担当家业。刚柔相济之教。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：勿用取女；見金夫，不有躬，无攸利。"
+        "judgement": "六三：勿用取女；見金夫，不有躬，无攸利。",
+        "judgementPlain": "勿娶此女，见富贵之人便失身从之，无所利。勿近品行不端者。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：困蒙，吝。"
+        "judgement": "六四：困蒙，吝。",
+        "judgementPlain": "困于蒙昧之中，遗憾。远离明师、孤立无援，难以开悟。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：童蒙，吉。"
+        "judgement": "六五：童蒙，吉。",
+        "judgementPlain": "童真纯朴之蒙，虚心受教，吉。如孩童般谦诚则启蒙有成。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：擊蒙；不利為寇，利禦寇。"
+        "judgement": "上九：擊蒙；不利為寇，利禦寇。",
+        "judgementPlain": "以猛烈手段击退蒙昧；不宜施暴为寇，宜用以抵御外寇。刚猛之教当慎用。"
       }
     ]
   },
@@ -216,43 +242,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "需：有孚，光亨，貞吉。利涉大川。",
-    "meaning": "象征等待，需要耐心守候。",
+    "meaning": "需为云上于天，待雨而降，象征等待、蓄势。占得此卦主时机未至、须耐心守候，不可急躁强求。等待之中当守正存诚，养精蓄锐，待条件成熟则可涉险成事，光明亨通在望。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：需于郊。利用恆，无咎。"
+        "judgement": "初九：需于郊。利用恆，无咎。",
+        "judgementPlain": "在郊野等待，远离险地。恒心守持则无咎。稳守不前为上。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：需于沙。小有言，終吉。"
+        "judgement": "九二：需于沙。小有言，終吉。",
+        "judgementPlain": "在沙滩等待，渐近险地，稍有口舌是非，终得吉祥。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：需于泥，致寇至。"
+        "judgement": "九三：需于泥，致寇至。",
+        "judgementPlain": "在泥泞中等待，逼近危险，招致盗寇到来。所处不当，自招祸患。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：需于血，出自穴。"
+        "judgement": "六四：需于血，出自穴。",
+        "judgementPlain": "在血泊险境中等待，从陷阱中脱身而出。深陷危难，当速求出离。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：需于酒食，貞吉。"
+        "judgement": "九五：需于酒食，貞吉。",
+        "judgementPlain": "在酒食中等待，安享其时，守正则吉。养精蓄锐、待时而动之正道。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：入于穴，有不速之客三人來，敬之終吉。"
+        "judgement": "上六：入于穴，有不速之客三人來，敬之終吉。",
+        "judgementPlain": "落入洞穴，有三位不速之客来访，恭敬相待终得吉祥。处变不惊、以礼化险。"
       }
     ]
   },
@@ -265,43 +297,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "訟：有孚，窒。惕中吉。終凶。利見大人，不利涉大川。",
-    "meaning": "象征争讼，争论是非。",
+    "meaning": "讼为天水违行，象征争讼、是非纷争。占得此卦主矛盾冲突、各执一词，务必谨慎处之。争讼终非吉事，当求和解、适可而止；若有理亦不可咄咄逼人，得公正大人裁断方利，忌扩大事态。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：不永所事，小有言，終吉。"
+        "judgement": "初六：不永所事，小有言，終吉。",
+        "judgementPlain": "不长久纠缠所争之事，虽有小口舌，终得吉祥。及时止损为上。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：不克訟，歸而逋，其邑人三百戶，无眚。"
+        "judgement": "九二：不克訟，歸而逋，其邑人三百戶，无眚。",
+        "judgementPlain": "争讼不胜，逃归躲避，其三百户邑人免于牵连灾祸。知退则保全。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：食舊德，貞厲，終吉，或從王事，无成。"
+        "judgement": "六三：食舊德，貞厲，終吉，或從王事，无成。",
+        "judgementPlain": "安享旧日德业，守正虽有危厉，终得吉祥。或从王事，不居其功。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：不克訟，復即命渝，安貞吉。"
+        "judgement": "九四：不克訟，復即命渝，安貞吉。",
+        "judgementPlain": "争讼不胜，回头归于正理、改变初衷，安顺守正则吉。改过自新。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：訟元吉。"
+        "judgement": "九五：訟元吉。",
+        "judgementPlain": "讼事大吉。得中正之君明断，诉讼得以公正解决，最为有利。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：或錫之鞶帶，終朝三褫之。"
+        "judgement": "上九：或錫之鞶帶，終朝三褫之。",
+        "judgementPlain": "纵然受赐鞶带之荣，一日之内竟三次被褫夺。凭争讼所得荣宠，终不可保。"
       }
     ]
   },
@@ -314,43 +352,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "師：貞，丈人，吉无咎。",
-    "meaning": "象征军队，统帅众人。",
+    "meaning": "师为地中有水，象征兴师动众、统御群体。占得此卦主组织行动、领导团队之象，须纪律严明、师出有名。统帅当选老成持重之人，赏罚分明则吉；若失法度、任用非人则凶险。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：師出以律，否臧凶。"
+        "judgement": "初六：師出以律，否臧凶。",
+        "judgementPlain": "出师必以严明军律约束，否则必有凶险。无律之师，未战先败。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：在師中吉，无咎，王三錫命。"
+        "judgement": "九二：在師中吉，无咎，王三錫命。",
+        "judgementPlain": "居军中主帅之位则吉无咎，君王三次赐命嘉奖。中正任贤则军威振。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：師或輿尸，凶。"
+        "judgement": "六三：師或輿尸，凶。",
+        "judgementPlain": "出师或将致载尸而归的惨败，凶险。任帅不当、轻进必败。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：師左次，无咎。"
+        "judgement": "六四：師左次，无咎。",
+        "judgementPlain": "军队左次驻守，稳守不进，无咎。审时度势、知难而退为上。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。"
+        "judgement": "六五：田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。",
+        "judgementPlain": "田有禽兽宜执言讨伐，无咎。长子挂帅，次子乱军载尸，守正可免凶。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：大君有命，開國承家，小人勿用。"
+        "judgement": "上六：大君有命，開國承家，小人勿用。",
+        "judgementPlain": "君王论功行赏，开国封家，但小人不可任用。赏罚分明、远小人。"
       }
     ]
   },
@@ -363,43 +407,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "比：吉。原筮元永貞，无咎。不寧方來，後夫凶。",
-    "meaning": "象征亲近、比较、辅助。",
+    "meaning": "比为水润大地，象征亲近、辅佐、团结。占得此卦主结交互助、内外和睦之吉象，宜主动诚信地与人相亲。择善而比、及早归附则吉，迟疑观望、首鼠两端则凶。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：有孚，比之，无咎。有孚盈缶，終來有它吉。"
+        "judgement": "初六：有孚，比之，无咎。有孚盈缶，終來有它吉。",
+        "judgementPlain": "心怀诚信去亲附，无咎。诚信如满缶之水，终将获得意外之吉。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：比之自內，貞吉。"
+        "judgement": "六二：比之自內，貞吉。",
+        "judgementPlain": "发自内心地亲附，守正则吉。诚信亲比，出自本心最为可贵。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：比之匪人。"
+        "judgement": "六三：比之匪人。",
+        "judgementPlain": "所亲附之人不当。所交非人，亲比须慎择其对象。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：外比之，貞吉。"
+        "judgement": "六四：外比之，貞吉。",
+        "judgementPlain": "向外亲附贤者，守正则吉。突破局限，主动结交正道之人。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：顯比，王用三驅，失前禽。邑人不誡，吉。"
+        "judgement": "九五：顯比，王用三驅，失前禽。邑人不誡，吉。",
+        "judgementPlain": "光明无私地亲附，君王田猎三面围合、放走前逃之禽，邑人不惊，吉。仁德感人。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：比之无首，凶。"
+        "judgement": "上六：比之无首，凶。",
+        "judgementPlain": "亲附却无首领，凶险。亲比之道贵在及早归附有德之首，迟则失机。"
       }
     ]
   },
@@ -412,43 +462,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "小畜：亨。密雲不雨，自我西郊。",
-    "meaning": "象征小的蓄积，力量微薄。",
+    "meaning": "小畜为风行天上，象征小的蓄积、力量微薄而须暂敛。占得此卦主能力尚弱、阻力未除，宜以柔蓄刚、温和渐进，密云不雨须耐心等待时机，切忌强求冒进。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：復自道，何其咎，吉。"
+        "judgement": "初九：復自道，何其咎，吉。",
+        "judgementPlain": "复归自身正道，有何灾咎？吉。初九处下，能自守复归正道则吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：牽復，吉。"
+        "judgement": "九二：牽復，吉。",
+        "judgementPlain": "与同类牵连同归正道，吉。九二居中，携手共进则吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：輿說輻，夫妻反目。"
+        "judgement": "九三：輿說輻，夫妻反目。",
+        "judgementPlain": "车轮脱辐，夫妻反目。刚不中正而致内争，关系破裂之象。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：有孚，血去惕出，无咎。"
+        "judgement": "六四：有孚，血去惕出，无咎。",
+        "judgementPlain": "心怀诚信，忧惧消去而出险，无咎。六四柔正得位，以诚化险。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：有孚攣如，富以其鄰。"
+        "judgement": "九五：有孚攣如，富以其鄰。",
+        "judgementPlain": "诚信绵连不断，与邻里共富。九五中正居尊，以信富邻。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：既雨既處，尚德載，婦貞厲。月幾望，君子征凶。"
+        "judgement": "上九：既雨既處，尚德載，婦貞厲。月幾望，君子征凶。",
+        "judgementPlain": "雨已下、事已成，尚德满载，然妇人守贞则有危。月近圆，君子征伐则凶。畜极将变，戒贪。"
       }
     ]
   },
@@ -461,43 +517,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "履虎尾，不咥人，亨。",
-    "meaning": "象征实践、履行，谨慎行事。",
+    "meaning": "履为履虎尾而不被咬，象征谨慎践行、伴险而行。占得此卦主处境微妙、如踏虎尾，唯有礼慎小心、行止合宜方能化险为夷，亨通无咎。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：素履，往无咎。"
+        "judgement": "初九：素履，往无咎。",
+        "judgementPlain": "以平素态度践行，前往无咎。初九处下守素，安分前行则无过。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：履道坦坦，幽人貞吉。"
+        "judgement": "九二：履道坦坦，幽人貞吉。",
+        "judgementPlain": "履道平坦宽广，隐居守正之人得吉。九二中正恬淡，安贞则吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。"
+        "judgement": "六三：眇能視，跛能履，履虎尾，咥人，凶。武人為于大君。",
+        "judgementPlain": "目眇却强视、足跛却强行，踩到虎尾被咬，凶。武人妄图篡位之象，不自量力则凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：履虎尾，愬愬，終吉。"
+        "judgement": "九四：履虎尾，愬愬，終吉。",
+        "judgementPlain": "踩到虎尾，戒惧谨慎，终得吉祥。九四以恐惧保身，终能脱险。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：夬履，貞厲。"
+        "judgement": "九五：夬履，貞厲。",
+        "judgementPlain": "果决地践行，守正以防危厉。九五刚中居尊，决行须戒刚愎。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：視履考祥，其旋元吉。"
+        "judgement": "上九：視履考祥，其旋元吉。",
+        "judgementPlain": "回顾履行之迹考求吉凶，圆满周全则元吉。上九善终，反身自省则大吉。"
       }
     ]
   },
@@ -510,43 +572,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "泰：小往大來，吉亨。",
-    "meaning": "象征通泰，天地交合，万物通达。",
+    "meaning": "泰为天地交合、阴阳相通，象征通泰和顺、万事亨达。占得此卦大吉，主上下沟通、内外和谐，小去大来、运势上扬，宜顺势而为、广结善缘。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：拔茅茹，以其彙，征吉。"
+        "judgement": "初九：拔茅茹，以其彙，征吉。",
+        "judgementPlain": "拔茅草连根带同类而起，出征吉。初九以其汇同进，同志并进则吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：包荒，用馮河，不遐遺，朋亡，得尚于中行。"
+        "judgement": "九二：包荒，用馮河，不遐遺，朋亡，得尚于中行。",
+        "judgementPlain": "胸怀宽广，涉河不弃远，不结私党，得中行之道。九二中正无私，弘大包容。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：无平不陂，无往不復，艱貞无咎。勿恤其孚，于食有福。"
+        "judgement": "九三：无平不陂，无往不復，艱貞无咎。勿恤其孚，于食有福。",
+        "judgementPlain": "无平不坡、无往不复，艰难守正则无咎。诚信无恤，必有福食。泰极否来之戒，艰贞保泰。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：翩翩，不富，以其鄰，不戒以孚。"
+        "judgement": "六四：翩翩，不富，以其鄰，不戒以孚。",
+        "judgementPlain": "翩翩下飞，不独富而带动邻里，不待戒令而以诚相从。六四上下交孚，自然而吉。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：帝乙歸妹，以祉元吉。"
+        "judgement": "六五：帝乙歸妹，以祉元吉。",
+        "judgementPlain": "帝乙嫁妹，以此得福元吉。六五柔中居尊，下嫁以成泰道。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：城復于隍，勿用師。自邑告命，貞吝。"
+        "judgement": "上六：城復于隍，勿用師。自邑告命，貞吝。",
+        "judgementPlain": "城墙倾覆于城隍沟中，不可用兵。城邑传下告命，守正亦有吝。泰极而否，盛极将崩。"
       }
     ]
   },
@@ -559,43 +627,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "否之匪人，不利君子貞，大往小來。",
-    "meaning": "象征闭塞，天地不交，万物不通。",
+    "meaning": "否为天地不交、阴阳隔绝，象征闭塞不通、小人当道。占得此卦主运势阻滞、诸事难成，宜俭德避难、守正待时，不可同流合污，静候否极泰来。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：拔茅茹，以其彙，貞吉亨。"
+        "judgement": "初六：拔茅茹，以其彙，貞吉亨。",
+        "judgementPlain": "拔茅草连根带同类而起，守贞正则吉亨。初六以其汇守正，能贞则吉亨。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：包承。小人吉，大人否，亨。"
+        "judgement": "六二：包承。小人吉，大人否，亨。",
+        "judgementPlain": "包承顺小人则小人吉，大人守道不与则亨。六二中正，大人安于否道。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：包羞。"
+        "judgement": "六三：包羞。",
+        "judgementPlain": "包藏羞耻。六三不中不正，以阿谀为耻，位不当。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：有命，无咎，疇離祉。"
+        "judgement": "九四：有命，无咎，疇離祉。",
+        "judgementPlain": "奉天命而行则无咎，众人受福。九四承上启下，奉命则无咎有福。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：休否，大人吉。其亡其亡，繫于苞桑。"
+        "judgement": "九五：休否，大人吉。其亡其亡，繫于苞桑。",
+        "judgementPlain": "休止否道，大人吉。常怀危亡之戒，如系于丛桑般稳固。九五休否，居安思危则大人吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：傾否，先否後喜。"
+        "judgement": "上九：傾否，先否後喜。",
+        "judgementPlain": "倾覆否道，先否后喜。上九否极泰来，倾否则喜。"
       }
     ]
   },
@@ -608,43 +682,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "同人于野，亨。利涉大川，利君子貞。",
-    "meaning": "象征志同道合，与人同心。",
+    "meaning": "同人为天火同明，象征志同道合、与人同心。占得此卦主得众相助、宜公开坦诚地团结众人，光明磊落则可涉险成事，忌结党营私之狭隘。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：同人于門，无咎。"
+        "judgement": "初九：同人于門，无咎。",
+        "judgementPlain": "在门口与人同心，无咎。初九出门即与人和同，无私无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：同人于宗，吝。"
+        "judgement": "六二：同人于宗，吝。",
+        "judgementPlain": "只与同宗之人同心，吝。六二局限于宗族，狭隘则有吝。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：伏戎于莽，升其高陵，三歲不興。"
+        "judgement": "九三：伏戎于莽，升其高陵，三歲不興。",
+        "judgementPlain": "伏兵于草莽，登高陵瞭望，三年不能兴起。九三刚亢，争同不成。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：乘其墉，弗克攻，吉。"
+        "judgement": "九四：乘其墉，弗克攻，吉。",
+        "judgementPlain": "乘其城墙而攻不下，吉。九四知难而退，不攻则吉。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：同人，先號咷而後笑。大師克相遇。"
+        "judgement": "九五：同人，先號咷而後笑。大師克相遇。",
+        "judgementPlain": "与人同心，先痛哭而后欢笑，大军克敌相遇。九五中正，先难后得，同志终合。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：同人于郊，无悔。"
+        "judgement": "上九：同人于郊，无悔。",
+        "judgementPlain": "在郊野与人同心，无悔。上九郊外同人，虽未及志同，无悔。"
       }
     ]
   },
@@ -657,43 +737,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "大有：元亨。",
-    "meaning": "象征大丰收，富有天下。",
+    "meaning": "大有为火在天上，普照万物，象征大丰收、富有天下。占得此卦主盛大有成、财物充盈，宜以德守富、谦抑待人，骄奢必致倾覆，顺德则吉。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：无交害，匪咎，艱則无咎。"
+        "judgement": "初九：无交害，匪咎，艱則无咎。",
+        "judgementPlain": "无交涉则无害，本非咎，艰难则无咎。初九处下，艰苦自守则无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：大車以載，有攸往，无咎。"
+        "judgement": "九二：大車以載，有攸往，无咎。",
+        "judgementPlain": "以大车载重物前往，无咎。九二中正能任重，往而无咎。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：公用亨于天子，小人弗克。"
+        "judgement": "九三：公用亨于天子，小人弗克。",
+        "judgementPlain": "公侯向天子朝献，小人不能胜任。九三居公位，惟贤者可享于天子。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：匪其彭，无咎。"
+        "judgement": "九四：匪其彭，无咎。",
+        "judgementPlain": "不以盛大自居，无咎。九四过中，谦抑不彭则无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：厥孚交如，威如；吉。"
+        "judgement": "六五：厥孚交如，威如；吉。",
+        "judgementPlain": "其诚信昭著、威严并存，吉。六五柔中居尊，孚信威如则吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：自天祐之，吉无不利。"
+        "judgement": "上九：自天祐之，吉无不利。",
+        "judgementPlain": "上天保佑，吉无不利。上九以诚信顺天，自天佑之吉无不利。"
       }
     ]
   },
@@ -706,43 +792,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "謙：亨，君子有終。",
-    "meaning": "象征谦虚，功高不自居。",
+    "meaning": "谦为山藏于地下，象征谦虚退让、功高不自居。占得此卦主以谦待人、终得善果，谦为唯一六爻皆吉之卦，宜低调行事、不争不伐，万事亨通。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：謙謙君子，用涉大川，吉。"
+        "judgement": "初六：謙謙君子，用涉大川，吉。",
+        "judgementPlain": "谦而又谦的君子，可涉大川，吉。初六处下极谦，用涉大川亦吉。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：鳴謙，貞吉。"
+        "judgement": "六二：鳴謙，貞吉。",
+        "judgementPlain": "谦虚之名远扬，守正则吉。六二中正，鸣谦中心，贞吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：勞謙，君子有終，吉。"
+        "judgement": "九三：勞謙，君子有終，吉。",
+        "judgementPlain": "勤劳而谦虚，君子有终，吉。九三劳谦之至，万民服之，有终吉。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：无不利，撝謙。"
+        "judgement": "六四：无不利，撝謙。",
+        "judgementPlain": "无所不利，发挥其谦。六四柔顺得位，撝谦无不利。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：不富，以其鄰，利用侵伐，无不利。"
+        "judgement": "六五：不富，以其鄰，利用侵伐，无不利。",
+        "judgementPlain": "不富以其邻，利于征伐，无不利。六五居尊，以谦用武，侵伐无不利。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：鳴謙，利用行師，征邑國。"
+        "judgement": "上六：鳴謙，利用行師，征邑國。",
+        "judgementPlain": "谦虚之名远扬，利于行师征伐邑国。上六鸣谦，虽柔亦可征邑国。"
       }
     ]
   },
@@ -755,43 +847,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "豫：利建侯，行師。",
-    "meaning": "象征愉悦、安乐。",
+    "meaning": "豫为雷出地奋，象征愉悦安乐、顺势而动。占得此卦主和乐顺遂、宜建侯行师、把握时机，然安乐易生懈怠，当居安思危，勿沉溺逸乐。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：鳴豫，凶。"
+        "judgement": "初六：鳴豫，凶。",
+        "judgementPlain": "以名声自鸣得意，凶。初六鸣豫，志穷致凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：介于石，不終日，貞吉。"
+        "judgement": "六二：介于石，不終日，貞吉。",
+        "judgementPlain": "坚如磐石，不终日（即决断），守正则吉。六二以中正自守，不耽于豫。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：盱豫，悔。遲有悔。"
+        "judgement": "六三：盱豫，悔。遲有悔。",
+        "judgementPlain": "阿谀求悦则悔，迟疑不改更有悔。六三旰豫谄媚，悔迟皆至。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：由豫，大有得。勿疑。朋盍簪。"
+        "judgement": "九四：由豫，大有得。勿疑。朋盍簪。",
+        "judgementPlain": "由己而致众豫，大有所得。勿疑，朋友如簪聚拢。九四一卦之主，由豫大有得。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：貞疾，恆不死。"
+        "judgement": "六五：貞疾，恆不死。",
+        "judgementPlain": "守正值疾，然恒久不死。六五柔居尊，耽豫致疾，赖中而不亡。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：冥豫，成有渝，无咎。"
+        "judgement": "上六：冥豫，成有渝，无咎。",
+        "judgementPlain": "昏冥沉溺于豫，已成而有改变则无咎。上六冥豫，能改过则无咎。"
       }
     ]
   },
@@ -804,43 +902,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "隨：元亨利貞，无咎。",
-    "meaning": "象征随从，随时变通。",
+    "meaning": "随为泽中有雷，象征随从顺应、随时变通。占得此卦主宜择善而从、因时制宜，元亨利贞、随正道则无咎，忌盲目附和、失去主见。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：官有渝，貞吉。出門交有功。"
+        "judgement": "初九：官有渝，貞吉。出門交有功。",
+        "judgementPlain": "官职有变，守正则吉。出门交友有功。初九官渝择善而从，出门交有功。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：系小子，失丈夫。"
+        "judgement": "六二：系小子，失丈夫。",
+        "judgementPlain": "系附于小子，则失去丈夫。六二柔中，贪近失大，失丈夫。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：系丈夫，失小子。隨有求得，利居貞。"
+        "judgement": "六三：系丈夫，失小子。隨有求得，利居貞。",
+        "judgementPlain": "系附于丈夫，则失去小子。随有所求必得，利于安居守正。六三舍小从大，利居贞。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：隨有獲，貞凶。有孚在道，以明，何咎。"
+        "judgement": "九四：隨有獲，貞凶。有孚在道，以明，何咎。",
+        "judgementPlain": "随从有所获，守正防凶。心存诚信、行于正道以明，何咎之有。九四随有获贞凶，孚明则无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：孚于嘉，吉。"
+        "judgement": "九五：孚于嘉，吉。",
+        "judgementPlain": "诚信于美善之人，吉。九五中正，孚于嘉则吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：拘系之，乃從維之。王用亨于西山。"
+        "judgement": "上六：拘系之，乃從維之。王用亨于西山。",
+        "judgementPlain": "拘禁而系缚之，又从而维系之。君王用享于西山。上六拘系极随，王亨西山。"
       }
     ]
   },
@@ -853,43 +957,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "蠱：元亨，利涉大川。先甲三日，後甲三日。",
-    "meaning": "象征败坏、腐败，需要革新。",
+    "meaning": "蛊为山下有风，象征败坏腐朽、积弊待治。占得此卦主事已败坏、须革新整顿，先甲三日 后甲三日强调谋而后动，涉险除弊可致元亨。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：幹父之蠱，有子，考无咎，厲終吉。"
+        "judgement": "初六：幹父之蠱，有子，考无咎，厲終吉。",
+        "judgementPlain": "整治父辈留下的积弊，有此贤子，父无咎，虽厉终吉。初六幹父之蛊，承先启后，厉终吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：幹母之蠱，不可貞。"
+        "judgement": "九二：幹母之蠱，不可貞。",
+        "judgementPlain": "整治母辈之弊，不可过正（须委婉）。九二幹母之蛊，刚中巽顺，不可贞。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：幹父之蠱，小有悔，无大咎。"
+        "judgement": "九三：幹父之蠱，小有悔，无大咎。",
+        "judgementPlain": "整治父辈积弊，小有悔吝，无大咎。九三幹父之蛊，过刚，小悔无大咎。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：裕父之蠱，往見吝。"
+        "judgement": "六四：裕父之蠱，往見吝。",
+        "judgementPlain": "宽容父辈之弊，往则见吝。六四裕父之蛊，柔弱不治，往吝。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：幹父之蠱，用譽。"
+        "judgement": "六五：幹父之蠱，用譽。",
+        "judgementPlain": "整治父辈积弊，得誉。六五柔中，幹蛊用誉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：不事王侯，高尚其事。"
+        "judgement": "上九：不事王侯，高尚其事。",
+        "judgementPlain": "不事王侯，高尚其志。上九不事王侯，高尚其事。"
       }
     ]
   },
@@ -902,43 +1012,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "臨：元，亨，利，貞。至于八月有凶。",
-    "meaning": "象征面临、莅临，居高临下。",
+    "meaning": "临为地泽相临，象征居高临下、面临莅临。占得此卦主运势渐隆、积极进取则吉，然至于八月有凶之戒提示盛极将衰，宜把握当下、未雨绸缪。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：咸臨，貞吉。"
+        "judgement": "初九：咸臨，貞吉。",
+        "judgementPlain": "以感来临人，守正则吉。初九咸临，刚正感下，贞吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：咸臨，吉无不利。"
+        "judgement": "九二：咸臨，吉无不利。",
+        "judgementPlain": "以感来临人，吉无不利。九二咸临，中正应上，吉无不利。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：甘臨，无攸利。既憂之，无咎。"
+        "judgement": "六三：甘臨，无攸利。既憂之，无咎。",
+        "judgementPlain": "以甜言临人，无所利。若能忧惧自省，则无咎。六三甘临佞说，忧之则无咎。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：至臨，无咎。"
+        "judgement": "六四：至臨，无咎。",
+        "judgementPlain": "至诚相临，无咎。六四至临，位正应初，无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：知臨，大君之宜，吉。"
+        "judgement": "六五：知臨，大君之宜，吉。",
+        "judgementPlain": "以智慧临人，大君之宜，吉。六五知临，大君之宜，吉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：敦臨，吉无咎。"
+        "judgement": "上六：敦臨，吉无咎。",
+        "judgementPlain": "敦厚相临，吉无咎。上六敦临，存厚，吉无咎。"
       }
     ]
   },
@@ -951,43 +1067,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "觀：盥而不薦，有孚顒若。",
-    "meaning": "象征观察、审视。",
+    "meaning": "观为风行地上，象征观察审视、以身作则。占得此卦主宜静观其变、明察事理，上以中正示下、下以敬信仰上，观而后动则无失。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：童觀，小人无咎，君子吝。"
+        "judgement": "初六：童觀，小人无咎，君子吝。",
+        "judgementPlain": "童稚般地观察，小人无咎，君子则吝。初六童观，小人道，君子吝。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：闚觀，利女貞。"
+        "judgement": "六二：闚觀，利女貞。",
+        "judgementPlain": "从门缝窥视，利于女子守贞。六二窥观，女贞之利，丈夫则陋。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：觀我生，進退。"
+        "judgement": "六三：觀我生，進退。",
+        "judgementPlain": "观察己之生平以定进退。六三观我生，进退审时。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：觀國之光，利用賓于王。"
+        "judgement": "六四：觀國之光，利用賓于王。",
+        "judgementPlain": "观察国之光辉，利于为王者之宾。六四观国之光，利用宾于王。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：觀我生，君子无咎。"
+        "judgement": "九五：觀我生，君子无咎。",
+        "judgementPlain": "观察己之生平，君子无咎。九五观我生，君子之德，无咎。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：觀其生，君子无咎。"
+        "judgement": "上九：觀其生，君子无咎。",
+        "judgementPlain": "观察他人生平，君子无咎。上九观其生，君子不忘省民，无咎。"
       }
     ]
   },
@@ -1000,43 +1122,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "噬嗑：亨。利用獄。",
-    "meaning": "象征咬合，刑罚断狱。",
+    "meaning": "噬嗑为雷电交加，象征咬合障碍、刑罚断狱。占得此卦主事有阻碍、须明断是非、果断处置，如咬碎硬物般排除障碍则亨通，宜用刑狱以正法纪。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：屨校滅趾，无咎。"
+        "judgement": "初九：屨校滅趾，无咎。",
+        "judgementPlain": "脚戴刑具遮没脚趾，无咎（小惩大戒）。初九屦校灭趾，小惩大诫，无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：噬膚滅鼻，无咎。"
+        "judgement": "六二：噬膚滅鼻，无咎。",
+        "judgementPlain": "咬软肉遮没鼻端，无咎。六二噬肤灭鼻，柔中，无咎。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：噬臘肉，遇毒；小吝，无咎。"
+        "judgement": "六三：噬臘肉，遇毒；小吝，无咎。",
+        "judgementPlain": "咬干腊肉，遇毒，小吝无咎。六三噬腊肉遇毒，不当位，小吝无咎。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：噬乾胏，得金矢，利艱貞，吉。"
+        "judgement": "九四：噬乾胏，得金矢，利艱貞，吉。",
+        "judgementPlain": "咬干硬带骨肉，得金属箭，利于艰难守正，吉。九四噬干胏得金矢，刚直，艰贞吉。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：噬乾肉，得黃金，貞厲，无咎。"
+        "judgement": "六五：噬乾肉，得黃金，貞厲，无咎。",
+        "judgementPlain": "咬干肉，得黄金，守正防厉，无咎。六五噬干肉得黄金，贞厉无咎。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：何校滅耳，凶。"
+        "judgement": "上九：何校滅耳，凶。",
+        "judgementPlain": "肩扛刑具遮没耳朵，凶（恶积不改）。上九何校灭耳，恶积罪大，凶。"
       }
     ]
   },
@@ -1049,43 +1177,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "賁：亨。小利有攸往。",
-    "meaning": "象征文饰，修饰美化。",
+    "meaning": "贲为山下有火，象征文饰美化、文质相济。占得此卦主宜注重修饰仪表、文采礼仪，然文不可胜质，小利有往，当以质为本、文为辅。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：賁其趾，舍車而徒。"
+        "judgement": "初九：賁其趾，舍車而徒。",
+        "judgementPlain": "文饰其脚趾，舍车而徒行。初九贲其趾，舍车徒行，安分守卑。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：賁其須。"
+        "judgement": "六二：賁其須。",
+        "judgementPlain": "文饰胡须（随下巴而动）。六二贲其须，附从于上，柔来文刚。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：賁如濡如，永貞吉。"
+        "judgement": "九三：賁如濡如，永貞吉。",
+        "judgementPlain": "文饰润泽之貌，永守正则吉。九三贲如濡如，永贞吉。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：賁如皤如，白馬翰如，匪寇婚媾。"
+        "judgement": "六四：賁如皤如，白馬翰如，匪寇婚媾。",
+        "judgementPlain": "文饰洁白之貌，白马飞驰，非寇而是求婚。六四贲如皤如，匪寇婚媾，疑而后合。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：賁于丘園，束帛戔戔，吝，終吉。"
+        "judgement": "六五：賁于丘園，束帛戔戔，吝，終吉。",
+        "judgementPlain": "文饰于丘园，束帛微薄，虽吝终吉。六五贲于丘园，束帛戋戋，终吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：白賁，无咎。"
+        "judgement": "上九：白賁，无咎。",
+        "judgementPlain": "素白无饰，无咎。上九白贲无咎，反本归真。"
       }
     ]
   },
@@ -1098,43 +1232,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "剝：不利有攸往。",
-    "meaning": "象征剥落、侵蚀。",
+    "meaning": "剥为山附于地，象征剥落侵蚀、阳气将尽。占得此卦主运势衰退、诸事不利，宜顺止安居、厚下安宅，不可妄动，静待一阳来复之机。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：剝床以足，蔑貞凶。"
+        "judgement": "初六：剝床以足，蔑貞凶。",
+        "judgementPlain": "剥落床腿足部，灭正则凶。初六剥床以足，自下剥上，蔑贞凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：剝床以辨，蔑貞凶。"
+        "judgement": "六二：剝床以辨，蔑貞凶。",
+        "judgementPlain": "剥落床腿横档，灭正则凶。六二剥床以辨，渐上，蔑贞凶。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：剝之，无咎。"
+        "judgement": "六三：剝之，无咎。",
+        "judgementPlain": "剥落它，无咎（与上下小人不党）。六三剥之，独应于上，无咎。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：剝床以膚，凶。"
+        "judgement": "六四：剝床以膚，凶。",
+        "judgementPlain": "剥落至床面，凶。六四剥床以肤，切近灾，凶。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：貫魚，以宮人寵，无不利。"
+        "judgement": "六五：貫魚，以宮人寵，无不利。",
+        "judgementPlain": "贯鱼般依次排列，以宫人受宠，无不利。六五贯鱼宫人宠，率众以从上，无不利。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：碩果不食，君子得輿，小人剝廬。"
+        "judgement": "上九：碩果不食，君子得輿，小人剝廬。",
+        "judgementPlain": "硕果未食，君子得车，小人剥庐。上九硕果不食，君子得舆小人剥庐，一阳存复之机。"
       }
     ]
   },
@@ -1147,43 +1287,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "復：亨。出入无疾，朋來无咎。反復其道，七日來復，利有攸往。",
-    "meaning": "象征复归、回归。",
+    "meaning": "复为地中有雷，一阳来复，象征回归复始、转机将至。占得此卦主否极泰来、转运之机，七日来复强调循环有期，宜及时把握、顺势复兴。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：不遠復，无祗悔，元吉。"
+        "judgement": "初九：不遠復，无祗悔，元吉。",
+        "judgementPlain": "不远即复，无大悔，元吉。初九不远复，颜子之仁，无祗悔元吉。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：休復，吉。"
+        "judgement": "六二：休復，吉。",
+        "judgementPlain": "欣然休止而复，吉。六二休复，下仁，吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：頻復，厲无咎。"
+        "judgement": "六三：頻復，厲无咎。",
+        "judgementPlain": "频频复归（屡失屡复），有厉而终无咎。六三频复厉无咎，屡失能复。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：中行獨復。"
+        "judgement": "六四：中行獨復。",
+        "judgementPlain": "中道独行而复。六四中行独复，从道不从众。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：敦復，无悔。"
+        "judgement": "六五：敦復，无悔。",
+        "judgementPlain": "敦厚地复归，无悔。六五敦复，自考无悔。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：迷復，凶，有災眚。用行師，終有大敗，以其國君，凶；至于十年，不克征。"
+        "judgement": "上六：迷復，凶，有災眚。用行師，終有大敗，以其國君，凶；至于十年，不克征。",
+        "judgementPlain": "迷而复归，凶，有灾眚。用兵则终有大败，危及国君，凶；至于十年不能征伐。上六迷复，迷而不反，凶。"
       }
     ]
   },
@@ -1196,43 +1342,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "无妄：元亨，利貞。其匪正有眚，不利有攸往。",
-    "meaning": "象征不妄为，无虚妄。",
+    "meaning": "无妄为天下雷行，象征不妄为、顺乎自然。占得此卦主宜守正道、无虚妄之念则元亨利贞，若有非分之想则生灾眚，切忌妄动强求。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：无妄，往吉。"
+        "judgement": "初九：无妄，往吉。",
+        "judgementPlain": "无妄之正，前往则吉。初九无妄，以刚正往，吉。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：不耕獲，不菑畬，則利有攸往。"
+        "judgement": "六二：不耕獲，不菑畬，則利有攸往。",
+        "judgementPlain": "不耕而获、不菑而畬（无功而利），则利于有攸往。六二不耕获，顺理而往，利有攸往。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：无妄之災，或繫之牛，行人之得，邑人之災。"
+        "judgement": "六三：无妄之災，或繫之牛，行人之得，邑人之災。",
+        "judgementPlain": "无妄之灾：系牛于此，行人牵走获利，邑人反受其灾。六三无妄之灾，无辜受累。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：可貞，无咎。"
+        "judgement": "九四：可貞，无咎。",
+        "judgementPlain": "可以守正，无咎。九四可贞无咎，刚健无私。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：无妄之疾，勿藥有喜。"
+        "judgement": "九五：无妄之疾，勿藥有喜。",
+        "judgementPlain": "无妄之疾，无须用药自会痊愈。九五无妄之疾勿药有喜，不治自治。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：无妄，行有眚，无攸利。"
+        "judgement": "上九：无妄，行有眚，无攸利。",
+        "judgementPlain": "无妄而行则有灾眚，无所利。上九无妄行有眚，过时而动则凶。"
       }
     ]
   },
@@ -1245,43 +1397,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "大畜：利貞，不家食吉，利涉大川。",
-    "meaning": "象征大的蓄积，积蓄力量。",
+    "meaning": "大畜为山在天上，象征大的蓄积、积蓄刚健。占得此卦主宜厚德载物、广蓄才能，不家食而效力于天下则吉，可涉大川、担大任。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：有厲利已。"
+        "judgement": "初九：有厲利已。",
+        "judgementPlain": "有危厉，利于停止。初九有厉利已，知难而止。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：輿說輹。"
+        "judgement": "九二：輿說輹。",
+        "judgementPlain": "车厢脱去车轴伏兔（停止）。九二舆说輹，中途而止，知几。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：良馬逐，利艱貞。曰閑輿衛，利有攸往。"
+        "judgement": "九三：良馬逐，利艱貞。曰閑輿衛，利有攸往。",
+        "judgementPlain": "良马追逐，利于艰难守正。常习车卫之事，利于有攸往。九三良马逐，艰贞闲卫，利往。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：童牛之牿，元吉。"
+        "judgement": "六四：童牛之牿，元吉。",
+        "judgementPlain": "小牛角上横木（牿），元吉。六四童牛之牿，止恶于未萌，元吉。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：豶豕之牙，吉。"
+        "judgement": "六五：豶豕之牙，吉。",
+        "judgementPlain": "阉豕之牙，吉（去其暴性）。六五豶豕之牙，制暴以柔，吉。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：何天之衢，亨。"
+        "judgement": "上九：何天之衢，亨。",
+        "judgementPlain": "何等天之通衢，亨通。上九何天之衢，畜极而通，亨。"
       }
     ]
   },
@@ -1294,43 +1452,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "頤：貞吉。觀頤，自求口實。",
-    "meaning": "象征颐养，修养身心。",
+    "meaning": "颐为山下有雷，象征颐养身心、慎言节食。占得此卦主注重修养身德、自食其力，观其所养知其吉凶，宜正道求养、戒贪戒奢。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：舍爾靈龜，觀我朵頤，凶。"
+        "judgement": "初九：舍爾靈龜，觀我朵頤，凶。",
+        "judgementPlain": "舍弃你的灵龟，却看我大嚼，凶。初九舍尔灵龟观我朵颐，自失其宝，凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：顛頤，拂經，于丘頤，征凶。"
+        "judgement": "六二：顛頤，拂經，于丘頤，征凶。",
+        "judgementPlain": "颠倒颐养，违悖常经，求养于丘，前往则凶。六二颠颐拂经，于丘颐，征凶。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：拂頤，貞凶，十年勿用，无攸利。"
+        "judgement": "六三：拂頤，貞凶，十年勿用，无攸利。",
+        "judgementPlain": "违逆颐养，守正亦凶，十年不能用，无所利。六三拂颐贞凶，十年勿用。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：顛頤，吉，虎視眈眈，其欲逐逐，无咎。"
+        "judgement": "六四：顛頤，吉，虎視眈眈，其欲逐逐，无咎。",
+        "judgementPlain": "颠倒颐养，吉，虎视眈眈、其欲逐逐，无咎。六四颠颐吉，虎视逐逐，无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：拂經，居貞吉，不可涉大川。"
+        "judgement": "六五：拂經，居貞吉，不可涉大川。",
+        "judgementPlain": "违逆常经，安居守正则吉，不可涉大川。六五拂经居贞吉，柔不可涉险。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：由頤，厲吉，利涉大川。"
+        "judgement": "上九：由頤，厲吉，利涉大川。",
+        "judgementPlain": "由之以颐养天下，虽厉得吉，利于涉大川。上九由颐厉吉，利涉大川。"
       }
     ]
   },
@@ -1343,43 +1507,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "大過：棟橈，利有攸往，亨。",
-    "meaning": "象征大的过失，压力过大。",
+    "meaning": "大过为泽灭木，象征大过失常、压力过重如栋梁弯曲。占得此卦主处非常之境、须非常之举，独立不惧则可有往而亨，然力不胜任则凶。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：藉用白茅，无咎。"
+        "judgement": "初六：藉用白茅，无咎。",
+        "judgementPlain": "以白茅垫物，无咎。初六藉用白茅，慎之至，无咎。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：枯楊生稊，老夫得其女妻，无不利。"
+        "judgement": "九二：枯楊生稊，老夫得其女妻，无不利。",
+        "judgementPlain": "枯杨生新芽，老夫娶少女为妻，无不利。九二枯杨生稊，过以相与，无不利。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：棟橈，凶。"
+        "judgement": "九三：棟橈，凶。",
+        "judgementPlain": "栋梁弯曲，凶。九三栋桡，刚过不胜任，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：棟隆，吉；有它吝。"
+        "judgement": "九四：棟隆，吉；有它吝。",
+        "judgementPlain": "栋梁隆起（加固），吉；然有其他吝惜。九四栋隆吉，有它吝。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：枯楊生華，老婦得士夫，无咎无譽。"
+        "judgement": "九五：枯楊生華，老婦得士夫，无咎无譽。",
+        "judgementPlain": "枯杨开花，老妇嫁少夫，无咎亦无誉。九五枯杨生华，过而可久，无咎无誉。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：過涉滅頂，凶，无咎。"
+        "judgement": "上六：過涉滅頂，凶，无咎。",
+        "judgementPlain": "涉水淹没头顶，凶，无咎（杀身成仁）。上六过涉灭顶凶，无咎。"
       }
     ]
   },
@@ -1392,43 +1562,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "坎：習坎，有孚，維心亨，行有尚。",
-    "meaning": "象征重重险难，水深危险。",
+    "meaning": "坎为习坎重险，象征重重险难、水深危险。占得此卦主陷入困境、险阻重重，唯有诚信维系于心、勇毅前行方能出险，行有尚则可脱困。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：習坎，入于坎窞，凶。"
+        "judgement": "初六：習坎，入于坎窞，凶。",
+        "judgementPlain": "重重坎险，陷入坎穴深处，凶。初六习坎入于坎窞，失道，凶。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：坎有險，求小得。"
+        "judgement": "九二：坎有險，求小得。",
+        "judgementPlain": "坎中有险，求得小的收获。九二坎有险，求小得，未能大出。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：來之坎坎，險且枕，入于坎窞，勿用。"
+        "judgement": "六三：來之坎坎，險且枕，入于坎窞，勿用。",
+        "judgementPlain": "前后皆坎险，险而又枕于险，陷入坎穴，不可用。六三来之坎坎，勿用。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：樽酒簋貳，用缶，納約自牖，終无咎。"
+        "judgement": "六四：樽酒簋貳，用缶，納約自牖，終无咎。",
+        "judgementPlain": "一樽酒、两簋食，用瓦缶盛，从窗户纳进简约之祭，终无咎。六四樽酒簋贰用缶，纳约自牖，终无咎。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：坎不盈，祗既平，无咎。"
+        "judgement": "九五：坎不盈，祗既平，无咎。",
+        "judgementPlain": "坎险未满，将近平复，无咎。九五坎不盈祗既平，中未大，无咎。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：係用徽纆，寘于叢棘，三歲不得，凶。"
+        "judgement": "上六：係用徽纆，寘于叢棘，三歲不得，凶。",
+        "judgementPlain": "以绳索捆缚，置于丛棘之中，三年不得解脱，凶。上六系用徽纆寘丛棘，三岁不得，凶。"
       }
     ]
   },
@@ -1441,43 +1617,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "離：利貞，亨。畜牝牛，吉。",
-    "meaning": "象征光明，附丽于正道。",
+    "meaning": "离为重明丽天，象征光明附丽、文明昌盛。占得此卦主宜依附正道、光明磊落，畜牝牛之柔顺则吉，然火性炎上，当戒明察太过、刻薄伤人。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：履錯然，敬之无咎。"
+        "judgement": "初九：履錯然，敬之无咎。",
+        "judgementPlain": "步履错杂之状，敬慎处之则无咎。初九履错然敬之无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：黃離，元吉。"
+        "judgement": "六二：黃離，元吉。",
+        "judgementPlain": "黄中文明之离，元吉。六二黄离元吉，得中道。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：日昃之離，不鼓缶而歌，則大耋之嗟，凶。"
+        "judgement": "九三：日昃之離，不鼓缶而歌，則大耋之嗟，凶。",
+        "judgementPlain": "日偏西之光明，不击缶唱歌，则老来嗟叹，凶。九三日昃之离，大耋之嗟，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：突如其來如，焚如，死如，棄如。"
+        "judgement": "九四：突如其來如，焚如，死如，棄如。",
+        "judgementPlain": "突如其来，焚烧、死亡、弃绝之状。九四突如其来如，焚如死如弃如，无所容。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：出涕沱若，戚嗟若，吉。"
+        "judgement": "六五：出涕沱若，戚嗟若，吉。",
+        "judgementPlain": "泪流如雨、忧戚嗟叹，吉。六五出涕沱若戚嗟若，吉，忧而得明。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：王用出征，有嘉折首，獲匪其醜，无咎。"
+        "judgement": "上九：王用出征，有嘉折首，獲匪其醜，无咎。",
+        "judgementPlain": "君王用兵出征，斩获敌首、擒获其丑类，无咎。上九王用出征，折首获丑，无咎。"
       }
     ]
   },
@@ -1490,43 +1672,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "咸，亨，利貞，取女吉。",
-    "meaning": "象征感应，相互吸引。",
+    "meaning": "咸为山泽通气，象征感应相通、相互吸引。占得此卦主两情相悦、人际和谐，取女吉宜于婚配，然感贵以正、以虚受人，勿陷于邪感。",
     "lines": [
       {
         "position": 1,
         "name": "",
         "isYang": false,
-        "judgement": "初六，咸其拇。"
+        "judgement": "初六，咸其拇。",
+        "judgementPlain": "感其脚大拇指。初六咸其拇，感之微而未行。"
       },
       {
         "position": 2,
         "name": "",
         "isYang": false,
-        "judgement": "六二，咸其腓，凶，居吉。"
+        "judgement": "六二，咸其腓，凶，居吉。",
+        "judgementPlain": "感其小腿肚，凶，安居则吉。六二咸其腓凶居吉，妄动则凶。"
       },
       {
         "position": 3,
         "name": "",
         "isYang": false,
-        "judgement": "九三，咸其股，執其隨，往吝。"
+        "judgement": "九三，咸其股，執其隨，往吝。",
+        "judgementPlain": "感其大腿，执意随人而往则吝。九三咸其股，执其随往吝，志在随人。"
       },
       {
         "position": 4,
         "name": "",
         "isYang": false,
-        "judgement": "九四，貞吉，悔亡，憧憧往來，朋從爾思。"
+        "judgement": "九四，貞吉，悔亡，憧憧往來，朋從爾思。",
+        "judgementPlain": "守正则吉，悔亡。心思往来不定，朋友从你所思。九四贞吉悔亡，憧憧往来朋从尔思，感之正。"
       },
       {
         "position": 5,
         "name": "",
         "isYang": false,
-        "judgement": "九五，咸其脢，无悔。"
+        "judgement": "九五，咸其脢，无悔。",
+        "judgementPlain": "感其背脊肉，无悔。九五咸其脢无悔，感而无私。"
       },
       {
         "position": 6,
         "name": "",
         "isYang": false,
-        "judgement": "上六，咸其輔頰舌。"
+        "judgement": "上六，咸其輔頰舌。",
+        "judgementPlain": "感其口颊舌（巧言）。上六咸其辅颊舌，感于末，多言无诚。"
       }
     ]
   },
@@ -1539,43 +1727,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "恆：亨，无咎，利貞，利有攸往。",
-    "meaning": "象征恒久，持久不变。",
+    "meaning": "恒为雷风相与，象征恒久持久、守常不变。占得此卦主宜持之以恒、守正不变则亨通，然恒非固执，当变则变、利于有往，妇人从一而吉，夫子须变通。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：浚恆，貞凶，无攸利。"
+        "judgement": "初六：浚恆，貞凶，无攸利。",
+        "judgementPlain": "深求恒久，守正则凶，无所利。初六浚恒贞凶，深处求恒太过。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：悔亡。"
+        "judgement": "九二：悔亡。",
+        "judgementPlain": "悔亡。九二悔亡，能久于中。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：不恆其德，或承之羞，貞吝。"
+        "judgement": "九三：不恆其德，或承之羞，貞吝。",
+        "judgementPlain": "不能恒守其德，或受其羞辱，守正亦吝。九三不恒其德或承之羞贞吝。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：田无禽。"
+        "judgement": "九四：田无禽。",
+        "judgementPlain": "田猎无获。九四田无禽，所之妄，无所得。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：恆其德，貞，婦人吉，夫子凶。"
+        "judgement": "六五：恆其德，貞，婦人吉，夫子凶。",
+        "judgementPlain": "恒守其德，守贞则妇人吉、夫子凶。六五恒其德贞妇人吉夫子凶，从一与变通之异。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：振恆，凶。"
+        "judgement": "上六：振恆，凶。",
+        "judgementPlain": "振动无常，凶。上六振恒凶，躁动不能久。"
       }
     ]
   },
@@ -1588,43 +1782,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "遯：亨，小利貞。",
-    "meaning": "象征退避，适时隐退。",
+    "meaning": "遁为天山相避，象征适时退避、隐遁保身。占得此卦主小人渐进、宜及时引退、避其锋芒，识时务者为俊杰，知退知进则亨通无灾。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：遯尾，厲，勿用有攸往。"
+        "judgement": "初六：遯尾，厲，勿用有攸往。",
+        "judgementPlain": "退避落于末尾，有危厉，不可有所往。初六遁尾厉勿用有攸往，落后而危。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：執之用黃牛之革，莫之勝說。"
+        "judgement": "六二：執之用黃牛之革，莫之勝說。",
+        "judgementPlain": "用黄牛皮绳执缚，无人能解脱。六二执之用黄牛之革莫之胜说，坚志固守。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：係遯，有疾厲，畜臣妾吉。"
+        "judgement": "九三：係遯，有疾厲，畜臣妾吉。",
+        "judgementPlain": "系缚而退避，有疾厉，蓄养臣妾则吉。九三系遁有疾厉畜臣妾吉，有所系累。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：好遯，君子吉，小人否。"
+        "judgement": "九四：好遯，君子吉，小人否。",
+        "judgementPlain": "乐于退避，君子吉，小人则否。九四好遁君子吉小人否，能舍所处。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：嘉遯，貞吉。"
+        "judgement": "九五：嘉遯，貞吉。",
+        "judgementPlain": "嘉美地退避，守正则吉。九五嘉遁贞吉，中正而退。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：肥遯，无不利。"
+        "judgement": "上九：肥遯，无不利。",
+        "judgementPlain": "从容宽余地退避，无不利。上九肥遁无不利，超然远引。"
       }
     ]
   },
@@ -1637,43 +1837,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "大壯：利貞。",
-    "meaning": "象征壮盛，力量充沛。",
+    "meaning": "大壮为雷在天上，象征壮盛有力、阳气充沛。占得此卦主势力强盛、势如破竹，然壮易致暴，宜守正用罔、非礼弗履，切忌恃强凌弱、刚愎冒进。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：壯于趾，征凶，有孚。"
+        "judgement": "初九：壯于趾，征凶，有孚。",
+        "judgementPlain": "壮于脚趾，征伐则凶，虽有诚信。初九壮于趾征凶有孚，壮于所不当。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：貞吉。"
+        "judgement": "九二：貞吉。",
+        "judgementPlain": "守正则吉。九二贞吉，中以自壮。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。"
+        "judgement": "九三：小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。",
+        "judgementPlain": "小人逞强用壮，君子用罔（无所用心），守正防厉。公羊触藩，羊角被缠。九三小人用壮君子用罔贞厉，羝羊触藩羸其角。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：貞吉悔亡，藩決不羸，壯于大輿之輹。"
+        "judgement": "九四：貞吉悔亡，藩決不羸，壯于大輿之輹。",
+        "judgementPlain": "守正则吉、悔亡，藩篱决开不再缠角，壮如大车之輹。九四贞吉悔亡藩决不羸壮于大舆之輹。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：喪羊于易，无悔。"
+        "judgement": "六五：喪羊于易，无悔。",
+        "judgementPlain": "丧羊于边邑，无悔。六五丧羊于易无悔，虽失壮而无悔。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：羝羊觸藩，不能退，不能遂，无攸利，艱則吉。"
+        "judgement": "上六：羝羊觸藩，不能退，不能遂，无攸利，艱則吉。",
+        "judgementPlain": "公羊触藩，不能退、不能进，无所利，艰难则吉。上六羝羊触藩不能退不能遂无攸利艰则吉。"
       }
     ]
   },
@@ -1686,43 +1892,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "晉：康侯用錫馬蕃庶，晝日三接。",
-    "meaning": "象征进取、晋升。",
+    "meaning": "晋为火出地上，象征进取晋升、光明上行。占得此卦主晋升之象、备受恩遇，昼日三接示殊荣，宜顺势上进、广结善缘，然当以德配位。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：晉如，摧如，貞吉。罔孚，裕无咎。"
+        "judgement": "初六：晉如，摧如，貞吉。罔孚，裕无咎。",
+        "judgementPlain": "进取却又被摧折，守正则吉。未被信任，宽裕待之则无咎。初六晋如摧如贞吉罔孚裕无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：晉如，愁如，貞吉。受茲介福，于其王母。"
+        "judgement": "六二：晉如，愁如，貞吉。受茲介福，于其王母。",
+        "judgementPlain": "进取而又忧愁，守正则吉。从其王母（祖母）那里承受大福。六二晋如愁如贞吉受兹介福于其王母。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：眾允，悔亡。"
+        "judgement": "六三：眾允，悔亡。",
+        "judgementPlain": "众人信允，悔亡。六三众允悔亡，志上行。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：晉如碩鼠，貞厲。"
+        "judgement": "九四：晉如碩鼠，貞厲。",
+        "judgementPlain": "进取如硕鼠（贪而畏），守正防厉。九四晋如硕鼠贞厉，窃位贪而危。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：悔亡，失得勿恤，往吉，无不利。"
+        "judgement": "六五：悔亡，失得勿恤，往吉，无不利。",
+        "judgementPlain": "悔亡，失得勿须忧恤，前往则吉无不利。六五悔亡失得勿恤往吉无不利。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：晉其角，維用伐邑，厲吉无咎，貞吝。"
+        "judgement": "上九：晉其角，維用伐邑，厲吉无咎，貞吝。",
+        "judgementPlain": "进取其角（锐进），唯用于征伐邑国，虽厉得吉无咎，守正亦吝。上九晋其角维用伐邑厉吉无咎贞吝。"
       }
     ]
   },
@@ -1735,43 +1947,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "明夷：利艱貞。",
-    "meaning": "象征光明受伤，韬光养晦。",
+    "meaning": "明夷为地中有火，光明入地，象征光明受伤、韬光养晦。占得此卦主身处逆境、昏主当道，宜外晦内明、隐忍待时，利艰贞守正，勿显露锋芒。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：明夷于飛，垂其翼。君子于行，三日不食，有攸往，主人有言。"
+        "judgement": "初九：明夷于飛，垂其翼。君子于行，三日不食，有攸往，主人有言。",
+        "judgementPlain": "光明受伤时飞翔，垂下翅膀。君子出行，三日不食，有所前往，主人有责言。初九明夷于飞垂其翼，君子避祸远行。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：明夷，夷于左股，用拯馬壯，吉。"
+        "judgement": "六二：明夷，夷于左股，用拯馬壯，吉。",
+        "judgementPlain": "光明受伤，伤及左股，用强壮之马拯救则吉。六二明夷夷于左股用拯马壮吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：明夷于南狩，得其大首，不可疾貞。"
+        "judgement": "九三：明夷于南狩，得其大首，不可疾貞。",
+        "judgementPlain": "光明受伤，到南方田猎，得其首恶，不可急于守正。九三明夷于南狩得其大首不可疾贞，去暗之首。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：入于左腹，獲明夷之心，出于門庭。"
+        "judgement": "六四：入于左腹，獲明夷之心，出于門庭。",
+        "judgementPlain": "进入左腹，获知光明受伤之核心，出于门庭。六四入于左腹获明夷之心出于门庭，察暗主之心。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：箕子之明夷，利貞。"
+        "judgement": "六五：箕子之明夷，利貞。",
+        "judgementPlain": "箕子之光明受伤，利于守正。六五箕子之明夷利贞，内难而能正志。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：不明晦，初登于天，後入于地。"
+        "judgement": "上六：不明晦，初登于天，後入于地。",
+        "judgementPlain": "晦暗不明，初登于天、后入于地。上六不明晦初登于天后入于地，暗极之象。"
       }
     ]
   },
@@ -1784,43 +2002,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "家人：利女貞。",
-    "meaning": "象征家人，治理家庭。",
+    "meaning": "家人为风自火出，象征治家有道、各正其位。占得此卦主家庭和睦、宜严正家风，女正位内、男正位外，言有物而行有恒，则家道兴隆。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：閑有家，悔亡。"
+        "judgement": "初九：閑有家，悔亡。",
+        "judgementPlain": "防闲以治家，悔亡。初九闲有家悔亡，防患初萌。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：无攸遂，在中饋，貞吉。"
+        "judgement": "六二：无攸遂，在中饋，貞吉。",
+        "judgementPlain": "无所专遂，主持家中饮食之事，守正则吉。六二无攸遂在中馈贞吉，柔顺中正。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：家人嗃嗃，悔厲吉；婦子嘻嘻，終吝。"
+        "judgement": "九三：家人嗃嗃，悔厲吉；婦子嘻嘻，終吝。",
+        "judgementPlain": "家人嗃嗃严苛，悔厉而吉；妇子嘻嘻失度，终吝。九三家人嗃嗃悔厉吉妇子嘻嘻终吝，严则吉纵则吝。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：富家，大吉。"
+        "judgement": "六四：富家，大吉。",
+        "judgementPlain": "使家富足，大吉。六四富家大吉，顺以保家。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：王假有家，勿恤，往吉。"
+        "judgement": "九五：王假有家，勿恤，往吉。",
+        "judgementPlain": "君王感格于家，勿忧，前往则吉。九五王假有家勿恤往吉，中正而家道成。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：有孚威如，終吉。"
+        "judgement": "上九：有孚威如，終吉。",
+        "judgementPlain": "心存诚信、威严并存，终吉。上九有孚威如终吉，反身齐家。"
       }
     ]
   },
@@ -1833,43 +2057,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "睽：小事吉。",
-    "meaning": "象征乖离、背离。",
+    "meaning": "睽为火泽相背，象征乖离背离、意见不合。占得此卦主离心离德、事多乖违，小事可吉而大事难成，宜求同存异、以柔化乖，勿强求一致。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：悔亡，喪馬勿逐，自復；見惡人无咎。"
+        "judgement": "初九：悔亡，喪馬勿逐，自復；見惡人无咎。",
+        "judgementPlain": "悔亡，丧马勿追逐，自会复归；见恶人无咎。初九悔亡丧马勿逐自复见恶人无咎，和而化乖。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：遇主于巷，无咎。"
+        "judgement": "九二：遇主于巷，无咎。",
+        "judgementPlain": "在巷中遇到主人，无咎。九二遇主于巷无咎，失位而合。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：見輿曳，其牛掣，其人天且劓，无初有終。"
+        "judgement": "六三：見輿曳，其牛掣，其人天且劓，无初有終。",
+        "judgementPlain": "见车被拖曳，其牛掣肘，其人额刺鼻割，起初不利而终有结果。六三见舆曳其牛掣其人天且劓无初有终，乖而难，终合。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：睽孤，遇元夫，交孚，厲无咎。"
+        "judgement": "九四：睽孤，遇元夫，交孚，厲无咎。",
+        "judgementPlain": "乖离孤立，遇到元夫（善人），交以诚信，虽厉无咎。九四睽孤遇元夫交孚厉无咎。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：悔亡，厥宗噬膚，往何咎。"
+        "judgement": "六五：悔亡，厥宗噬膚，往何咎。",
+        "judgementPlain": "悔亡，与同宗之人咬肉（相合），前往有何咎。六五悔亡厥宗噬肤往何咎，乖而复合。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：睽孤，見豕負塗，載鬼一車，先張之弧，後說之弧，匪寇婚媾，往遇雨則吉。"
+        "judgement": "上九：睽孤，見豕負塗，載鬼一車，先張之弧，後說之弧，匪寇婚媾，往遇雨則吉。",
+        "judgementPlain": "乖离孤立，见满身泥之豕、载鬼一车，先张弓后放下，非寇而是求婚，前往遇雨则吉。上九睽孤见豕负涂载鬼一车，先张后说，匪寇婚媾，往遇雨则吉，疑极而合。"
       }
     ]
   },
@@ -1882,43 +2112,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "蹇：利西南，不利東北；利見大人，貞吉。",
-    "meaning": "象征困难、跛足难行。",
+    "meaning": "蹇为水山蹇难，象征困难重重、跛足难行。占得此卦主险阻在前、进退维谷，宜见险而止、求大人相助，利西南顺处则可脱困，忌冒进强为。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：往蹇，來譽。"
+        "judgement": "初六：往蹇，來譽。",
+        "judgementPlain": "前往则蹇难，归来则有誉。初六往蹇来誉，宜止而待。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：王臣蹇蹇，匪躬之故。"
+        "judgement": "六二：王臣蹇蹇，匪躬之故。",
+        "judgementPlain": "王臣蹇蹇济难，非为自身之故。六二王臣蹇蹇匪躬之故，忠勤济蹇。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：往蹇來反。"
+        "judgement": "九三：往蹇來反。",
+        "judgementPlain": "前往则蹇难，归来则反（自反）。九三往蹇来反，内正其身。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：往蹇來連。"
+        "judgement": "六四：往蹇來連。",
+        "judgementPlain": "前往则蹇难，归来则连合。六四往蹇来连，连合以济。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：大蹇朋來。"
+        "judgement": "九五：大蹇朋來。",
+        "judgementPlain": "大蹇而朋友来助。九五大蹇朋来，大蹇而众归。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：往蹇來碩，吉；利見大人。"
+        "judgement": "上六：往蹇來碩，吉；利見大人。",
+        "judgementPlain": "前往则蹇难，归来则丰硕，吉；利于见大人。上六往蹇来硕吉利见大人，蹇极而出。"
       }
     ]
   },
@@ -1931,43 +2167,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "解：利西南，无所往，其來復吉。有攸往，夙吉。",
-    "meaning": "象征解除困难，化解危机。",
+    "meaning": "解为雷雨交作，象征解除困难、化解危机。占得此卦主险难将解、困局松动，宜宽赦容人、及时行动则夙吉，有往当速、无所往则来复守正。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：无咎。"
+        "judgement": "初六：无咎。",
+        "judgementPlain": "无咎。初六无咎，柔正解之始。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：田獲三狐，得黃矢，貞吉。"
+        "judgement": "九二：田獲三狐，得黃矢，貞吉。",
+        "judgementPlain": "田猎获三狐，得黄色之矢，守正则吉。九二田获三狐得黄矢贞吉，得中道而去邪。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：負且乘，致寇至，貞吝。"
+        "judgement": "六三：負且乘，致寇至，貞吝。",
+        "judgementPlain": "背负重物又乘车（位不当），招致盗寇，守正亦吝。六三负且乘致寇至贞吝，小人窃位。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：解而拇，朋至斯孚。"
+        "judgement": "九四：解而拇，朋至斯孚。",
+        "judgementPlain": "解开你的拇指（小人依附），朋友至此而有诚信。九四解而拇朋至斯孚，去小人而得君子。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：君子維有解，吉；有孚于小人。"
+        "judgement": "六五：君子維有解，吉；有孚于小人。",
+        "judgementPlain": "君子若有解救之心则吉；以诚信感化小人。六五君子维有解吉有孚于小人，孚以化小人。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：公用射隼于高墉之上，獲之，无不利。"
+        "judgement": "上六：公用射隼于高墉之上，獲之，无不利。",
+        "judgementPlain": "公侯在高墙之上射隼，擒获之，无不利。上六公用射隼于高墉之上获之无不利，去恶以解。"
       }
     ]
   },
@@ -1980,43 +2222,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "損：有孚，元吉，无咎，可貞，利有攸往。曷之用，二簋可用享。",
-    "meaning": "象征减损，舍己为人。",
+    "meaning": "损为山泽损下益上，象征减损克制、舍己奉公。占得此卦主宜损己之过、损有余补不足，有孚诚信则元吉，二簋可用享示诚不在物，损得其所则无咎。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：巳事遄往，无咎，酌損之。"
+        "judgement": "初九：巳事遄往，无咎，酌損之。",
+        "judgementPlain": "祭事速往，无咎，酌情减损。初九巳事遄往无咎酌损之，损下以从上。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：利貞，征凶，弗損，益之。"
+        "judgement": "九二：利貞，征凶，弗損，益之。",
+        "judgementPlain": "利于守正，征伐则凶；不损己而益之（守中）。九二利贞征凶弗损益之。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：三人行，則損一人；一人行，則得其友。"
+        "judgement": "六三：三人行，則損一人；一人行，則得其友。",
+        "judgementPlain": "三人行则损去一人，一人行则得其友。六三三人行则损一人一人行则得其友，致一之道。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：損其疾，使遄有喜，无咎。"
+        "judgement": "六四：損其疾，使遄有喜，无咎。",
+        "judgementPlain": "减损其疾病，使之速愈有喜，无咎。六四损其疾使遄有喜无咎，损过迁善。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：或益之，十朋之龜弗克違，元吉。"
+        "judgement": "六五：或益之，十朋之龜弗克違，元吉。",
+        "judgementPlain": "或有人增益之，十朋之龟也无法推辞，元吉。六五或益之十朋之龟弗克违元吉，柔中自得益。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：弗損益之，无咎，貞吉，有攸往，得臣无家。"
+        "judgement": "上九：弗損益之，无咎，貞吉，有攸往，得臣无家。",
+        "judgementPlain": "不损人而益之，无咎，守正则吉，有所前往则得臣而无需家室。上九弗损益之无咎贞吉有攸往得臣无家，损极而益天下。"
       }
     ]
   },
@@ -2029,43 +2277,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "益：利有攸往，利涉大川。",
-    "meaning": "象征增益，兴利除弊。",
+    "meaning": "益为风雷相益，损上益下，象征增益兴利、上下受益。占得此卦主宜见善则迁、有过则改，利涉大川担大任，益下则民悦、施益有道则元吉。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：利用為大作，元吉，无咎。"
+        "judgement": "初九：利用為大作，元吉，无咎。",
+        "judgementPlain": "利于大有作为，元吉，无咎。初九利用为大作元吉无咎，受益而为大。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。"
+        "judgement": "六二：或益之，十朋之龜弗克違，永貞吉。王用享于帝，吉。",
+        "judgementPlain": "或有人增益之，十朋之龟不违，永守正则吉。君王用享于上帝，吉。六二或益之十朋之龟弗克违永贞吉王用享于帝吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：益之用凶事，无咎。有孚中行，告公用圭。"
+        "judgement": "六三：益之用凶事，无咎。有孚中行，告公用圭。",
+        "judgementPlain": "将增益用于凶事，无咎。心存诚信、行于中道，以圭告公。六三益之用凶事无咎有孚中行告公用圭。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：中行，告公從。利用為依遷國。"
+        "judgement": "六四：中行，告公從。利用為依遷國。",
+        "judgementPlain": "行于中道，公告公而从之。利于以此为依凭迁国。六四中行告公从利用为依迁国。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：有孚惠心，勿問元吉。有孚惠我德。"
+        "judgement": "九五：有孚惠心，勿問元吉。有孚惠我德。",
+        "judgementPlain": "心怀诚信、施惠之心，勿问元吉；其诚信惠我以德。九五有孚惠心勿问元吉有孚惠我德，惠而不费。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：莫益之，或擊之，立心勿恆，凶。"
+        "judgement": "上九：莫益之，或擊之，立心勿恆，凶。",
+        "judgementPlain": "无人增益之，或有人击之，立心无恒，凶。上九莫益之或击之立心勿恒凶，贪求无厌则凶。"
       }
     ]
   },
@@ -2078,43 +2332,49 @@
     "palace": "坤宫",
     "fiveElements": "土",
     "judgment": "夬：揚于王庭，孚號，有厲，告自邑，不利即戎，利有攸往。",
-    "meaning": "象征决断，果敢除弊。",
+    "meaning": "夬为泽天决去，象征五阳决一阴、果敢决断除弊。占得此卦主正气将胜、宜公开决去小人，然当以德化而非暴戎，孚号有厉示不可轻敌，稳健推进则利往。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：壯于前趾，往不勝為咎。"
+        "judgement": "初九：壯于前趾，往不勝為咎。",
+        "judgementPlain": "壮于前趾，前往不胜则成为咎。初九壮于前趾往不胜为咎，躁进必败。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：惕號，莫夜有戎，勿恤。"
+        "judgement": "九二：惕號，莫夜有戎，勿恤。",
+        "judgementPlain": "警惕呼号，暮夜有兵戎，勿忧。九二惕号莫夜有戎勿恤，有备无患。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：壯于頄，有凶。君子夬夬，獨行，遇雨，若濡，有慍，无咎。"
+        "judgement": "九三：壯于頄，有凶。君子夬夬，獨行，遇雨，若濡，有慍，无咎。",
+        "judgementPlain": "壮于面部颧骨，有凶。君子果决独行，遇雨如被淋湿而愠，无咎。九三壮于頄有凶君子夬夬独行遇雨若濡有愠无咎，决去小人而若不露。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：臀无膚，其行次且。牽羊悔亡，聞言不信。"
+        "judgement": "九四：臀无膚，其行次且。牽羊悔亡，聞言不信。",
+        "judgementPlain": "臀部无肉，行进次且难前。牵羊则悔亡，闻言不信。九四臀无肤其行次且牵羊悔亡闻言不信，决而难进。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：莧陸夬夬，中行无咎。"
+        "judgement": "九五：莧陸夬夬，中行无咎。",
+        "judgementPlain": "如苋陆般果决，行于中道则无咎。九五苋陆夬夬中行无咎，中正以决。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：无號，終有凶。"
+        "judgement": "上六：无號，終有凶。",
+        "judgementPlain": "无人呼号，终有凶。上六无号终有凶，小人终尽而犹不知戒，凶。"
       }
     ]
   },
@@ -2127,43 +2387,49 @@
     "palace": "乾宫",
     "fiveElements": "金",
     "judgment": "姤：女壯，勿用取女。",
-    "meaning": "象征相遇，不期而遇。",
+    "meaning": "姤为天风相遇，一阴遇五阳，象征不期而遇、邂逅相逢。占得此卦主非常之遇、机遇突至，然女壮勿用取女示所遇非正，宜慎择其偶、勿陷入邪缘。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：繫于金柅，貞吉，有攸往，見凶，羸豕孚蹢躅。"
+        "judgement": "初六：繫于金柅，貞吉，有攸往，見凶，羸豕孚蹢躅。",
+        "judgementPlain": "系于金属刹车木，守正则吉，有所前往见凶，羸弱之猪徘徊躁动。初六系于金柅贞吉有攸往见凶羸豕孚蹢躅，防微杜渐。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：包有魚，无咎，不利賓。"
+        "judgement": "九二：包有魚，无咎，不利賓。",
+        "judgementPlain": "包中有鱼，无咎，不利于待宾。九二包有鱼无咎不利宾，制邪不使蔓延。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：臀无膚，其行次且，厲，无大咎。"
+        "judgement": "九三：臀无膚，其行次且，厲，无大咎。",
+        "judgementPlain": "臀部无肉，行进次且，有厉，无大咎。九三臀无肤其行次且厉无大咎，遇而不行其私。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：包无魚，起凶。"
+        "judgement": "九四：包无魚，起凶。",
+        "judgementPlain": "包中无鱼，起凶。九四包无鱼起凶，失民而凶。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：以杞包瓜，含章，有隕自天。"
+        "judgement": "九五：以杞包瓜，含章，有隕自天。",
+        "judgementPlain": "以杞叶包瓜，含藏文采，有陨自天（佳遇自天而降）。九五以杞包瓜含章有陨自天，居尊含章而诚感。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：姤其角，吝，无咎。"
+        "judgement": "上九：姤其角，吝，无咎。",
+        "judgementPlain": "遇其角（刚触），吝，无咎。上九姤其角吝无咎，无所遇而吝。"
       }
     ]
   },
@@ -2176,43 +2442,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "萃：亨。王假有廟，利見大人，亨，利貞。用大牲吉，利有攸往。",
-    "meaning": "象征聚集、汇合。",
+    "meaning": "萃为泽地萃聚，象征聚集汇合、众心归附。占得此卦主宜祭祖聚众、见大人以正，用大牲示诚敬则吉，然聚须有正、防所聚非人，利有攸往。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：有孚不終，乃亂乃萃，若號一握為笑，勿恤，往无咎。"
+        "judgement": "初六：有孚不終，乃亂乃萃，若號一握為笑，勿恤，往无咎。",
+        "judgementPlain": "诚信不终，乃致乱乃致聚，若号呼而一握为笑，勿忧，前往无咎。初六有孚不终乃乱乃萃若号一握为笑勿恤往无咎。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：引吉，无咎，孚乃利用禴。"
+        "judgement": "六二：引吉，无咎，孚乃利用禴。",
+        "judgementPlain": "引之而吉，无咎，诚信则利于禴祭。六二引吉无咎孚乃利用禴，引聚以正。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：萃如，嗟如，无攸利，往无咎，小吝。"
+        "judgement": "六三：萃如，嗟如，无攸利，往无咎，小吝。",
+        "judgementPlain": "聚而又叹，无所利，前往无咎，小有吝。六三萃如嗟如无攸利往无咎小吝，聚不得正。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：大吉，无咎。"
+        "judgement": "九四：大吉，无咎。",
+        "judgementPlain": "大吉，无咎（必大吉而后无咎）。九四大吉无咎，处多惧之地，大吉乃免。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：萃有位，无咎。匪孚，元永貞，悔亡。"
+        "judgement": "九五：萃有位，无咎。匪孚，元永貞，悔亡。",
+        "judgementPlain": "聚而有位，无咎。未孚，则元永贞以悔亡。九五萃有位无咎匪孚元永贞悔亡，修德以服众。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：齎咨涕洟，无咎。"
+        "judgement": "上六：齎咨涕洟，无咎。",
+        "judgementPlain": "叹息流涕，无咎（处高位而能恤）。上六齎咨涕洟无咎，畏盈而戒。"
       }
     ]
   },
@@ -2225,43 +2497,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "升：元亨，用見大人，勿恤，南征吉。",
-    "meaning": "象征上升、登进。",
+    "meaning": "升为地中生木，象征上升登进、循序渐进。占得此卦主运势上扬、宜见大人提携，南征吉示向明而行，顺时而升、不息则通达，勿急功近利。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：允升，大吉。"
+        "judgement": "初六：允升，大吉。",
+        "judgementPlain": "允诺上升，大吉。初六允升大吉，柔顺以升，下从上。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：孚乃利用禴，无咎。"
+        "judgement": "九二：孚乃利用禴，无咎。",
+        "judgementPlain": "诚信则利于禴祭，无咎。九二孚乃利用禴无咎，中诚以升。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：升虛邑。"
+        "judgement": "九三：升虛邑。",
+        "judgementPlain": "升入空虚之邑（无所阻）。九三升虚邑，无所疑。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：王用亨于岐山，吉无咎。"
+        "judgement": "六四：王用亨于岐山，吉无咎。",
+        "judgementPlain": "君王用享于岐山，吉无咎。六四王用亨于岐山吉无咎，顺事以升。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：貞吉，升階。"
+        "judgement": "六五：貞吉，升階。",
+        "judgementPlain": "守正则吉，升进其阶。六五贞吉升阶，循序渐进。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：冥升，利于不息之貞。"
+        "judgement": "上六：冥升，利于不息之貞。",
+        "judgementPlain": "昏冥上升，利于不息地守正。上六冥升利于不息之贞，升极而当不息以正。"
       }
     ]
   },
@@ -2274,43 +2552,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "困：亨，貞，大人吉，无咎，有言不信。",
-    "meaning": "象征困顿、困境。",
+    "meaning": "困为泽无水，象征困顿困境、才智难展。占得此卦主身陷困境、有言不信，唯大人守正可吉，致命遂志则亨通，忌怨天尤人、强辩求伸。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：臀困于株木，入于幽谷，三歲不覿。"
+        "judgement": "初六：臀困于株木，入于幽谷，三歲不覿。",
+        "judgementPlain": "臀部困于株木，陷入幽谷，三年不得相见。初六臀困于株木入于幽谷三岁不觌，幽困不能自拔。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：困于酒食，朱紱方來，利用享祀，征凶，无咎。"
+        "judgement": "九二：困于酒食，朱紱方來，利用享祀，征凶，无咎。",
+        "judgementPlain": "困于酒食，朱色蔽膝方来，利于享祀，征伐则凶，无咎。九二困于酒食朱绂方来利用享祀征凶无咎，刚中之困，祭则福。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：困于石，據于蒺蔾，入于其宮，不見其妻，凶。"
+        "judgement": "六三：困于石，據于蒺蔾，入于其宮，不見其妻，凶。",
+        "judgementPlain": "困于石、据于蒺藜，入其宫不见其妻，凶。六三困于石据于蒺蔾入于其宫不见其妻凶，非所困而困，凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：來徐徐，困于金車，吝，有終。"
+        "judgement": "九四：來徐徐，困于金車，吝，有終。",
+        "judgementPlain": "缓缓而来，困于金车，吝，有终。九四来徐徐困于金车吝有终，欲往而缓。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：劓刖，困于赤紱，乃徐有說，利用祭祀。"
+        "judgement": "九五：劓刖，困于赤紱，乃徐有說，利用祭祀。",
+        "judgementPlain": "劓鼻刖足，困于赤色蔽膝，乃徐徐解脱，利于祭祀。九五劓刖困于赤绂乃徐有说利用祭祀，险厄而后释。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：困于葛藟，于臲卼，曰動悔。有悔，征吉。"
+        "judgement": "上六：困于葛藟，于臲卼，曰動悔。有悔，征吉。",
+        "judgementPlain": "困于葛藟、于臲卼不安，动则悔；有悔而征伐则吉。上六困于葛藟于臲卼曰动悔有悔征吉，悔悟而动则吉。"
       }
     ]
   },
@@ -2323,43 +2607,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "井：改邑不改井，无喪无得，往來井井。汔至，亦未繘井，羸其瓶，凶。",
-    "meaning": "象征水井，养民不穷。",
+    "meaning": "井为水风井，象征井养不穷、德泽广施。占得此卦主宜修身养德、惠施不倦，改邑不改井示德操恒定，当勤勉修治以防功亏一篑，井收勿幕则元吉。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：井泥不食，舊井无禽。"
+        "judgement": "初六：井泥不食，舊井无禽。",
+        "judgementPlain": "井泥不能饮用，旧井无禽。初六井泥不食旧井无禽，淤废之井。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：井谷射鮒，瓮敝漏。"
+        "judgement": "九二：井谷射鮒，瓮敝漏。",
+        "judgementPlain": "井谷侧射出鲋鱼，水瓮破漏。九二井谷射鲋瓮敝漏，井未治而养不周。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：井渫不食，為我心惻，可用汲，王明，並受其福。"
+        "judgement": "九三：井渫不食，為我心惻，可用汲，王明，並受其福。",
+        "judgementPlain": "井已疏治却不饮用，使我心悲；可汲取用，王若明察则并受其福。九三井渫不食为我心恻可用汲王明并受其福，井治而不见用，待明主。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：井甃，无咎。"
+        "judgement": "六四：井甃，无咎。",
+        "judgementPlain": "以砖砌井壁，无咎。六四井甃无咎，修井以养。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：井冽，寒泉食。"
+        "judgement": "九五：井冽，寒泉食。",
+        "judgementPlain": "井水清冽，寒泉可食。九五井冽寒泉食，井道大成。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：井收勿幕，有孚元吉。"
+        "judgement": "上六：井收勿幕，有孚元吉。",
+        "judgementPlain": "井水收提勿掩盖，有孚则元吉。上六井收勿幕有孚元吉，井功大成而济众。"
       }
     ]
   },
@@ -2372,43 +2662,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "革：巳日乃孚，元亨利貞，悔亡。",
-    "meaning": "象征变革、除旧布新。",
+    "meaning": "革为泽火变革，象征变革除旧、顺天应民。占得此卦主宜革故鼎新、巳日乃孚示待信而后革，悔亡则大成，然革须顺天应人、不可妄动，慎之则吉。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：鞏用黃牛之革。"
+        "judgement": "初九：鞏用黃牛之革。",
+        "judgementPlain": "以黄牛皮绳牢固束缚。初九巩用黄牛之革，变革未可，固守以待。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：巳日乃革之，征吉，无咎。"
+        "judgement": "六二：巳日乃革之，征吉，无咎。",
+        "judgementPlain": "到了巳日才变革之，征伐则吉，无咎。六二巳日乃革之征吉无咎，时至乃革。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：征凶，貞厲，革言三就，有孚。"
+        "judgement": "九三：征凶，貞厲，革言三就，有孚。",
+        "judgementPlain": "征伐则凶，守正防厉，变革之议须经多次斟酌而成就，心存诚信。九三征凶贞厉革言三就有孚。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：悔亡，有孚改命，吉。"
+        "judgement": "九四：悔亡，有孚改命，吉。",
+        "judgementPlain": "悔亡，心存诚信以改命，吉。九四悔亡有孚改命吉，改命顺天。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：大人虎變，未占有孚。"
+        "judgement": "九五：大人虎變，未占有孚。",
+        "judgementPlain": "大人之变如虎之斑纹焕然，未占已知其诚信。九五大人虎变未占有孚，炳然文明。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：君子豹變，小人革面，征凶，居貞吉。"
+        "judgement": "上六：君子豹變，小人革面，征凶，居貞吉。",
+        "judgementPlain": "君子之变如豹之斑纹，小人则改其面目，征伐则凶，安居守正则吉。上六君子豹变小人革面征凶居贞吉，革成当静。"
       }
     ]
   },
@@ -2421,43 +2717,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "鼎：元吉，亨。",
-    "meaning": "象征鼎器，烹饪养贤。",
+    "meaning": "鼎为火风鼎，象征鼎器养贤、鼎新而成。占得此卦主宜正位凝命、养贤用能，元吉亨通，然须小心护持以防折足覆餗，稳重守正则大吉无不利。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：鼎顛趾，利出否，得妾以其子，无咎。"
+        "judgement": "初六：鼎顛趾，利出否，得妾以其子，无咎。",
+        "judgementPlain": "鼎足颠倒朝上，利于倾倒废秽，得妾因其生子，无咎。初六鼎颠趾利出否得妾以其子无咎，弃旧纳新。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：鼎有實，我仇有疾，不我能即，吉。"
+        "judgement": "九二：鼎有實，我仇有疾，不我能即，吉。",
+        "judgementPlain": "鼎中有实，我之仇伴有疾，不能就我（不相侵），吉。九二鼎有实我仇有疾不我能即吉，守实不染。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。"
+        "judgement": "九三：鼎耳革，其行塞，雉膏不食，方雨虧悔，終吉。",
+        "judgementPlain": "鼎耳变形，其行受阻，雉膏不得食，方雨则悔亏，终吉。九三鼎耳革其行塞雉膏不食方雨亏悔终吉，待时而通。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：鼎折足，覆公餗，其形渥，凶。"
+        "judgement": "九四：鼎折足，覆公餗，其形渥，凶。",
+        "judgementPlain": "鼎足折断，倾覆王公之美食，其形湿漉，凶。九四鼎折足覆公餗其形渥凶，任非其人则败。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：鼎黃耳，金鉉，利貞。"
+        "judgement": "六五：鼎黃耳，金鉉，利貞。",
+        "judgementPlain": "鼎有黄色耳、金制举鼎器，利于守正。六五鼎黄耳金铉利贞，柔中以正。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：鼎玉鉉，大吉，无不利。"
+        "judgement": "上九：鼎玉鉉，大吉，无不利。",
+        "judgementPlain": "鼎有玉制举鼎器，大吉无不利。上九鼎玉铉大吉无不利，玉铉之德，刚柔节。"
       }
     ]
   },
@@ -2470,43 +2772,49 @@
     "palace": "震宫",
     "fiveElements": "木",
     "judgment": "震：亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。",
-    "meaning": "象征震动，雷声惊醒。",
+    "meaning": "震为洊雷震动，象征震动惊惧、奋发自省。占得此卦主猝遇变故、当临危不乱，恐惧修省则笑言哑哑，震惊百里而不丧匕鬯示定力，临震而惧则吉。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：震來虩虩，後笑言啞啞，吉。"
+        "judgement": "初九：震來虩虩，後笑言啞啞，吉。",
+        "judgementPlain": "雷震袭来恐惧虩虩，其后则笑言哑哑，吉。初九震来虩虩后笑言哑哑吉，能惧而保福。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。"
+        "judgement": "六二：震來厲，億喪貝，躋于九陵，勿逐，七日得。",
+        "judgementPlain": "雷震袭来有厉，丧失巨额贝财，登于九陵之上，勿追逐，七日复得。六二震来厉亿丧贝跻于九陵勿逐七日得，震失而终复。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：震蘇蘇，震行无眚。"
+        "judgement": "六三：震蘇蘇，震行无眚。",
+        "judgementPlain": "震动苏苏（畏惧），震行则无眚灾。六三震苏苏震行无眚，因惧而修省则免灾。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：震遂泥。"
+        "judgement": "九四：震遂泥。",
+        "judgementPlain": "震动遂陷入泥泞。九四震遂泥，刚不中而溺于震。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：震往來厲，億无喪，有事。"
+        "judgement": "六五：震往來厲，億无喪，有事。",
+        "judgementPlain": "震往来皆有厉，幸好无大丧，然有事（所损）。六五震往来厉亿无丧有事，柔中而能保。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎。婚媾有言。"
+        "judgement": "上六：震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎。婚媾有言。",
+        "judgementPlain": "震动索索、视之矍矍，征伐则凶。震不及其身、仅及邻居，无咎；婚媾则有言。上六震索索视矍矍征凶震不于其躬于其邻无咎婚媾有言，震极而戒。"
       }
     ]
   },
@@ -2519,43 +2827,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "艮：艮其背，不獲其身，行其庭，不見其人，无咎。",
-    "meaning": "象征静止，止而不动。",
+    "meaning": "艮为兼山静止，象征知止安止、动静适时。占得此卦主宜适时而止、思不出位，艮其背示止于所当止，止于至善则无咎，当止不止、当行不行则凶。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：艮其趾，无咎，利永貞。"
+        "judgement": "初六：艮其趾，无咎，利永貞。",
+        "judgementPlain": "止其脚趾，无咎，利于永远守正。初六艮其趾无咎利永贞，止于初。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：艮其腓，不拯其隨，其心不快。"
+        "judgement": "六二：艮其腓，不拯其隨，其心不快。",
+        "judgementPlain": "止其小腿肚，不能拯救其随从（大腿），其心不快。六二艮其腓不拯其随其心不快，止非所当。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：艮其限，列其夤，厲薰心。"
+        "judgement": "九三：艮其限，列其夤，厲薰心。",
+        "judgementPlain": "止其腰部，分裂其脊肉，危厉薰心。九三艮其限列其夤厉薰心，强止而危。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：艮其身，无咎。"
+        "judgement": "六四：艮其身，无咎。",
+        "judgementPlain": "止其身（躯干），无咎。六四艮其身无咎，止于身而安。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：艮其輔，言有序，悔亡。"
+        "judgement": "六五：艮其輔，言有序，悔亡。",
+        "judgementPlain": "止其口颊，言语有序，悔亡。六五艮其辅言有序悔亡，慎言。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：敦艮，吉。"
+        "judgement": "上九：敦艮，吉。",
+        "judgementPlain": "敦厚地止，吉。上九敦艮吉，止于至厚，吉终。"
       }
     ]
   },
@@ -2568,43 +2882,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "漸：女歸吉，利貞。",
-    "meaning": "象征渐进，循序渐进。",
+    "meaning": "渐为风山渐进，象征循序渐进、按部就班。占得此卦主宜循序渐进、不可躐等，女归吉示婚姻循礼则成，渐进而正、积渐有成则亨通无咎。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：鴻漸于干，小子厲，有言，无咎。"
+        "judgement": "初六：鴻漸于干，小子厲，有言，无咎。",
+        "judgementPlain": "鸿雁渐进于水边，小人有厉，有言语中伤，无咎。初六鸿渐于干小子厉有言无咎，渐进始微。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：鴻漸于磐，飲食衎衎，吉。"
+        "judgement": "六二：鴻漸于磐，飲食衎衎，吉。",
+        "judgementPlain": "鸿雁渐进于磐石，饮食衎衎和乐，吉。六二鸿渐于磐饮食衎衎吉，渐进得安。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：鴻漸于陸，夫征不復，婦孕不育，凶；利禦寇。"
+        "judgement": "九三：鴻漸于陸，夫征不復，婦孕不育，凶；利禦寇。",
+        "judgementPlain": "鸿雁渐进于高地，丈夫出征不复、妇人怀孕不育，凶；利于抵御寇盗。九三鸿渐于陆夫征不复妇孕不育凶利御寇，渐失所宜。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：鴻漸于木，或得其桷，无咎。"
+        "judgement": "六四：鴻漸于木，或得其桷，无咎。",
+        "judgementPlain": "鸿雁渐进于树木，或得其方木（平柯），无咎。六四鸿渐于木或得其桷无咎，渐得其所。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。"
+        "judgement": "九五：鴻漸于陵，婦三歲不孕，終莫之勝，吉。",
+        "judgementPlain": "鸿雁渐进于山陵，妇人三年不孕，终无人能胜之，吉。九五鸿渐于陵妇三岁不孕终莫之胜吉，渐久而正合。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：鴻漸于陸，其羽可用為儀，吉。"
+        "judgement": "上九：鴻漸于陸，其羽可用為儀，吉。",
+        "judgementPlain": "鸿雁渐进于高地（云端），其羽可用为仪饰，吉。上九鸿渐于陆其羽可用为仪吉，渐进至高，可为人仪。"
       }
     ]
   },
@@ -2617,43 +2937,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "歸妹：征凶，无攸利。",
-    "meaning": "象征少女出嫁，归之终也。",
+    "meaning": "归妹为雷泽归妹，象征少女出嫁、归之有终。占得此卦主位不正而动、征凶无攸利，多示所归非偶、名分不正，宜守正待时、勿急就苟合，否则有凶。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：歸妹以娣，跛能履，征吉。"
+        "judgement": "初九：歸妹以娣，跛能履，征吉。",
+        "judgementPlain": "少女以娣（侧室）身份出嫁，如跛者能行，征伐则吉。初九归妹以娣跛能履征吉，以贱从正。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：眇能視，利幽人之貞。"
+        "judgement": "九二：眇能視，利幽人之貞。",
+        "judgementPlain": "如眇者能视，利于幽居守正之人。九二眇能视利幽人之贞，守正待时。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：歸妹以須，反歸以娣。"
+        "judgement": "六三：歸妹以須，反歸以娣。",
+        "judgementPlain": "少女须待（失位）而嫁，反以娣归。六三归妹以须反归以娣，失位不得正配。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：歸妹愆期，遲歸有時。"
+        "judgement": "九四：歸妹愆期，遲歸有時。",
+        "judgementPlain": "少女出嫁延期，迟归自有其时。九四归妹愆期迟归有时，待时而归。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：帝乙歸妹，其君之袂，不如其娣之袂良，月幾望，吉。"
+        "judgement": "六五：帝乙歸妹，其君之袂，不如其娣之袂良，月幾望，吉。",
+        "judgementPlain": "帝乙嫁妹，其君夫人之衣袖不如其娣之美，月近圆，吉。六五帝乙归妹其君之袂不如其娣之袂良月几望吉，贵德不贵饰。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：女承筐无實，士刲羊无血，无攸利。"
+        "judgement": "上六：女承筐无實，士刲羊无血，无攸利。",
+        "judgementPlain": "女子捧筐无实，男士宰羊无血，无所利。上六女承筐无实士刲羊无血无攸利，名存实亡。"
       }
     ]
   },
@@ -2666,43 +2992,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "豐：亨，王假之，勿憂，宜日中。",
-    "meaning": "象征丰收、盛大光明。",
+    "meaning": "丰为雷电交辉，象征丰收盛大、光明充盈。占得此卦主正值鼎盛、宜守中保泰，宜日中示盛当守，然丰极易衰、盛极必亏，当警惕衰微、守诚保丰。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：遇其配主，雖旬无咎，往有尚。"
+        "judgement": "初九：遇其配主，雖旬无咎，往有尚。",
+        "judgementPlain": "遇其配主，虽相等（旬）无咎，前往有嘉尚。初九遇其配主虽旬无咎往有尚，相得而往。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。"
+        "judgement": "六二：豐其蔀，日中見斗，往得疑疾，有孚發若，吉。",
+        "judgementPlain": "丰大其障蔽，日中见星斗，前往得疑疾，以诚信启发之，吉。六二丰其蔀日中见斗往得疑疾有孚发若吉，盛而有蔽，以孚发之。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：豐其沛，日中見沬，折其右肱，无咎。"
+        "judgement": "九三：豐其沛，日中見沬，折其右肱，无咎。",
+        "judgementPlain": "丰大其幔幕，日中见小星，折其右肱，无咎。九三丰其沛日中见沬折其右肱无咎，盛极而损。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：豐其蔀，日中見斗，遇其夷主，吉。"
+        "judgement": "九四：豐其蔀，日中見斗，遇其夷主，吉。",
+        "judgementPlain": "丰大其障蔽，日中见星斗，遇其夷主，吉。九四丰其蔀日中见斗遇其夷主吉，蔽而得配。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：來章，有慶譽，吉。"
+        "judgement": "六五：來章，有慶譽，吉。",
+        "judgementPlain": "来致章美之人，有庆誉，吉。六五来章有庆誉吉，柔中致贤。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：豐其屋，蔀其家，闚其戶，闃其无人，三歲不覿，凶。"
+        "judgement": "上六：豐其屋，蔀其家，闚其戶，闃其无人，三歲不覿，凶。",
+        "judgementPlain": "丰大其屋宇、障蔽其家室，窥其门户阒其无人，三年不得见，凶。上六丰其屋蔀其家窥其户阒其无人三岁不觌凶，丰极而藏，自绝于人。"
       }
     ]
   },
@@ -2715,43 +3047,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "旅：小亨，旅貞吉。",
-    "meaning": "象征旅行、客居他乡。",
+    "meaning": "旅为火山旅，象征旅行客居、颠沛在外。占得此卦主客居他乡、势单力薄，小亨旅贞吉示柔顺谨慎则吉，宜明慎不留、随遇而安，骄奢则失旅凶。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：旅瑣瑣，斯其所取災。"
+        "judgement": "初六：旅瑣瑣，斯其所取災。",
+        "judgementPlain": "旅人琐碎吝啬，这是自取灾祸。初六旅琐琐斯其所取灾，旅而狭陋致灾。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：旅即次，懷其資，得童僕貞。"
+        "judgement": "六二：旅即次，懷其資，得童僕貞。",
+        "judgementPlain": "旅人次于旅舍，怀揣资财，得童仆之贞正。六二旅即次怀其资得童仆贞，旅而有备。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：旅焚其次，喪其童僕，貞厲。"
+        "judgement": "九三：旅焚其次，喪其童僕，貞厲。",
+        "judgementPlain": "旅人所次旅舍被焚，丧失其童仆，守正防厉。九三旅焚其次丧其童仆贞厉，旅而骄致灾。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：旅于處，得其資斧，我心不快。"
+        "judgement": "九四：旅于處，得其資斧，我心不快。",
+        "judgementPlain": "旅人居于处所，得其资斧，我心不快。九四旅于处得其资斧我心不快，旅而未安。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：射雉一矢亡，終以譽命。"
+        "judgement": "六五：射雉一矢亡，終以譽命。",
+        "judgementPlain": "射雉一箭而亡（虽失一矢），终得誉命。六五射雉一矢亡终以誉命，旅而有成，柔中。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。"
+        "judgement": "上九：鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。",
+        "judgementPlain": "鸟焚其巢，旅人先笑后号咷；丧牛于边邑，凶。上九鸟焚其巢旅人先笑后号咷丧牛于易凶，旅而骄奢，凶。"
       }
     ]
   },
@@ -2764,43 +3102,49 @@
     "palace": "巽宫",
     "fiveElements": "木",
     "judgment": "巽：小亨，利攸往，利見大人。",
-    "meaning": "象征进入、顺从，如风之入。",
+    "meaning": "巽为随风相随，象征顺从渗入、令行教化。占得此卦主宜谦逊顺从、申命行事，小亨利有往，然顺非盲从、须利见大人以正，反复申命则令行。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：進退，利武人之貞。"
+        "judgement": "初六：進退，利武人之貞。",
+        "judgementPlain": "进退不决，利于武人之守正。初六进退利武人之贞，柔弱当决以武人之刚。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：巽在床下，用史巫紛若，吉，无咎。"
+        "judgement": "九二：巽在床下，用史巫紛若，吉，无咎。",
+        "judgementPlain": "顺伏于床下，用史巫纷若（多般祝祷），吉，无咎。九二巽在床下用史巫纷若吉无咎，过巽以中正得吉。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：頻巽，吝。"
+        "judgement": "九三：頻巽，吝。",
+        "judgementPlain": "频繁地顺从（勉强），吝。九三频巽吝，屡失其正。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：悔亡，田獲三品。"
+        "judgement": "六四：悔亡，田獲三品。",
+        "judgementPlain": "悔亡，田猎获三品。六四悔亡田获三品，顺正而有功。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：貞吉悔亡，无不利。无初有終，先庚三日，後庚三日，吉。"
+        "judgement": "九五：貞吉悔亡，无不利。无初有終，先庚三日，後庚三日，吉。",
+        "judgementPlain": "守正则吉、悔亡，无不利。无初有终，先庚三日、后庚三日（慎重申命），吉。九五贞吉悔亡无不利无初有终先庚三日后庚三日吉，申命以正。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：巽在床下，喪其資斧，貞凶。"
+        "judgement": "上九：巽在床下，喪其資斧，貞凶。",
+        "judgementPlain": "顺伏于床下，丧失其资斧，守正防凶。上九巽在床下丧其资斧贞凶，巽极而失断。"
       }
     ]
   },
@@ -2813,43 +3157,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "兌：亨，利貞。",
-    "meaning": "象征喜悦、欢欣。",
+    "meaning": "兑为丽泽相说，象征喜悦欢欣、朋友讲习。占得此卦主和悦待人、亨通利贞，然悦须以正、刚中柔外，谄媚求悦、悦于邪僻则有厉，和而不同则吉。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：和兌，吉。"
+        "judgement": "初九：和兌，吉。",
+        "judgementPlain": "和悦待人，吉。初九和兑吉，以刚正和悦。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：孚兌，吉，悔亡。"
+        "judgement": "九二：孚兌，吉，悔亡。",
+        "judgementPlain": "以诚信待人悦，吉，悔亡。九二孚兑吉悔亡，刚中孚信以悦。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：來兌，凶。"
+        "judgement": "六三：來兌，凶。",
+        "judgementPlain": "前来求悦（谄媚），凶。六三来兑凶，柔不中正，谄以求悦。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：商兌，未寧，介疾有喜。"
+        "judgement": "九四：商兌，未寧，介疾有喜。",
+        "judgementPlain": "商度其悦，未宁，介疾（隔阻邪疾）则有喜。九四商兑未宁介疾有喜，去邪而后悦。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：孚于剝，有厲。"
+        "judgement": "九五：孚于剝，有厲。",
+        "judgementPlain": "诚信于剥蚀（小人），有厉。九五孚于剥有厉，悦于小人则危。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：引兌。"
+        "judgement": "上六：引兌。",
+        "judgementPlain": "引人来悦（未明言吉凶）。上六引兑，悦之极而引人，当戒。"
       }
     ]
   },
@@ -2862,43 +3212,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "渙：亨。王假有廟，利涉大川，利貞。",
-    "meaning": "象征涣散，离散而去。",
+    "meaning": "涣为风水涣散，象征涣散离散、去险而行。占得此卦主涣散将聚、宜聚散有道，王假有庙示以诚聚人心，利涉大川示济险有为，涣其群则元吉。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：用拯馬壯，吉。"
+        "judgement": "初六：用拯馬壯，吉。",
+        "judgementPlain": "用强壮之马拯救，吉。初六用拯马壮吉，涣之始，速济以壮马。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：渙奔其机，悔亡。"
+        "judgement": "九二：渙奔其机，悔亡。",
+        "judgementPlain": "涣散奔向其几案（依托），悔亡。九二涣奔其机悔亡，得所据。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：渙其躬，无悔。"
+        "judgement": "六三：渙其躬，无悔。",
+        "judgementPlain": "涣散其自身，无悔。六三涣其躬无悔，忘私以济涣。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：渙其群，元吉。渙有丘，匪夷所思。"
+        "judgement": "六四：渙其群，元吉。渙有丘，匪夷所思。",
+        "judgementPlain": "涣散其朋党（小群体），元吉。涣散而有丘墟（聚为大），非凡所能思。六四涣其群元吉涣有丘匪夷所思，散小群以聚大众。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：渙汗其大號，渙王居，无咎。"
+        "judgement": "九五：渙汗其大號，渙王居，无咎。",
+        "judgementPlain": "涣散如汗（号令一出不可收回），涣散王之居积（散财济众），无咎。九五涣汗其大号涣王居无咎，散财以聚人。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：渙其血，去逖出，无咎。"
+        "judgement": "上九：渙其血，去逖出，无咎。",
+        "judgementPlain": "涣散其血（伤害），远去而出，无咎。上九涣其血去逖出无咎，去伤害而远出。"
       }
     ]
   },
@@ -2911,43 +3267,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "節：亨。苦節，不可貞。",
-    "meaning": "象征节制、限度。",
+    "meaning": "节为水泽节，象征节制有度、适可而止。占得此卦主宜节制有度、亨通守正，甘节为吉而苦节不可贞，过则伤生、不及则纵，当节以中道。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：不出戶庭，无咎。"
+        "judgement": "初九：不出戶庭，无咎。",
+        "judgementPlain": "不出内院门户，无咎。初九不出户庭无咎，知塞而止。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：不出門庭，凶。"
+        "judgement": "九二：不出門庭，凶。",
+        "judgementPlain": "不出外院门户，凶。九二不出门庭凶，当通而止则失时。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：不節若，則嗟若，无咎。"
+        "judgement": "六三：不節若，則嗟若，无咎。",
+        "judgementPlain": "不能节制，则嗟叹，无咎（能悔）。六三不节若则嗟若无咎，不节而能嗟，悔也。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：安節，亨。"
+        "judgement": "六四：安節，亨。",
+        "judgementPlain": "安于节制，亨通。六四安节亨，柔正顺节。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：甘節，吉；往有尚。"
+        "judgement": "九五：甘節，吉；往有尚。",
+        "judgementPlain": "甘美地节制，吉，前往有嘉尚。九五甘节吉往有尚，中正以节而甘。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：苦節，貞凶，悔亡。"
+        "judgement": "上六：苦節，貞凶，悔亡。",
+        "judgementPlain": "苦于节制，守正防凶，悔亡。上六苦节贞凶悔亡，节之过苦则凶，悔乃亡。"
       }
     ]
   },
@@ -2960,43 +3322,49 @@
     "palace": "艮宫",
     "fiveElements": "土",
     "judgment": "中孚：豚魚吉，利涉大川，利貞。",
-    "meaning": "象征诚信，中正之信。",
+    "meaning": "中孚为风泽中孚，象征诚信中实、感而遂通。占得此卦主以诚待人、信及豚鱼则吉，利涉大川示信可济险，中虚受物、中实不妄，信守不渝则无咎。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：虞吉，有它不燕。"
+        "judgement": "初九：虞吉，有它不燕。",
+        "judgementPlain": "安守则吉，另有他求则不安。初九虞吉有它不燕，守信专一则吉。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。"
+        "judgement": "九二：鳴鶴在陰，其子和之，我有好爵，吾與爾靡之。",
+        "judgementPlain": "鹤鸣于幽阴之中，其子和之；我有美酒，愿与你共享。九二鸣鹤在阴其子和之我有好爵吾与尔靡之，诚信感通。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：得敵，或鼓或罷，或泣或歌。"
+        "judgement": "六三：得敵，或鼓或罷，或泣或歌。",
+        "judgementPlain": "遇到敌对，或鼓或罢，或泣或歌。六三得敌或鼓或罢或泣或歌，信不专则无常。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：月幾望，馬匹亡，无咎。"
+        "judgement": "六四：月幾望，馬匹亡，无咎。",
+        "judgementPlain": "月近圆，丧失其马匹（伴），无咎。六四月几望马匹亡无咎，绝类而去上。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：有孚攣如，无咎。"
+        "judgement": "九五：有孚攣如，无咎。",
+        "judgementPlain": "心存诚信、攣如不断，无咎。九五有孚挛如无咎，中正以孚而系。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：翰音登于天，貞凶。"
+        "judgement": "上九：翰音登于天，貞凶。",
+        "judgementPlain": "鸡鸣之声上达于天，守正防凶。上九翰音登于天贞凶，信非所登，妄鸣则凶。"
       }
     ]
   },
@@ -3009,43 +3377,49 @@
     "palace": "兑宫",
     "fiveElements": "金",
     "judgment": "小過：亨，利貞，可小事，不可大事。飛鳥遺之音，不宜上，宜下，大吉。",
-    "meaning": "象征小的过失，行事宜谦。",
+    "meaning": "小过为雷山小过，象征小有过越、行宜谦下。占得此卦主可小事不可大事、宜下不宜上，飞鸟遗音示谦退则吉，过以利贞、小有过越而守正则亨通。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：飛鳥以凶。"
+        "judgement": "初六：飛鳥以凶。",
+        "judgementPlain": "飞鸟妄飞以致凶。初六飞鸟以凶，过而上飞则凶。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：過其祖，遇其妣；不及其君，遇其臣；无咎。"
+        "judgement": "六二：過其祖，遇其妣；不及其君，遇其臣；无咎。",
+        "judgementPlain": "过其祖父、遇其祖母；不及其君、遇其臣，无咎。六二过其祖遇其妣不及其君遇其臣无咎，柔中得宜。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：弗過防之，從或戕之，凶。"
+        "judgement": "九三：弗過防之，從或戕之，凶。",
+        "judgementPlain": "不能过分防备，随从而反被戕害，凶。九三弗过防之从或戕之凶，过刚不防则凶。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：无咎，弗過遇之。往厲必戒，勿用永貞。"
+        "judgement": "九四：无咎，弗過遇之。往厲必戒，勿用永貞。",
+        "judgementPlain": "无咎，不过分而遇之。前往有厉必戒，勿用永贞。九四无咎弗过遇之往厉必戒勿用永贞，柔而当戒。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：密雲不雨，自我西郊，公弋取彼在穴。"
+        "judgement": "六五：密雲不雨，自我西郊，公弋取彼在穴。",
+        "judgementPlain": "密云不雨，自我西郊，公侯以弋取穴中之物。六五密云不雨自我西郊公弋取彼在穴，柔而无辅，事难成。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：弗遇過之，飛鳥離之，凶，是謂災眚。"
+        "judgement": "上六：弗遇過之，飛鳥離之，凶，是謂災眚。",
+        "judgementPlain": "不能遇而过之，飞鸟离之（遭网），凶，是为灾眚。上六弗遇过之飞鸟离之凶是谓灾眚，过极而灾。"
       }
     ]
   },
@@ -3058,43 +3432,49 @@
     "palace": "坎宫",
     "fiveElements": "水",
     "judgment": "既濟：亨，小利貞，初吉終亂。",
-    "meaning": "象征已经完成，万事已成。",
+    "meaning": "既济为水火既济，象征已经完成、万事皆成。占得此卦主初吉终乱、事成当守，宜居安思危、防患未然，初吉而终乱之戒示盛极将倾，慎终如始方保泰。",
     "lines": [
       {
         "position": 1,
         "name": "初九",
         "isYang": true,
-        "judgement": "初九：曳其輪，濡其尾，无咎。"
+        "judgement": "初九：曳其輪，濡其尾，无咎。",
+        "judgementPlain": "拖曳其车轮，沾湿其尾，无咎。初九曳其轮濡其尾无咎，慎于既济之始。"
       },
       {
         "position": 2,
         "name": "六二",
         "isYang": false,
-        "judgement": "六二：婦喪其茀，勿逐，七日得。"
+        "judgement": "六二：婦喪其茀，勿逐，七日得。",
+        "judgementPlain": "妇人丧失其首饰，勿追逐，七日复得。六二妇丧其茀勿逐七日得，失而终复，中正自守。"
       },
       {
         "position": 3,
         "name": "九三",
         "isYang": true,
-        "judgement": "九三：高宗伐鬼方，三年克之，小人勿用。"
+        "judgement": "九三：高宗伐鬼方，三年克之，小人勿用。",
+        "judgementPlain": "殷高宗伐鬼方，三年克之，小人不可任用。九三高宗伐鬼方三年克之小人勿用，克之不易，戒小人。"
       },
       {
         "position": 4,
         "name": "六四",
         "isYang": false,
-        "judgement": "六四：繻有衣袽，終日戒。"
+        "judgement": "六四：繻有衣袽，終日戒。",
+        "judgementPlain": "盛衣有破絮，终日戒备。六四繻有衣袽终日戒，既济当防终乱。"
       },
       {
         "position": 5,
         "name": "九五",
         "isYang": true,
-        "judgement": "九五：東鄰殺牛，不如西鄰之禴祭，實受其福。"
+        "judgement": "九五：東鄰殺牛，不如西鄰之禴祭，實受其福。",
+        "judgementPlain": "东邻杀牛（盛祭），不如西邻之禴祭（诚祭），实受其福。九五东邻杀牛不如西邻之禴祭实受其福，孚不在物。"
       },
       {
         "position": 6,
         "name": "上六",
         "isYang": false,
-        "judgement": "上六：濡其首，厲。"
+        "judgement": "上六：濡其首，厲。",
+        "judgementPlain": "沾湿其首，有厉。上六濡其首厉，既济之极，将乱之征。"
       }
     ]
   },
@@ -3107,43 +3487,49 @@
     "palace": "离宫",
     "fiveElements": "火",
     "judgment": "未濟：亨，小狐汔濟，濡其尾，无攸利。",
-    "meaning": "象征尚未完成，事未终结。",
+    "meaning": "未济为火水未济，象征尚未完成、事未终结。占得此卦主事将成未成、当慎始慎终，小狐汔济濡尾示力竭将成而败，宜量力慎行、守正以济，终将通达。",
     "lines": [
       {
         "position": 1,
         "name": "初六",
         "isYang": false,
-        "judgement": "初六：濡其尾，吝。"
+        "judgement": "初六：濡其尾，吝。",
+        "judgementPlain": "沾湿其尾，吝。初六濡其尾吝，不知量力，未济而冒进。"
       },
       {
         "position": 2,
         "name": "九二",
         "isYang": true,
-        "judgement": "九二：曳其輪，貞吉。"
+        "judgement": "九二：曳其輪，貞吉。",
+        "judgementPlain": "拖曳其车轮，守正则吉。九二曳其轮贞吉，中以缓济，慎重则吉。"
       },
       {
         "position": 3,
         "name": "六三",
         "isYang": false,
-        "judgement": "六三：未濟，征凶，利涉大川。"
+        "judgement": "六三：未濟，征凶，利涉大川。",
+        "judgementPlain": "尚未成功，征伐则凶，利于涉大川。六三未济征凶利涉大川，位不当，宜慎而济险。"
       },
       {
         "position": 4,
         "name": "九四",
         "isYang": true,
-        "judgement": "九四：貞吉，悔亡，震用伐鬼方，三年有賞于大國。"
+        "judgement": "九四：貞吉，悔亡，震用伐鬼方，三年有賞于大國。",
+        "judgementPlain": "守正则吉、悔亡，震动以伐鬼方，三年而获大国之赏。九四贞吉悔亡震用伐鬼方三年有赏于大国，努力而成。"
       },
       {
         "position": 5,
         "name": "六五",
         "isYang": false,
-        "judgement": "六五：貞吉，无悔，君子之光，有孚，吉。"
+        "judgement": "六五：貞吉，无悔，君子之光，有孚，吉。",
+        "judgementPlain": "守正则吉、无悔，君子之光辉，心存诚信，吉。六五贞吉无悔君子之光有孚吉，柔中文明，孚而光。"
       },
       {
         "position": 6,
         "name": "上九",
         "isYang": true,
-        "judgement": "上九：有孚于飲酒，无咎，濡其首，有孚失是。"
+        "judgement": "上九：有孚于飲酒，无咎，濡其首，有孚失是。",
+        "judgementPlain": "心存诚信而饮酒，无咎，沾湿其首，心存诚信却失其常度。上九有孚于饮酒无咎濡其首有孚失是，乐极而当戒。"
       }
     ]
   }
