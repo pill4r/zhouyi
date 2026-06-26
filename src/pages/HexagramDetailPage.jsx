@@ -22,6 +22,8 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
   useEffect(() => {
     if (hex) {
       setHexagram(hex)
+      // 切换卦象时回到页面顶部
+      window.scrollTo(0, 0)
       // 加载笔记
       API.Notes.get().then(data => {
         if (data && data[numId]) {
@@ -103,8 +105,7 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
         <div className="bg-gradient-to-br from-card to-surface border border-gold/30 rounded-2xl p-6 mb-6">
           <div className="text-center mb-4">
             <div className="text-6xl mb-2">{hex.trigramAbove}{hex.trigramBelow}</div>
-            <div className="text-2xl font-medium text-gold">{hex.nameCn}</div>
-            <div className="text-gray">{hex.name}</div>
+            <div className="text-gray text-lg">{hex.name}</div>
           </div>
 
           <div className="grid grid-cols-2 gap-3 mb-4">
@@ -175,9 +176,14 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
                 <div className={`text-2xl ${line.isYang ? 'text-gold' : 'text-muted'}`}>
                   {line.isYang ? '——' : '— —'}
                 </div>
-                <div>
+                <div className="flex-1 min-w-0">
                   <div className="text-sm font-medium">{line.name}</div>
                   <div className="text-xs text-gray">{line.judgement}</div>
+                  {line.judgementPlain && (
+                    <div className="text-xs text-text/60 leading-relaxed mt-1.5 pt-1.5 border-t border-gold/10">
+                      {line.judgementPlain}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
