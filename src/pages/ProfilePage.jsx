@@ -98,15 +98,19 @@ export default function ProfilePage({ userData, onUpdate }) {
           ) : (
             <div className="space-y-2">
               {history.slice(0, 5).map((record) => (
-                <div key={record.id} className="bg-card rounded-xl p-3 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="text-2xl">{record.trigramAbove}{record.trigramBelow}</div>
-                    <div>
+                <div
+                  key={record.id}
+                  onClick={() => record.hexagramId && navigate(`/hexagrams/${record.hexagramId}`)}
+                  className={`bg-card rounded-xl p-3 flex items-center justify-between ${record.hexagramId ? 'cursor-pointer active:scale-98 transition-transform' : ''}`}
+                >
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <div className="text-2xl flex-shrink-0">{record.trigramAbove}{record.trigramBelow}</div>
+                    <div className="min-w-0 flex-1">
                       <div className="text-sm font-medium">{record.name}</div>
-                      <div className="text-xs text-gray">{record.question || '未记录问题'}</div>
+                      <div className="text-xs text-gray truncate">{record.question || '未记录问题'}</div>
                     </div>
                   </div>
-                  <div className="text-xs text-gray">
+                  <div className="text-xs text-gray flex-shrink-0 ml-2">
                     {new Date(record.timestamp).toLocaleDateString()}
                   </div>
                 </div>

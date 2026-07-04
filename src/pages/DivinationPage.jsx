@@ -120,6 +120,7 @@ export default function DivinationPage({ userData, onUpdate }) {
   const [lastThrow, setLastThrow] = useState(null)
   const [saving, setSaving] = useState(false)
   const [revealed, setRevealed] = useState(false)
+  const [question, setQuestion] = useState('')
 
   const movingCount = useMemo(() => lines.filter(l => l.moving).length, [lines])
 
@@ -148,6 +149,7 @@ export default function DivinationPage({ userData, onUpdate }) {
         trigramAbove: orig.trigramAbove,
         trigramBelow: orig.trigramBelow,
         judgment: orig.judgment,
+        question: question || '',
         movingLines: lineData.filter(l => l.moving).map(l => l.position),
         changedHexagramId: changed?.id || null,
         changedName: changed?.name || null,
@@ -201,6 +203,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     setLastThrow(null)
     setThrowing(false)
     setRevealed(false)
+    setQuestion('')
   }
 
   // 渲染单条爻线
@@ -478,6 +481,20 @@ export default function DivinationPage({ userData, onUpdate }) {
               诚心默念所问之事，<br />
               专注意念，然后开始占卜。
             </p>
+
+            <div className="max-w-xs mx-auto mb-6">
+              <input
+                type="text"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter') setStep(1) }}
+                placeholder="（可选）写下你想问的事"
+                maxLength={50}
+                className="w-full bg-card border border-gold/20 rounded-full px-4 py-2.5 text-sm text-text text-center focus:outline-none focus:border-gold/60 placeholder:text-gray-500"
+              />
+              <div className="text-[10px] text-gray-500 mt-1.5">{question.length}/50 · 回车可直接开始</div>
+            </div>
+
             <p className="text-gray-500 text-xs mb-8">三硬币法 · 六爻成卦</p>
             <button
               onClick={() => setStep(1)}
@@ -564,6 +581,13 @@ export default function DivinationPage({ userData, onUpdate }) {
         {/* 结果阶段 */}
         {step === 2 && originalHex && (
           <div className="w-full max-w-sm mt-4">
+            {/* 所问之事 */}
+            {question && (
+              <div className="bg-card rounded-xl p-3 mb-4 text-center">
+                <div className="text-[10px] text-gray-500 mb-0.5">所问之事</div>
+                <div className="text-sm text-gold-light">「{question}」</div>
+              </div>
+            )}
 
             {/* 卦象对比图：本卦 → 变卦 */}
             <div className="bg-card rounded-2xl p-5 mb-4">

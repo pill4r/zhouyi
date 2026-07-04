@@ -9,9 +9,14 @@ export default function HomePage({ userData }) {
   const [todayHexagram, setTodayHexagram] = useState(null)
 
   useEffect(() => {
-    // 随机选择一个卦作为今日卦
-    const randomIndex = Math.floor(Math.random() * 64)
-    setTodayHexagram(hexagramsData[randomIndex])
+    // 以日期为种子选卦，保证"今日卦"在同一天内固定不变
+    const today = new Date().toDateString()
+    let hash = 0
+    for (let i = 0; i < today.length; i++) {
+      hash = (hash * 31 + today.charCodeAt(i)) >>> 0
+    }
+    const index = hash % 64
+    setTodayHexagram(hexagramsData[index])
   }, [])
 
   const learnedCount = userData.learned?.length || 0
