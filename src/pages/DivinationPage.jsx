@@ -472,7 +472,7 @@ export default function DivinationPage({ userData, onUpdate }) {
         <h1 className="text-xl font-semibold text-gold">占卜</h1>
       </header>
 
-      <main className="p-5 pb-24 flex flex-col items-center">
+      <main className="p-5 pb-24 flex flex-col items-center" style={{ minHeight: 'calc(100vh - 57px)' }}>
         {/* 准备阶段 */}
         {step === 0 && (
           <div className="text-center mt-12">
@@ -495,20 +495,28 @@ export default function DivinationPage({ userData, onUpdate }) {
               <div className="text-[10px] text-gray-500 mt-1.5">{question.length}/50 · 回车可直接开始</div>
             </div>
 
-            <p className="text-gray-500 text-xs mb-8">三硬币法 · 六爻成卦</p>
-            <button
-              onClick={() => setStep(1)}
-              className="bg-gold text-primary font-medium px-8 py-3 rounded-full active:scale-95 transition-transform inline-flex items-center gap-2"
-            >
-              <Sparkles className="w-5 h-5" />
-              开始占卜
-            </button>
+            <p className="text-gray-500 text-xs">三硬币法 · 六爻成卦</p>
+          </div>
+        )}
+
+        {/* 准备阶段按钮 — fixed 钉在视口底部，与掷币按钮位置完全一致 */}
+        {step === 0 && (
+          <div className="fixed bottom-0 left-0 right-0 z-30 px-5 pb-24 pt-3 bg-primary/95 backdrop-blur-sm">
+            <div className="max-w-sm mx-auto">
+              <button
+                onClick={() => setStep(1)}
+                className="w-full bg-gold text-primary font-medium py-3 rounded-full active:scale-95 transition-transform inline-flex items-center justify-center gap-2 shadow-lg shadow-gold/20"
+              >
+                <Sparkles className="w-5 h-5" />
+                开始占卜
+              </button>
+            </div>
           </div>
         )}
 
         {/* 掷币阶段 — 逐爻 */}
         {step === 1 && (
-          <div className="w-full max-w-sm mt-6 flex flex-col" style={{ minHeight: 'calc(100vh - 220px)' }}>
+          <div className="w-full max-w-sm mt-6">
             <div className="text-center mb-6">
               <div className="text-sm text-gray mb-1">第 {currentLine + 1} 爻 / 共六爻</div>
               <div className="text-gold font-medium">{LINE_NAMES[currentLine]}爻</div>
@@ -559,28 +567,32 @@ export default function DivinationPage({ userData, onUpdate }) {
               ) : null}
             </div>
 
-            {/* 已成爻线展示（从下往上）— 占据剩余空间，把按钮顶到底部 */}
-            <div className="flex-1 flex flex-col justify-end">
-              {lines.length > 0 && (
-                <div className="flex flex-col-reverse items-center gap-2 mb-8 bg-card rounded-xl p-4">
-                  {lines.map((l, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
-                      {renderLine(l.yang, l.moving, l.value)}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* 已成爻线展示（从下往上） */}
+            {lines.length > 0 && (
+              <div className="flex flex-col-reverse items-center gap-2 mb-8 bg-card rounded-xl p-4">
+                {lines.map((l, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
+                    {renderLine(l.yang, l.moving, l.value)}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
 
-            {/* 按钮 — 固定在底部，不受上方内容变化影响 */}
-            <button
-              onClick={throwOnce}
-              disabled={throwing}
-              className="w-full bg-gold text-primary font-medium py-3 rounded-full active:scale-95 transition-transform disabled:opacity-50 disabled:pointer-events-none"
-            >
-              {throwing ? '掷币中…' : `掷第 ${currentLine + 1} 爻`}
-            </button>
+        {/* 掷币按钮 — fixed 钉在视口底部，全程位置恒定不变 */}
+        {step === 1 && (
+          <div className="fixed bottom-0 left-0 right-0 z-30 px-5 pb-24 pt-3 bg-primary/95 backdrop-blur-sm">
+            <div className="max-w-sm mx-auto">
+              <button
+                onClick={throwOnce}
+                disabled={throwing}
+                className="w-full bg-gold text-primary font-medium py-3 rounded-full active:scale-95 transition-transform disabled:opacity-50 disabled:pointer-events-none shadow-lg shadow-gold/20"
+              >
+                {throwing ? '掷币中…' : `掷第 ${currentLine + 1} 爻`}
+              </button>
+            </div>
           </div>
         )}
 
