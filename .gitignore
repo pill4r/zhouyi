@@ -3,3 +3,14 @@ dist
 .DS_Store
 *.local
 .playwright-mcp/*
+
+# Cloudflare Wrangler 本地缓存与密钥
+.wrangler/
+workers/.wrangler/
+.dev.vars
+workers/.dev.vars
+
+# 环境变量
+.env
+.env.*
+!.env.example
