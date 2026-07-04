@@ -188,7 +188,8 @@ export default function DivinationPage({ userData, onUpdate }) {
       setCurrentLine(currentLine + 1)
     } else {
       const orig = findHexagram(newLines)
-      const changed = movingCount > 0 || newLines.some(l => l.moving)
+      // 用 newLines 真实判断（movingCount 是过时闭包值，此处不可用）
+      const changed = newLines.some(l => l.moving)
         ? findHexagram(getChangedLines(newLines))
         : null
       if (orig) saveHistory(orig, changed, newLines)
