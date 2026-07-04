@@ -508,7 +508,7 @@ export default function DivinationPage({ userData, onUpdate }) {
 
         {/* 掷币阶段 — 逐爻 */}
         {step === 1 && (
-          <div className="w-full max-w-sm mt-6">
+          <div className="w-full max-w-sm mt-6 flex flex-col" style={{ minHeight: 'calc(100vh - 220px)' }}>
             <div className="text-center mb-6">
               <div className="text-sm text-gray mb-1">第 {currentLine + 1} 爻 / 共六爻</div>
               <div className="text-gold font-medium">{LINE_NAMES[currentLine]}爻</div>
@@ -544,30 +544,36 @@ export default function DivinationPage({ userData, onUpdate }) {
               ))}
             </div>
 
-            {revealed && lastThrow && (
-              <div className="text-center mb-6 animate-[fadeIn_0.3s_ease-out]">
-                <LineTypeBadge value={lastThrow.sum} />
-                <div className="text-xs text-gray-500 mt-1">
-                  {lastThrow.sum === 9 && '三字'}
-                  {lastThrow.sum === 8 && '二字一背'}
-                  {lastThrow.sum === 7 && '一字二背'}
-                  {lastThrow.sum === 6 && '三背'}
-                </div>
-              </div>
-            )}
-
-            {/* 已成爻线展示（从下往上） */}
-            {lines.length > 0 && (
-              <div className="flex flex-col-reverse items-center gap-2 mb-8 bg-card rounded-xl p-4">
-                {lines.map((l, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
-                    {renderLine(l.yang, l.moving, l.value)}
+            {/* 爻类型标签 — 占位固定高度，避免插拔导致跳动 */}
+            <div className="text-center mb-6 h-12 flex flex-col items-center justify-center">
+              {revealed && lastThrow ? (
+                <div className="animate-[fadeIn_0.3s_ease-out]">
+                  <LineTypeBadge value={lastThrow.sum} />
+                  <div className="text-xs text-gray-500 mt-1">
+                    {lastThrow.sum === 9 && '三字'}
+                    {lastThrow.sum === 8 && '二字一背'}
+                    {lastThrow.sum === 7 && '一字二背'}
+                    {lastThrow.sum === 6 && '三背'}
                   </div>
-                ))}
-              </div>
-            )}
+                </div>
+              ) : null}
+            </div>
 
+            {/* 已成爻线展示（从下往上）— 占据剩余空间，把按钮顶到底部 */}
+            <div className="flex-1 flex flex-col justify-end">
+              {lines.length > 0 && (
+                <div className="flex flex-col-reverse items-center gap-2 mb-8 bg-card rounded-xl p-4">
+                  {lines.map((l, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <span className="text-xs text-gray w-8">{LINE_NAMES[i]}爻</span>
+                      {renderLine(l.yang, l.moving, l.value)}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* 按钮 — 固定在底部，不受上方内容变化影响 */}
             <button
               onClick={throwOnce}
               disabled={throwing}
