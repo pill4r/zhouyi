@@ -1,6 +1,13 @@
 import { getStoredAuth } from './auth'
-
-const API_BASE = 'https://zhouyi-api.pillarbialexi.workers.dev'
+import { API_BASE } from './config'
+import {
+  getCachedProgress,
+  cacheProgress,
+  getCachedFavorites,
+  cacheFavorites,
+  getCachedNotes,
+  cacheNote,
+} from './localCache'
 
 function ensureAnonymousId() {
   let id = localStorage.getItem('zhouyi_user_id')
@@ -37,23 +44,59 @@ async function apiRequest(endpoint, options = {}) {
   return response.json()
 }
 
+// 读取：后端优先，失败回退本地缓存
+async function getWithFallback(apiCall, cacheGetter) {
+  try {
+    const data = await apiCall()
+    return data
+  } catch (e) {
+    return cacheGetter()
+  }
+}
+
 export const API = {
   Progress: {
-    get: () => apiRequest('/api/progress'),
-    save: (data) => apiRequest('/api/progress', { method: 'POST', body: JSON.stringify(data) }),
+    get: () => getWithFallback(
+      () => apiRequest('/api/progress'),
+      () => getCachedProgress()
+    ),
+    save: async (data) => {
+      cacheProgress(data) // 无论后端是否可达，先写本地缓存
+      return apiRequest('/api/progress', { method: 'POST', body: JSON.stringify(data) })
+    },
   },
   Favorites: {
-    get: () => apiRequest('/api/favorites'),
-    add: (hexagramId) => apiRequest('/api/favorites', { method: 'POST', body: JSON.stringify({ action: 'add', hexagramId }) }),
-    remove: (hexagramId) => apiRequest('/api/favorites', { method: 'POST', body: JSON.stringify({ action: 'remove', hexagramId }) }),
+    get: () => getWithFallback(
+      () => apiRequest('/api/favorites'),
+      () => getCachedFavorites()
+    ),
+    add: async (hexagramId) => {
+      const next = [...new Set([...getCachedFavorites(), hexagramId])]
+      cacheFavorites(next)
+      return apiRequest('/api/favorites', { method: 'POST', body: JSON.stringify({ action: 'add', hexagramId }) })
+    },
+    remove: async (hexagramId) => {
+      cacheFavorites(getCachedFavorites().filter(id => id !== hexagramId))
+      return apiRequest('/api/favorites', { method: 'POST', body: JSON.stringify({ action: 'remove', hexagramId }) })
+    },
   },
   History: {
-    get: () => apiRequest('/api/history'),
+    get: () => apiRequest('/api/history').catch(() => []),
     add: (record) => apiRequest('/api/history', { method: 'POST', body: JSON.stringify(record) }),
   },
   Notes: {
-    get: () => apiRequest('/api/notes'),
-    save: (hexagramId, content) => apiRequest('/api/notes', { method: 'POST', body: JSON.stringify({ hexagramId, content }) }),
+    get: () => getWithFallback(
+      () => apiRequest('/api/notes'),
+      () => getCachedNotes()
+    ),
+    save: async (hexagramId, content) => {
+      cacheNote(hexagramId, content) // 先写本地缓存
+      try {
+        return await apiRequest('/api/notes', { method: 'POST', body: JSON.stringify({ hexagramId, content }) })
+      } catch (e) {
+        return { success: false, cached: true }
+      }
+    },
   },
   Health: {
     check: () => apiRequest('/api/health'),

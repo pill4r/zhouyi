@@ -1,4 +1,4 @@
-const API_BASE = 'https://zhouyi-api.pillarbialexi.workers.dev'
+import { API_BASE } from './config'
 
 const TOKEN_KEY = 'zhouyi_auth_token'
 const USER_KEY = 'zhouyi_auth_user'

@@ -10,6 +10,12 @@ import LibraryPage from './pages/LibraryPage'
 import ProfilePage from './pages/ProfilePage'
 import LoginPage from './pages/LoginPage'
 import { API } from './api/client'
+import {
+  getCachedProgress,
+  cacheProgress,
+  getCachedFavorites,
+  cacheFavorites,
+} from './api/localCache'
 
 function AppContent() {
   const location = useLocation()
@@ -29,13 +35,24 @@ function AppContent() {
         API.Progress.get(),
         API.Favorites.get()
       ])
-      setUserData({
+      const next = {
         learned: progress.learned || [],
         memorized: progress.memorized || [],
         favorites: favorites || []
-      })
+      }
+      setUserData(next)
+      // 成功时同步写一份本地缓存，作为后续断网兜底
+      cacheProgress({ learned: next.learned, memorized: next.memorized })
+      cacheFavorites(next.favorites)
     } catch (e) {
-      console.log('Using local storage fallback')
+      // 网络失败时，回退到本地缓存，避免学习进度"看起来归零"
+      console.log('API 不可达，使用本地缓存兜底')
+      const p = getCachedProgress()
+      setUserData({
+        learned: p.learned || [],
+        memorized: p.memorized || [],
+        favorites: getCachedFavorites() || []
+      })
     }
   }
 
