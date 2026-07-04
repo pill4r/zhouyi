@@ -161,7 +161,7 @@ export default function DivinationPage({ userData, onUpdate }) {
     } finally {
       setSaving(false)
     }
-  }, [onUpdate])
+  }, [onUpdate, question])
 
   async function throwOnce() {
     setThrowing(true)
