@@ -22,13 +22,12 @@ export default function HexagramDetailPage({ userData, onUpdate }) {
   useEffect(() => {
     if (hex) {
       setHexagram(hex)
+      setNote('') // 先清空，避免上一卦笔记残留
       // 切换卦象时回到页面顶部
       window.scrollTo(0, 0)
       // 加载笔记
       API.Notes.get().then(data => {
-        if (data && data[numId]) {
-          setNote(data[numId])
-        }
+        setNote(data?.[numId] || '')
       }).catch(() => {})
     }
   }, [id])

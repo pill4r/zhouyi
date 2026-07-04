@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { API } from '../api/client'
 import { useAuth } from '../components/AuthProvider'
-import { GraduationCap, Brain, Heart, LogIn, LogOut } from 'lucide-react'
+import { GraduationCap, Brain, Heart, LogIn, LogOut, RefreshCw } from 'lucide-react'
 
 export default function ProfilePage({ userData, onUpdate }) {
   const navigate = useNavigate()
@@ -10,12 +10,15 @@ export default function ProfilePage({ userData, onUpdate }) {
   const [history, setHistory] = useState([])
   const [notes, setNotes] = useState({})
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     loadData()
   }, [])
 
   async function loadData() {
+    setLoading(true)
+    setError(false)
     try {
       const [historyData, notesData] = await Promise.all([
         API.History.get(),
@@ -24,7 +27,7 @@ export default function ProfilePage({ userData, onUpdate }) {
       setHistory(historyData || [])
       setNotes(notesData || {})
     } catch (e) {
-      console.error(e)
+      setError(true)
     } finally {
       setLoading(false)
     }
@@ -91,6 +94,16 @@ export default function ProfilePage({ userData, onUpdate }) {
           <h2 className="text-sm font-medium text-gray mb-3">最近占卜</h2>
           {loading ? (
             <div className="text-center text-gray py-4">加载中...</div>
+          ) : error ? (
+            <div className="bg-card rounded-xl p-4 text-center">
+              <p className="text-gray text-sm mb-2">加载失败</p>
+              <button
+                onClick={loadData}
+                className="text-gold text-sm inline-flex items-center gap-1 active:scale-95 transition-transform"
+              >
+                <RefreshCw className="w-3.5 h-3.5" />点击重试
+              </button>
+            </div>
           ) : history.length === 0 ? (
             <div className="bg-card rounded-xl p-4 text-center text-gray text-sm">
               暂无占卜记录
@@ -122,7 +135,13 @@ export default function ProfilePage({ userData, onUpdate }) {
         {/* Notes */}
         <section>
           <h2 className="text-sm font-medium text-gray mb-3">我的笔记</h2>
-          {Object.keys(notes).length === 0 ? (
+          {loading ? (
+            <div className="text-center text-gray py-4">加载中...</div>
+          ) : error ? (
+            <div className="bg-card rounded-xl p-4 text-center text-gray text-sm">
+              笔记加载失败
+            </div>
+          ) : Object.keys(notes).length === 0 ? (
             <div className="bg-card rounded-xl p-4 text-center text-gray text-sm">
               暂无笔记
             </div>

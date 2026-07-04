@@ -49,7 +49,7 @@ export default {
       if (isStatic) {
         let filePath = path;
         if (path === '/') filePath = '/index.html';
-        
+
         // 尝试从 KV 获取静态文件
         const staticFile = await env.ZHOUYI_KV.get(`static${filePath}`, 'text');
         if (staticFile) {
@@ -58,17 +58,6 @@ export default {
             headers: { 'Content-Type': contentType, ...corsHeaders },
           });
         }
-
-        // 尝试从 Worker bundle 内读取 (通过 glob import)
-        try {
-          const asset = staticAssets[`./public${filePath}`];
-          if (asset) {
-            const contentType = getContentType(filePath);
-            return new Response(asset, {
-              headers: { 'Content-Type': contentType, ...corsHeaders },
-            });
-          }
-        } catch (e) {}
 
         // 返回 index.html (SPA fallback)
         const indexHtml = await env.ZHOUYI_KV.get('static/index.html', 'text');
@@ -255,8 +244,6 @@ function jsonResp(data, status, corsHeaders) {
     headers: { ...corsHeaders, 'Content-Type': 'application/json' },
   });
 }
-
-// ============ 学习进度 ============
 
 // ============ 学习进度 ============
 async function handleProgress(request, env, url) {
