@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import { Hexagon, Sparkles, BookOpen, User } from 'lucide-react'
+import { Home, Hexagon, Sparkles, BookOpen, User } from 'lucide-react'
 
 const tabs = [
+  { path: '/', icon: Home, label: '首页', end: true },
   { path: '/hexagrams', icon: Hexagon, label: '卦象' },
   { path: '/divination', icon: Sparkles, label: '占卜' },
   { path: '/library', icon: BookOpen, label: '书库' },
@@ -16,6 +17,7 @@ export default function Navigation() {
           <NavLink
             key={tab.path}
             to={tab.path}
+            end={tab.end}
             className={({ isActive }) =>
               `flex flex-col items-center justify-center w-full h-full transition-colors ${
                 isActive ? 'text-gold' : 'text-gray-500'
@@ -24,8 +26,8 @@ export default function Navigation() {
           >
             {({ isActive }) => (
               <>
-                <tab.icon className="w-6 h-6 mb-1" strokeWidth={isActive ? 2 : 1.5} />
-                <span className="text-xs">{tab.label}</span>
+                <tab.icon className="w-5 h-5 md:w-6 md:h-6 mb-0.5 md:mb-1" strokeWidth={isActive ? 2 : 1.5} />
+                <span className="text-[10px] md:text-xs">{tab.label}</span>
               </>
             )}
           </NavLink>

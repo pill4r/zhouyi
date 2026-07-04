@@ -43,7 +43,7 @@ export default function HomePage({ userData }) {
               </div>
               <div>
                 <div className="text-gold font-medium">{todayHexagram.nameCn}</div>
-                <div className="text-gray text-sm">{todayHexagram.name}</div>
+                <div className="text-gray text-sm">{todayHexagram.palace} · 五行 {todayHexagram.fiveElements}</div>
               </div>
             </div>
             <p className="text-text/80 text-sm mb-3">{todayHexagram.judgment}</p>
