@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { Hexagon, Sparkles, BookOpen, User } from 'lucide-react'
 
 const tabs = [
-  { path: '/', icon: Hexagon, label: '卦象' },
+  { path: '/hexagrams', icon: Hexagon, label: '卦象' },
   { path: '/divination', icon: Sparkles, label: '占卜' },
   { path: '/library', icon: BookOpen, label: '书库' },
   { path: '/profile', icon: User, label: '我的' },
